@@ -16,5 +16,6 @@ namespace System_Constructor
         public Cooler Cooler { get; set; }
         public ROM ROM { get; set; }
         public HardDisk HardDisk { get; set; }
+        public int PCINumber { get; set; }
     }
 }

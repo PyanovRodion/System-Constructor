@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace System_Constructor
 {
-    public partial class Form1 : Form
+    public partial class FormSystemConstructor : Form
     {
-        public Form1()
+        public FormSystemConstructor()
         {
             InitializeComponent();
         }

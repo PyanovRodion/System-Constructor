@@ -1,6 +1,6 @@
 ﻿namespace System_Constructor
 {
-    partial class Form1
+    partial class FormSystemConstructor
     {
         /// <summary>
         /// Required designer variable.
@@ -592,7 +592,7 @@
             this.buttonSendOrder.Text = "Отправить заказ";
             this.buttonSendOrder.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FormSystemConstructor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -616,7 +616,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelConfig);
             this.Controls.Add(this.tabControl);
-            this.Name = "Form1";
+            this.Name = "FormSystemConstructor";
             this.Text = "System Constructor";
             this.tabControl.ResumeLayout(false);
             this.tabPageProcessor.ResumeLayout(false);
