@@ -16,5 +16,10 @@ namespace System_Constructor
         {
             InitializeComponent();
         }
+
+        private void buttonSelectProc_Click(object sender, EventArgs e)
+        {
+            //Some method
+        }
     }
 }
