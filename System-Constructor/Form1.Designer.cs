@@ -42,20 +42,25 @@
             this.buttonCancelSCard = new System.Windows.Forms.Button();
             this.dataGridViewSCard = new System.Windows.Forms.DataGridView();
             this.tabPageMotherboard = new System.Windows.Forms.TabPage();
+            this.buttonSelectMotherboard = new System.Windows.Forms.Button();
             this.buttonCancelMotherboard = new System.Windows.Forms.Button();
             this.dataGridViewMotherboard = new System.Windows.Forms.DataGridView();
             this.tabPagePowerUnit = new System.Windows.Forms.TabPage();
+            this.buttonSelectPowerUnit = new System.Windows.Forms.Button();
             this.buttonCancelPowerUnit = new System.Windows.Forms.Button();
             this.dataGridViewPowerUnit = new System.Windows.Forms.DataGridView();
             this.tabPageCooler = new System.Windows.Forms.TabPage();
+            this.buttonSelectCooler = new System.Windows.Forms.Button();
             this.buttonCancelCooler = new System.Windows.Forms.Button();
             this.dataGridViewCooler = new System.Windows.Forms.DataGridView();
             this.tabPageROM = new System.Windows.Forms.TabPage();
+            this.buttonSelectROM = new System.Windows.Forms.Button();
             this.buttonCancelROM = new System.Windows.Forms.Button();
             this.dataGridViewROM = new System.Windows.Forms.DataGridView();
-            this.tabPageHardDisc = new System.Windows.Forms.TabPage();
-            this.buttonCancelHardDisc = new System.Windows.Forms.Button();
-            this.dataGridViewHardDisc = new System.Windows.Forms.DataGridView();
+            this.tabPageHardDisk = new System.Windows.Forms.TabPage();
+            this.buttonSelectHardDisk = new System.Windows.Forms.Button();
+            this.buttonCancelHardDisk = new System.Windows.Forms.Button();
+            this.dataGridViewHardDisk = new System.Windows.Forms.DataGridView();
             this.labelConfig = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,11 +78,6 @@
             this.labelCooler = new System.Windows.Forms.Label();
             this.labelROM = new System.Windows.Forms.Label();
             this.labelHardDisc = new System.Windows.Forms.Label();
-            this.buttonSelectMotherboard = new System.Windows.Forms.Button();
-            this.buttonSelectPowerUnit = new System.Windows.Forms.Button();
-            this.buttonSelectCooler = new System.Windows.Forms.Button();
-            this.buttonSelectROM = new System.Windows.Forms.Button();
-            this.buttonSelectHardDisc = new System.Windows.Forms.Button();
             this.buttonSendOrder = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPageProcessor.SuspendLayout();
@@ -94,8 +94,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCooler)).BeginInit();
             this.tabPageROM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewROM)).BeginInit();
-            this.tabPageHardDisc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisc)).BeginInit();
+            this.tabPageHardDisk.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -107,7 +107,7 @@
             this.tabControl.Controls.Add(this.tabPagePowerUnit);
             this.tabControl.Controls.Add(this.tabPageCooler);
             this.tabControl.Controls.Add(this.tabPageROM);
-            this.tabControl.Controls.Add(this.tabPageHardDisc);
+            this.tabControl.Controls.Add(this.tabPageHardDisk);
             this.tabControl.Location = new System.Drawing.Point(12, 12);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -144,6 +144,7 @@
             this.buttonSelectProc.TabIndex = 1;
             this.buttonSelectProc.Text = "Выбрать";
             this.buttonSelectProc.UseVisualStyleBackColor = true;
+            this.buttonSelectProc.Click += new System.EventHandler(this.buttonSelectProc_Click);
             // 
             // dataGridViewProcessor
             // 
@@ -247,6 +248,15 @@
             this.tabPageMotherboard.Text = "Материнская плата";
             this.tabPageMotherboard.UseVisualStyleBackColor = true;
             // 
+            // buttonSelectMotherboard
+            // 
+            this.buttonSelectMotherboard.Location = new System.Drawing.Point(449, 309);
+            this.buttonSelectMotherboard.Name = "buttonSelectMotherboard";
+            this.buttonSelectMotherboard.Size = new System.Drawing.Size(182, 23);
+            this.buttonSelectMotherboard.TabIndex = 2;
+            this.buttonSelectMotherboard.Text = "Выбрать";
+            this.buttonSelectMotherboard.UseVisualStyleBackColor = true;
+            // 
             // buttonCancelMotherboard
             // 
             this.buttonCancelMotherboard.Location = new System.Drawing.Point(49, 309);
@@ -276,6 +286,15 @@
             this.tabPagePowerUnit.TabIndex = 4;
             this.tabPagePowerUnit.Text = "Блок питания";
             this.tabPagePowerUnit.UseVisualStyleBackColor = true;
+            // 
+            // buttonSelectPowerUnit
+            // 
+            this.buttonSelectPowerUnit.Location = new System.Drawing.Point(449, 309);
+            this.buttonSelectPowerUnit.Name = "buttonSelectPowerUnit";
+            this.buttonSelectPowerUnit.Size = new System.Drawing.Size(182, 23);
+            this.buttonSelectPowerUnit.TabIndex = 2;
+            this.buttonSelectPowerUnit.Text = "Выбрать";
+            this.buttonSelectPowerUnit.UseVisualStyleBackColor = true;
             // 
             // buttonCancelPowerUnit
             // 
@@ -307,6 +326,15 @@
             this.tabPageCooler.Text = "Кулер";
             this.tabPageCooler.UseVisualStyleBackColor = true;
             // 
+            // buttonSelectCooler
+            // 
+            this.buttonSelectCooler.Location = new System.Drawing.Point(449, 309);
+            this.buttonSelectCooler.Name = "buttonSelectCooler";
+            this.buttonSelectCooler.Size = new System.Drawing.Size(182, 23);
+            this.buttonSelectCooler.TabIndex = 2;
+            this.buttonSelectCooler.Text = "Выбрать";
+            this.buttonSelectCooler.UseVisualStyleBackColor = true;
+            // 
             // buttonCancelCooler
             // 
             this.buttonCancelCooler.Location = new System.Drawing.Point(49, 309);
@@ -337,6 +365,15 @@
             this.tabPageROM.Text = "Оперативная память";
             this.tabPageROM.UseVisualStyleBackColor = true;
             // 
+            // buttonSelectROM
+            // 
+            this.buttonSelectROM.Location = new System.Drawing.Point(449, 309);
+            this.buttonSelectROM.Name = "buttonSelectROM";
+            this.buttonSelectROM.Size = new System.Drawing.Size(182, 23);
+            this.buttonSelectROM.TabIndex = 2;
+            this.buttonSelectROM.Text = "Выбрать";
+            this.buttonSelectROM.UseVisualStyleBackColor = true;
+            // 
             // buttonCancelROM
             // 
             this.buttonCancelROM.Location = new System.Drawing.Point(49, 309);
@@ -354,35 +391,44 @@
             this.dataGridViewROM.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewROM.TabIndex = 0;
             // 
-            // tabPageHardDisc
+            // tabPageHardDisk
             // 
-            this.tabPageHardDisc.Controls.Add(this.buttonSelectHardDisc);
-            this.tabPageHardDisc.Controls.Add(this.buttonCancelHardDisc);
-            this.tabPageHardDisc.Controls.Add(this.dataGridViewHardDisc);
-            this.tabPageHardDisc.Location = new System.Drawing.Point(4, 22);
-            this.tabPageHardDisc.Name = "tabPageHardDisc";
-            this.tabPageHardDisc.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHardDisc.Size = new System.Drawing.Size(688, 351);
-            this.tabPageHardDisc.TabIndex = 7;
-            this.tabPageHardDisc.Text = "Жесткий диск";
-            this.tabPageHardDisc.UseVisualStyleBackColor = true;
+            this.tabPageHardDisk.Controls.Add(this.buttonSelectHardDisk);
+            this.tabPageHardDisk.Controls.Add(this.buttonCancelHardDisk);
+            this.tabPageHardDisk.Controls.Add(this.dataGridViewHardDisk);
+            this.tabPageHardDisk.Location = new System.Drawing.Point(4, 22);
+            this.tabPageHardDisk.Name = "tabPageHardDisk";
+            this.tabPageHardDisk.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageHardDisk.Size = new System.Drawing.Size(688, 351);
+            this.tabPageHardDisk.TabIndex = 7;
+            this.tabPageHardDisk.Text = "Жесткий диск";
+            this.tabPageHardDisk.UseVisualStyleBackColor = true;
             // 
-            // buttonCancelHardDisc
+            // buttonSelectHardDisk
             // 
-            this.buttonCancelHardDisc.Location = new System.Drawing.Point(49, 309);
-            this.buttonCancelHardDisc.Name = "buttonCancelHardDisc";
-            this.buttonCancelHardDisc.Size = new System.Drawing.Size(182, 23);
-            this.buttonCancelHardDisc.TabIndex = 1;
-            this.buttonCancelHardDisc.Text = "Сбросить";
-            this.buttonCancelHardDisc.UseVisualStyleBackColor = true;
+            this.buttonSelectHardDisk.Location = new System.Drawing.Point(449, 309);
+            this.buttonSelectHardDisk.Name = "buttonSelectHardDisk";
+            this.buttonSelectHardDisk.Size = new System.Drawing.Size(182, 23);
+            this.buttonSelectHardDisk.TabIndex = 2;
+            this.buttonSelectHardDisk.Text = "Выбрать";
+            this.buttonSelectHardDisk.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewHardDisc
+            // buttonCancelHardDisk
             // 
-            this.dataGridViewHardDisc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewHardDisc.Location = new System.Drawing.Point(6, 31);
-            this.dataGridViewHardDisc.Name = "dataGridViewHardDisc";
-            this.dataGridViewHardDisc.Size = new System.Drawing.Size(675, 272);
-            this.dataGridViewHardDisc.TabIndex = 0;
+            this.buttonCancelHardDisk.Location = new System.Drawing.Point(49, 309);
+            this.buttonCancelHardDisk.Name = "buttonCancelHardDisk";
+            this.buttonCancelHardDisk.Size = new System.Drawing.Size(182, 23);
+            this.buttonCancelHardDisk.TabIndex = 1;
+            this.buttonCancelHardDisk.Text = "Сбросить";
+            this.buttonCancelHardDisk.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewHardDisk
+            // 
+            this.dataGridViewHardDisk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHardDisk.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewHardDisk.Name = "dataGridViewHardDisk";
+            this.dataGridViewHardDisk.Size = new System.Drawing.Size(675, 272);
+            this.dataGridViewHardDisk.TabIndex = 0;
             // 
             // labelConfig
             // 
@@ -537,51 +583,6 @@
             this.labelHardDisc.TabIndex = 17;
             this.labelHardDisc.Text = "Не выбрано";
             // 
-            // buttonSelectMotherboard
-            // 
-            this.buttonSelectMotherboard.Location = new System.Drawing.Point(449, 309);
-            this.buttonSelectMotherboard.Name = "buttonSelectMotherboard";
-            this.buttonSelectMotherboard.Size = new System.Drawing.Size(182, 23);
-            this.buttonSelectMotherboard.TabIndex = 2;
-            this.buttonSelectMotherboard.Text = "Выбрать";
-            this.buttonSelectMotherboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonSelectPowerUnit
-            // 
-            this.buttonSelectPowerUnit.Location = new System.Drawing.Point(449, 309);
-            this.buttonSelectPowerUnit.Name = "buttonSelectPowerUnit";
-            this.buttonSelectPowerUnit.Size = new System.Drawing.Size(182, 23);
-            this.buttonSelectPowerUnit.TabIndex = 2;
-            this.buttonSelectPowerUnit.Text = "Выбрать";
-            this.buttonSelectPowerUnit.UseVisualStyleBackColor = true;
-            // 
-            // buttonSelectCooler
-            // 
-            this.buttonSelectCooler.Location = new System.Drawing.Point(449, 309);
-            this.buttonSelectCooler.Name = "buttonSelectCooler";
-            this.buttonSelectCooler.Size = new System.Drawing.Size(182, 23);
-            this.buttonSelectCooler.TabIndex = 2;
-            this.buttonSelectCooler.Text = "Выбрать";
-            this.buttonSelectCooler.UseVisualStyleBackColor = true;
-            // 
-            // buttonSelectROM
-            // 
-            this.buttonSelectROM.Location = new System.Drawing.Point(449, 309);
-            this.buttonSelectROM.Name = "buttonSelectROM";
-            this.buttonSelectROM.Size = new System.Drawing.Size(182, 23);
-            this.buttonSelectROM.TabIndex = 2;
-            this.buttonSelectROM.Text = "Выбрать";
-            this.buttonSelectROM.UseVisualStyleBackColor = true;
-            // 
-            // buttonSelectHardDisc
-            // 
-            this.buttonSelectHardDisc.Location = new System.Drawing.Point(449, 309);
-            this.buttonSelectHardDisc.Name = "buttonSelectHardDisc";
-            this.buttonSelectHardDisc.Size = new System.Drawing.Size(182, 23);
-            this.buttonSelectHardDisc.TabIndex = 2;
-            this.buttonSelectHardDisc.Text = "Выбрать";
-            this.buttonSelectHardDisc.UseVisualStyleBackColor = true;
-            // 
             // buttonSendOrder
             // 
             this.buttonSendOrder.Location = new System.Drawing.Point(730, 362);
@@ -632,8 +633,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCooler)).EndInit();
             this.tabPageROM.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewROM)).EndInit();
-            this.tabPageHardDisc.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisc)).EndInit();
+            this.tabPageHardDisk.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -658,8 +659,8 @@
         private System.Windows.Forms.DataGridView dataGridViewCooler;
         private System.Windows.Forms.TabPage tabPageROM;
         private System.Windows.Forms.DataGridView dataGridViewROM;
-        private System.Windows.Forms.TabPage tabPageHardDisc;
-        private System.Windows.Forms.DataGridView dataGridViewHardDisc;
+        private System.Windows.Forms.TabPage tabPageHardDisk;
+        private System.Windows.Forms.DataGridView dataGridViewHardDisk;
         private System.Windows.Forms.Label labelConfig;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -685,12 +686,12 @@
         private System.Windows.Forms.Button buttonCancelPowerUnit;
         private System.Windows.Forms.Button buttonCancelCooler;
         private System.Windows.Forms.Button buttonCancelROM;
-        private System.Windows.Forms.Button buttonCancelHardDisc;
+        private System.Windows.Forms.Button buttonCancelHardDisk;
         private System.Windows.Forms.Button buttonSelectMotherboard;
         private System.Windows.Forms.Button buttonSelectPowerUnit;
         private System.Windows.Forms.Button buttonSelectCooler;
         private System.Windows.Forms.Button buttonSelectROM;
-        private System.Windows.Forms.Button buttonSelectHardDisc;
+        private System.Windows.Forms.Button buttonSelectHardDisk;
         private System.Windows.Forms.Button buttonSendOrder;
     }
 }
