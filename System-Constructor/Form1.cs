@@ -14,6 +14,7 @@ namespace System_Constructor
     {
         public FormSystemConstructor()
         {
+
             InitializeComponent();
         }
 
