@@ -100,7 +100,6 @@ namespace System_Constructor
         {
             dataGridViewProcessor.DataSource = dbc.Процессоры;
             dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Select(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU.Socket == "");
-            this.материнские_платыTableAdapter.F
             //dataGridViewCooler.DataSource = 
             //dataGridViewHardDisk.DataSource = HarddrivesTable;
             //dataGridViewPowerUnit.DataSource = BlockpitTable;

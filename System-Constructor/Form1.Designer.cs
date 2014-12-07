@@ -61,8 +61,6 @@
             this.ценаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.типВидеоКартыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.типПодключенияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.линейкаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеВидеопроцессораDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.количествоВидеопроцессоровDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.частотаПамятиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,8 +70,6 @@
             this.количествоВыходовDVIIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.поддержкаHDCPDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.количествоВыходовHDMIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tVoutDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.максимальноеРазрешениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.видеоКартыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPageSCard = new System.Windows.Forms.TabPage();
@@ -209,7 +205,6 @@
             this.кулеры_и_системы_охлажденияTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Кулеры_и_системы_охлажденияTableAdapter();
             this.ошибки_вставкиTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Ошибки_вставкиTableAdapter();
             this.жесткие_диски_и_сетевые_накопителиTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Жесткие_диски_и_сетевые_накопителиTableAdapter();
-            this.ошибкиВставкиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl.SuspendLayout();
             this.tabPageProcessor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcessor)).BeginInit();
@@ -236,7 +231,6 @@
             this.tabPageHardDisk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.жесткиеДискиИСетевыеНакопителиBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ошибкиВставкиBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -316,6 +310,7 @@
             this.максимальнаяРабочаяТемператураDataGridViewTextBoxColumn});
             this.dataGridViewProcessor.DataSource = this.процессорыBindingSource;
             this.dataGridViewProcessor.Location = new System.Drawing.Point(7, 31);
+            this.dataGridViewProcessor.MultiSelect = false;
             this.dataGridViewProcessor.Name = "dataGridViewProcessor";
             this.dataGridViewProcessor.ReadOnly = true;
             this.dataGridViewProcessor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -459,6 +454,7 @@
             this.buttonSelectVCard.TabIndex = 2;
             this.buttonSelectVCard.Text = "Выбрать";
             this.buttonSelectVCard.UseVisualStyleBackColor = false;
+            this.buttonSelectVCard.Click += new System.EventHandler(this.buttonSelectVCard_Click);
             // 
             // buttonCancelVCard
             // 
@@ -486,8 +482,6 @@
             this.ценаDataGridViewTextBoxColumn1,
             this.типВидеоКартыDataGridViewTextBoxColumn,
             this.типПодключенияDataGridViewTextBoxColumn,
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn,
-            this.линейкаDataGridViewTextBoxColumn,
             this.названиеВидеопроцессораDataGridViewTextBoxColumn,
             this.количествоВидеопроцессоровDataGridViewTextBoxColumn,
             this.частотаПамятиDataGridViewTextBoxColumn,
@@ -497,12 +491,12 @@
             this.количествоВыходовDVIIDataGridViewTextBoxColumn,
             this.поддержкаHDCPDataGridViewCheckBoxColumn,
             this.количествоВыходовHDMIDataGridViewTextBoxColumn,
-            this.tVoutDataGridViewCheckBoxColumn,
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn,
             this.максимальноеРазрешениеDataGridViewTextBoxColumn});
             this.dataGridViewVCard.DataSource = this.видеоКартыBindingSource;
             this.dataGridViewVCard.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewVCard.MultiSelect = false;
             this.dataGridViewVCard.Name = "dataGridViewVCard";
+            this.dataGridViewVCard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewVCard.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewVCard.TabIndex = 0;
             // 
@@ -541,18 +535,6 @@
             this.типПодключенияDataGridViewTextBoxColumn.DataPropertyName = "Тип подключения";
             this.типПодключенияDataGridViewTextBoxColumn.HeaderText = "Тип подключения";
             this.типПодключенияDataGridViewTextBoxColumn.Name = "типПодключенияDataGridViewTextBoxColumn";
-            // 
-            // разработчикВидеопроцессораDataGridViewTextBoxColumn
-            // 
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn.DataPropertyName = "Разработчик видеопроцессора";
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn.HeaderText = "Разработчик видеопроцессора";
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn.Name = "разработчикВидеопроцессораDataGridViewTextBoxColumn";
-            // 
-            // линейкаDataGridViewTextBoxColumn
-            // 
-            this.линейкаDataGridViewTextBoxColumn.DataPropertyName = "Линейка";
-            this.линейкаDataGridViewTextBoxColumn.HeaderText = "Линейка";
-            this.линейкаDataGridViewTextBoxColumn.Name = "линейкаDataGridViewTextBoxColumn";
             // 
             // названиеВидеопроцессораDataGridViewTextBoxColumn
             // 
@@ -608,18 +590,6 @@
             this.количествоВыходовHDMIDataGridViewTextBoxColumn.HeaderText = "Количество выходов HDMI";
             this.количествоВыходовHDMIDataGridViewTextBoxColumn.Name = "количествоВыходовHDMIDataGridViewTextBoxColumn";
             // 
-            // tVoutDataGridViewCheckBoxColumn
-            // 
-            this.tVoutDataGridViewCheckBoxColumn.DataPropertyName = "TV-out";
-            this.tVoutDataGridViewCheckBoxColumn.HeaderText = "TV-out";
-            this.tVoutDataGridViewCheckBoxColumn.Name = "tVoutDataGridViewCheckBoxColumn";
-            // 
-            // встроенныйTVтюнерDataGridViewCheckBoxColumn
-            // 
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn.DataPropertyName = "Встроенный TV-тюнер";
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn.HeaderText = "Встроенный TV-тюнер";
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn.Name = "встроенныйTVтюнерDataGridViewCheckBoxColumn";
-            // 
             // максимальноеРазрешениеDataGridViewTextBoxColumn
             // 
             this.максимальноеРазрешениеDataGridViewTextBoxColumn.DataPropertyName = "Максимальное разрешение";
@@ -653,6 +623,7 @@
             this.buttonSelectSCard.TabIndex = 2;
             this.buttonSelectSCard.Text = "Выбрать";
             this.buttonSelectSCard.UseVisualStyleBackColor = false;
+            this.buttonSelectSCard.Click += new System.EventHandler(this.buttonSelectSCard_Click);
             // 
             // buttonCancelSCard
             // 
@@ -687,7 +658,9 @@
             this.количествоВходныхАналоговыхКаналовDataGridViewTextBoxColumn});
             this.dataGridViewSCard.DataSource = this.звуковыеКартыBindingSource;
             this.dataGridViewSCard.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewSCard.MultiSelect = false;
             this.dataGridViewSCard.Name = "dataGridViewSCard";
+            this.dataGridViewSCard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewSCard.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewSCard.TabIndex = 0;
             // 
@@ -1290,12 +1263,11 @@
             this.dataGridViewROM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewROM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.поле0DataGridViewTextBoxColumn});
-            this.dataGridViewROM.DataSource = this.ошибкиВставкиBindingSource1;
+            this.dataGridViewROM.DataSource = this.ошибкиВставкиBindingSource;
             this.dataGridViewROM.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewROM.Name = "dataGridViewROM";
             this.dataGridViewROM.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewROM.TabIndex = 0;
-            this.dataGridViewROM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewROM_CellContentClick);
             // 
             // поле0DataGridViewTextBoxColumn
             // 
@@ -1694,11 +1666,6 @@
             // 
             this.жесткие_диски_и_сетевые_накопителиTableAdapter.ClearBeforeFill = true;
             // 
-            // ошибкиВставкиBindingSource1
-            // 
-            this.ошибкиВставкиBindingSource1.DataMember = "Ошибки вставки";
-            this.ошибкиВставкиBindingSource1.DataSource = this.database_Computer_PartsDataSet;
-            // 
             // FormSystemConstructor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1757,7 +1724,6 @@
             this.tabPageHardDisk.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.жесткиеДискиИСетевыеНакопителиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ошибкиВставкиBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1945,7 +1911,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn скоростьЧтенияDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn скоростьЗаписиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn объемБуфераDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource ошибкиВставкиBindingSource1;
     }
 }
 
