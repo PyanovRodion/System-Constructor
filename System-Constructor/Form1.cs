@@ -46,6 +46,20 @@ namespace System_Constructor
 
         private void FormSystemConstructor_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Жесткие_диски_и_сетевые_накопители' table. You can move, or remove it, as needed.
+            this.жесткие_диски_и_сетевые_накопителиTableAdapter.Fill(this.database_Computer_PartsDataSet.Жесткие_диски_и_сетевые_накопители);
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Ошибки_вставки' table. You can move, or remove it, as needed.
+            this.ошибки_вставкиTableAdapter.Fill(this.database_Computer_PartsDataSet.Ошибки_вставки);
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Кулеры_и_системы_охлаждения' table. You can move, or remove it, as needed.
+            this.кулеры_и_системы_охлажденияTableAdapter.Fill(this.database_Computer_PartsDataSet.Кулеры_и_системы_охлаждения);
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Блоки_питания' table. You can move, or remove it, as needed.
+            this.блоки_питанияTableAdapter.Fill(this.database_Computer_PartsDataSet.Блоки_питания);
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Материнские_платы' table. You can move, or remove it, as needed.
+            this.материнские_платыTableAdapter.Fill(this.database_Computer_PartsDataSet.Материнские_платы);
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Звуковые_карты' table. You can move, or remove it, as needed.
+            this.звуковые_картыTableAdapter.Fill(this.database_Computer_PartsDataSet.Звуковые_карты);
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Процессоры' table. You can move, or remove it, as needed.
+            this.процессорыTableAdapter.Fill(this.database_Computer_PartsDataSet.Процессоры);
             // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Процессоры' table. You can move, or remove it, as needed.
             this.процессорыTableAdapter.Fill(this.database_Computer_PartsDataSet.Процессоры);
             // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Видео_карты' table. You can move, or remove it, as needed.
