@@ -13,11 +13,13 @@ namespace System_Constructor
 {
     public partial class FormSystemConstructor : Form
     {
+        public Database_Computer_PartsDataSet dbc;
         public FormSystemConstructor()
         {
 
             InitializeComponent();  
-            Database_Computer_PartsDataSet dbc=new Database_Computer_PartsDataSet();
+            //dbc=new Database_Computer_PartsDataSet();
+            dbc = database_Computer_PartsDataSet;
 
             DataTable ProcTable= dbc.Процессоры; 
             DataTable BlockpitTable = dbc.Блоки_питания;
@@ -44,6 +46,8 @@ namespace System_Constructor
 
         private void FormSystemConstructor_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Процессоры' table. You can move, or remove it, as needed.
+            this.процессорыTableAdapter.Fill(this.database_Computer_PartsDataSet.Процессоры);
             // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Видео_карты' table. You can move, or remove it, as needed.
             this.видео_картыTableAdapter.Fill(this.database_Computer_PartsDataSet.Видео_карты);
 
@@ -52,6 +56,11 @@ namespace System_Constructor
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
