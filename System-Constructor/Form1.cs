@@ -95,5 +95,15 @@ namespace System_Constructor
         {
 
         }
+        public void RefreshDataGridView()
+        {
+            dataGridViewProcessor.DataSource = dbc.Процессоры;
+            dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Select(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU.Socket == "");
+            //dataGridViewCooler.DataSource = 
+            //dataGridViewHardDisk.DataSource = HarddrivesTable;
+            //dataGridViewPowerUnit.DataSource = BlockpitTable;
+            //dataGridViewSCard.DataSource = ZvukKartaTable;
+            //dataGridViewVCard.DataSource = VideoKardsTable;
+        }
     }
 }
