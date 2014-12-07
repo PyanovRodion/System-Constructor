@@ -1048,10 +1048,6 @@ namespace System_Constructor {
             
             private global::System.Data.DataColumn columnТип_подключения;
             
-            private global::System.Data.DataColumn columnРазработчик_видеопроцессора;
-            
-            private global::System.Data.DataColumn columnЛинейка;
-            
             private global::System.Data.DataColumn columnНазвание_видеопроцессора;
             
             private global::System.Data.DataColumn columnКоличество_видеопроцессоров;
@@ -1069,10 +1065,6 @@ namespace System_Constructor {
             private global::System.Data.DataColumn columnПоддержка_HDCP;
             
             private global::System.Data.DataColumn columnКоличество_выходов_HDMI;
-            
-            private global::System.Data.DataColumn _columnTV_out;
-            
-            private global::System.Data.DataColumn _columnВстроенный_TV_тюнер;
             
             private global::System.Data.DataColumn columnМаксимальное_разрешение;
             
@@ -1159,22 +1151,6 @@ namespace System_Constructor {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Разработчик_видеопроцессораColumn {
-                get {
-                    return this.columnРазработчик_видеопроцессора;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ЛинейкаColumn {
-                get {
-                    return this.columnЛинейка;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn Название_видеопроцессораColumn {
                 get {
                     return this.columnНазвание_видеопроцессора;
@@ -1247,22 +1223,6 @@ namespace System_Constructor {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn _TV_outColumn {
-                get {
-                    return this._columnTV_out;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn _Встроенный_TV_тюнерColumn {
-                get {
-                    return this._columnВстроенный_TV_тюнер;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn Максимальное_разрешениеColumn {
                 get {
                     return this.columnМаксимальное_разрешение;
@@ -1306,26 +1266,7 @@ namespace System_Constructor {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Видео_картыRow AddВидео_картыRow(
-                        string Производитель, 
-                        string Название, 
-                        decimal Цена, 
-                        string Тип_видео_карты, 
-                        string Тип_подключения, 
-                        string Разработчик_видеопроцессора, 
-                        string Линейка, 
-                        string Название_видеопроцессора, 
-                        int Количество_видеопроцессоров, 
-                        int Частота_памяти, 
-                        int Объем_памяти, 
-                        string Тип_памяти, 
-                        int Количество_поддерживаемых_мониторов, 
-                        string _Количество_выходов_DVI_I, 
-                        bool Поддержка_HDCP, 
-                        int Количество_выходов_HDMI, 
-                        bool _TV_out, 
-                        bool _Встроенный_TV_тюнер, 
-                        string Максимальное_разрешение) {
+            public Видео_картыRow AddВидео_картыRow(string Производитель, string Название, decimal Цена, string Тип_видео_карты, string Тип_подключения, string Название_видеопроцессора, int Количество_видеопроцессоров, int Частота_памяти, int Объем_памяти, string Тип_памяти, int Количество_поддерживаемых_мониторов, string _Количество_выходов_DVI_I, bool Поддержка_HDCP, int Количество_выходов_HDMI, string Максимальное_разрешение) {
                 Видео_картыRow rowВидео_картыRow = ((Видео_картыRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1334,8 +1275,6 @@ namespace System_Constructor {
                         Цена,
                         Тип_видео_карты,
                         Тип_подключения,
-                        Разработчик_видеопроцессора,
-                        Линейка,
                         Название_видеопроцессора,
                         Количество_видеопроцессоров,
                         Частота_памяти,
@@ -1345,8 +1284,6 @@ namespace System_Constructor {
                         _Количество_выходов_DVI_I,
                         Поддержка_HDCP,
                         Количество_выходов_HDMI,
-                        _TV_out,
-                        _Встроенный_TV_тюнер,
                         Максимальное_разрешение};
                 rowВидео_картыRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowВидео_картыRow);
@@ -1383,8 +1320,6 @@ namespace System_Constructor {
                 this.columnЦена = base.Columns["Цена"];
                 this.columnТип_видео_карты = base.Columns["Тип видео карты"];
                 this.columnТип_подключения = base.Columns["Тип подключения"];
-                this.columnРазработчик_видеопроцессора = base.Columns["Разработчик видеопроцессора"];
-                this.columnЛинейка = base.Columns["Линейка"];
                 this.columnНазвание_видеопроцессора = base.Columns["Название видеопроцессора"];
                 this.columnКоличество_видеопроцессоров = base.Columns["Количество видеопроцессоров"];
                 this.columnЧастота_памяти = base.Columns["Частота памяти"];
@@ -1394,8 +1329,6 @@ namespace System_Constructor {
                 this._columnКоличество_выходов_DVI_I = base.Columns["Количество выходов DVI-I"];
                 this.columnПоддержка_HDCP = base.Columns["Поддержка HDCP"];
                 this.columnКоличество_выходов_HDMI = base.Columns["Количество выходов HDMI"];
-                this._columnTV_out = base.Columns["TV-out"];
-                this._columnВстроенный_TV_тюнер = base.Columns["Встроенный TV-тюнер"];
                 this.columnМаксимальное_разрешение = base.Columns["Максимальное разрешение"];
             }
             
@@ -1414,10 +1347,6 @@ namespace System_Constructor {
                 base.Columns.Add(this.columnТип_видео_карты);
                 this.columnТип_подключения = new global::System.Data.DataColumn("Тип подключения", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnТип_подключения);
-                this.columnРазработчик_видеопроцессора = new global::System.Data.DataColumn("Разработчик видеопроцессора", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnРазработчик_видеопроцессора);
-                this.columnЛинейка = new global::System.Data.DataColumn("Линейка", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnЛинейка);
                 this.columnНазвание_видеопроцессора = new global::System.Data.DataColumn("Название видеопроцессора", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnНазвание_видеопроцессора);
                 this.columnКоличество_видеопроцессоров = new global::System.Data.DataColumn("Количество видеопроцессоров", typeof(int), null, global::System.Data.MappingType.Element);
@@ -1438,14 +1367,6 @@ namespace System_Constructor {
                 base.Columns.Add(this.columnПоддержка_HDCP);
                 this.columnКоличество_выходов_HDMI = new global::System.Data.DataColumn("Количество выходов HDMI", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnКоличество_выходов_HDMI);
-                this._columnTV_out = new global::System.Data.DataColumn("TV-out", typeof(bool), null, global::System.Data.MappingType.Element);
-                this._columnTV_out.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnTV_out");
-                this._columnTV_out.ExtendedProperties.Add("Generator_UserColumnName", "TV-out");
-                base.Columns.Add(this._columnTV_out);
-                this._columnВстроенный_TV_тюнер = new global::System.Data.DataColumn("Встроенный TV-тюнер", typeof(bool), null, global::System.Data.MappingType.Element);
-                this._columnВстроенный_TV_тюнер.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnВстроенный_TV_тюнер");
-                this._columnВстроенный_TV_тюнер.ExtendedProperties.Add("Generator_UserColumnName", "Встроенный TV-тюнер");
-                base.Columns.Add(this._columnВстроенный_TV_тюнер);
                 this.columnМаксимальное_разрешение = new global::System.Data.DataColumn("Максимальное разрешение", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnМаксимальное_разрешение);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -1459,8 +1380,6 @@ namespace System_Constructor {
                 this.columnНазвание.MaxLength = 255;
                 this.columnТип_видео_карты.MaxLength = 255;
                 this.columnТип_подключения.MaxLength = 255;
-                this.columnРазработчик_видеопроцессора.MaxLength = 255;
-                this.columnЛинейка.MaxLength = 255;
                 this.columnНазвание_видеопроцессора.MaxLength = 255;
                 this.columnТип_памяти.MaxLength = 255;
                 this._columnКоличество_выходов_DVI_I.MaxLength = 255;
@@ -5112,39 +5031,6 @@ namespace System_Constructor {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Разработчик_видеопроцессора {
-                get {
-                    try {
-                        return ((string)(this[this.tableВидео_карты.Разработчик_видеопроцессораColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Разработчик видеопроцессора\' in table \'Видео карты\' is DBNu" +
-                                "ll.", e);
-                    }
-                }
-                set {
-                    this[this.tableВидео_карты.Разработчик_видеопроцессораColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Линейка {
-                get {
-                    try {
-                        return ((string)(this[this.tableВидео_карты.ЛинейкаColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Линейка\' in table \'Видео карты\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableВидео_карты.ЛинейкаColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Название_видеопроцессора {
                 get {
                     try {
@@ -5293,38 +5179,6 @@ namespace System_Constructor {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool _TV_out {
-                get {
-                    try {
-                        return ((bool)(this[this.tableВидео_карты._TV_outColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TV-out\' in table \'Видео карты\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableВидео_карты._TV_outColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool _Встроенный_TV_тюнер {
-                get {
-                    try {
-                        return ((bool)(this[this.tableВидео_карты._Встроенный_TV_тюнерColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Встроенный TV-тюнер\' in table \'Видео карты\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableВидео_карты._Встроенный_TV_тюнерColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Максимальное_разрешение {
                 get {
                     try {
@@ -5397,30 +5251,6 @@ namespace System_Constructor {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetТип_подключенияNull() {
                 this[this.tableВидео_карты.Тип_подключенияColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsРазработчик_видеопроцессораNull() {
-                return this.IsNull(this.tableВидео_карты.Разработчик_видеопроцессораColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetРазработчик_видеопроцессораNull() {
-                this[this.tableВидео_карты.Разработчик_видеопроцессораColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsЛинейкаNull() {
-                return this.IsNull(this.tableВидео_карты.ЛинейкаColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetЛинейкаNull() {
-                this[this.tableВидео_карты.ЛинейкаColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5529,30 +5359,6 @@ namespace System_Constructor {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetКоличество_выходов_HDMINull() {
                 this[this.tableВидео_карты.Количество_выходов_HDMIColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Is_TV_outNull() {
-                return this.IsNull(this.tableВидео_карты._TV_outColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Set_TV_outNull() {
-                this[this.tableВидео_карты._TV_outColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Is_Встроенный_TV_тюнерNull() {
-                return this.IsNull(this.tableВидео_карты._Встроенный_TV_тюнерColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Set_Встроенный_TV_тюнерNull() {
-                this[this.tableВидео_карты._Встроенный_TV_тюнерColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9143,8 +8949,6 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Цена", "Цена");
             tableMapping.ColumnMappings.Add("Тип видео карты", "Тип видео карты");
             tableMapping.ColumnMappings.Add("Тип подключения", "Тип подключения");
-            tableMapping.ColumnMappings.Add("Разработчик видеопроцессора", "Разработчик видеопроцессора");
-            tableMapping.ColumnMappings.Add("Линейка", "Линейка");
             tableMapping.ColumnMappings.Add("Название видеопроцессора", "Название видеопроцессора");
             tableMapping.ColumnMappings.Add("Количество видеопроцессоров", "Количество видеопроцессоров");
             tableMapping.ColumnMappings.Add("Частота памяти", "Частота памяти");
@@ -9154,13 +8958,11 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Количество выходов DVI-I", "Количество выходов DVI-I");
             tableMapping.ColumnMappings.Add("Поддержка HDCP", "Поддержка HDCP");
             tableMapping.ColumnMappings.Add("Количество выходов HDMI", "Количество выходов HDMI");
-            tableMapping.ColumnMappings.Add("TV-out", "TV-out");
-            tableMapping.ColumnMappings.Add("Встроенный TV-тюнер", "Встроенный TV-тюнер");
             tableMapping.ColumnMappings.Add("Максимальное разрешение", "Максимальное разрешение");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Видео карты` WHERE ((`Код` = ?) AND ((? = 1 AND `Производитель` IS NULL) OR (`Производитель` = ?)) AND ((? = 1 AND `Название` IS NULL) OR (`Название` = ?)) AND ((? = 1 AND `Цена` IS NULL) OR (`Цена` = ?)) AND ((? = 1 AND `Тип видео карты` IS NULL) OR (`Тип видео карты` = ?)) AND ((? = 1 AND `Тип подключения` IS NULL) OR (`Тип подключения` = ?)) AND ((? = 1 AND `Разработчик видеопроцессора` IS NULL) OR (`Разработчик видеопроцессора` = ?)) AND ((? = 1 AND `Линейка` IS NULL) OR (`Линейка` = ?)) AND ((? = 1 AND `Название видеопроцессора` IS NULL) OR (`Название видеопроцессора` = ?)) AND ((? = 1 AND `Количество видеопроцессоров` IS NULL) OR (`Количество видеопроцессоров` = ?)) AND ((? = 1 AND `Частота памяти` IS NULL) OR (`Частота памяти` = ?)) AND ((? = 1 AND `Объем памяти` IS NULL) OR (`Объем памяти` = ?)) AND ((? = 1 AND `Тип памяти` IS NULL) OR (`Тип памяти` = ?)) AND ((? = 1 AND `Количество поддерживаемых мониторов` IS NULL) OR (`Количество поддерживаемых мониторов` = ?)) AND ((? = 1 AND `Количество выходов DVI-I` IS NULL) OR (`Количество выходов DVI-I` = ?)) AND ((? = 1 AND `Поддержка HDCP` IS NULL) OR (`Поддержка HDCP` = ?)) AND ((? = 1 AND `Количество выходов HDMI` IS NULL) OR (`Количество выходов HDMI` = ?)) AND ((? = 1 AND `TV-out` IS NULL) OR (`TV-out` = ?)) AND ((? = 1 AND `Встроенный TV-тюнер` IS NULL) OR (`Встроенный TV-тюнер` = ?)) AND ((? = 1 AND `Максимальное разрешение` IS NULL) OR (`Максимальное разрешение` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Видео карты` WHERE ((`Код` = ?) AND ((? = 1 AND `Производитель` IS NULL) OR (`Производитель` = ?)) AND ((? = 1 AND `Название` IS NULL) OR (`Название` = ?)) AND ((? = 1 AND `Цена` IS NULL) OR (`Цена` = ?)) AND ((? = 1 AND `Тип видео карты` IS NULL) OR (`Тип видео карты` = ?)) AND ((? = 1 AND `Тип подключения` IS NULL) OR (`Тип подключения` = ?)) AND ((? = 1 AND `Название видеопроцессора` IS NULL) OR (`Название видеопроцессора` = ?)) AND ((? = 1 AND `Количество видеопроцессоров` IS NULL) OR (`Количество видеопроцессоров` = ?)) AND ((? = 1 AND `Частота памяти` IS NULL) OR (`Частота памяти` = ?)) AND ((? = 1 AND `Объем памяти` IS NULL) OR (`Объем памяти` = ?)) AND ((? = 1 AND `Тип памяти` IS NULL) OR (`Тип памяти` = ?)) AND ((? = 1 AND `Количество поддерживаемых мониторов` IS NULL) OR (`Количество поддерживаемых мониторов` = ?)) AND ((? = 1 AND `Количество выходов DVI-I` IS NULL) OR (`Количество выходов DVI-I` = ?)) AND ((? = 1 AND `Поддержка HDCP` IS NULL) OR (`Поддержка HDCP` = ?)) AND ((? = 1 AND `Количество выходов HDMI` IS NULL) OR (`Количество выходов HDMI` = ?)) AND ((? = 1 AND `Максимальное разрешение` IS NULL) OR (`Максимальное разрешение` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Производитель", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Производитель", global::System.Data.DataRowVersion.Original, true, null));
@@ -9173,10 +8975,6 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Тип_видео_карты", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип видео карты", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Тип_подключения", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип подключения", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Тип_подключения", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип подключения", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Разработчик_видеопроцессора", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Разработчик видеопроцессора", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Разработчик_видеопроцессора", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Разработчик видеопроцессора", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Линейка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Линейка", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Линейка", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Линейка", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Название_видеопроцессора", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Название видеопроцессора", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Название_видеопроцессора", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Название видеопроцессора", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Количество_видеопроцессоров", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество видеопроцессоров", global::System.Data.DataRowVersion.Original, true, null));
@@ -9190,86 +8988,69 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Количество_поддерживаемых_мониторов", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество поддерживаемых мониторов", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Количество_поддерживаемых_мониторов", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество поддерживаемых мониторов", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Поддержка_HDCP", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Поддержка HDCP", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Поддержка_HDCP", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Поддержка HDCP", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Количество_выходов_HDMI", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов HDMI", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Количество_выходов_HDMI", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов HDMI", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_TV-out", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TV-out", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TV-out", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TV-out", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Встроенный_TV-тюнер", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Встроенный TV-тюнер", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Встроенный_TV-тюнер", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Встроенный TV-тюнер", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Максимальное_разрешение", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Максимальное разрешение", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Максимальное_разрешение", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Максимальное разрешение", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO `Видео карты` (`Производитель`, `Название`, `Цена`, `Тип видео карты`, `Тип подключения`, `Разработчик видеопроцессора`, `Линейка`, `Название видеопроцессора`, `Количество видеопроцессоров`, `Частота памяти`, `Объем памяти`, `Тип памяти`, `Количество поддерживаемых мониторов`, `Количество выходов DVI-I`, `Поддержка HDCP`, `Количество выходов HDMI`, `TV-out`, `Встроенный TV-тюнер`, `Максимальное разрешение`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO `Видео карты` (`Производитель`, `Название`, `Цена`, `Тип видео карты`, `Тип подключения`, `Название видеопроцессора`, `Количество видеопроцессоров`, `Частота памяти`, `Объем памяти`, `Тип памяти`, `Количество поддерживаемых мониторов`, `Количество выходов DVI-I`, `Поддержка HDCP`, `Количество выходов HDMI`, `Максимальное разрешение`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Производитель", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Производитель", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Название", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Название", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Цена", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Цена", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Тип_видео_карты", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип видео карты", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Тип_подключения", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип подключения", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Разработчик_видеопроцессора", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Разработчик видеопроцессора", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Линейка", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Линейка", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Название_видеопроцессора", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Название видеопроцессора", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_видеопроцессоров", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество видеопроцессоров", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Частота_памяти", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Частота памяти", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Объем_памяти", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Объем памяти", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Тип_памяти", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип памяти", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_поддерживаемых_мониторов", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество поддерживаемых мониторов", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Поддержка_HDCP", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Поддержка HDCP", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_выходов_HDMI", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов HDMI", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TV-out", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TV-out", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Встроенный_TV-тюнер", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Встроенный TV-тюнер", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Максимальное_разрешение", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Максимальное разрешение", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE `Видео карты` SET `Производитель` = ?, `Название` = ?, `Цена` = ?, `Тип ви" +
-                "део карты` = ?, `Тип подключения` = ?, `Разработчик видеопроцессора` = ?, `Линей" +
-                "ка` = ?, `Название видеопроцессора` = ?, `Количество видеопроцессоров` = ?, `Час" +
-                "тота памяти` = ?, `Объем памяти` = ?, `Тип памяти` = ?, `Количество поддерживаем" +
-                "ых мониторов` = ?, `Количество выходов DVI-I` = ?, `Поддержка HDCP` = ?, `Количе" +
-                "ство выходов HDMI` = ?, `TV-out` = ?, `Встроенный TV-тюнер` = ?, `Максимальное р" +
-                "азрешение` = ? WHERE ((`Код` = ?) AND ((? = 1 AND `Производитель` IS NULL) OR (`" +
-                "Производитель` = ?)) AND ((? = 1 AND `Название` IS NULL) OR (`Название` = ?)) AN" +
-                "D ((? = 1 AND `Цена` IS NULL) OR (`Цена` = ?)) AND ((? = 1 AND `Тип видео карты`" +
-                " IS NULL) OR (`Тип видео карты` = ?)) AND ((? = 1 AND `Тип подключения` IS NULL)" +
-                " OR (`Тип подключения` = ?)) AND ((? = 1 AND `Разработчик видеопроцессора` IS NU" +
-                "LL) OR (`Разработчик видеопроцессора` = ?)) AND ((? = 1 AND `Линейка` IS NULL) O" +
-                "R (`Линейка` = ?)) AND ((? = 1 AND `Название видеопроцессора` IS NULL) OR (`Назв" +
-                "ание видеопроцессора` = ?)) AND ((? = 1 AND `Количество видеопроцессоров` IS NUL" +
-                "L) OR (`Количество видеопроцессоров` = ?)) AND ((? = 1 AND `Частота памяти` IS N" +
-                "ULL) OR (`Частота памяти` = ?)) AND ((? = 1 AND `Объем памяти` IS NULL) OR (`Объ" +
-                "ем памяти` = ?)) AND ((? = 1 AND `Тип памяти` IS NULL) OR (`Тип памяти` = ?)) AN" +
-                "D ((? = 1 AND `Количество поддерживаемых мониторов` IS NULL) OR (`Количество под" +
-                "держиваемых мониторов` = ?)) AND ((? = 1 AND `Количество выходов DVI-I` IS NULL)" +
-                " OR (`Количество выходов DVI-I` = ?)) AND ((? = 1 AND `Поддержка HDCP` IS NULL) " +
-                "OR (`Поддержка HDCP` = ?)) AND ((? = 1 AND `Количество выходов HDMI` IS NULL) OR" +
-                " (`Количество выходов HDMI` = ?)) AND ((? = 1 AND `TV-out` IS NULL) OR (`TV-out`" +
-                " = ?)) AND ((? = 1 AND `Встроенный TV-тюнер` IS NULL) OR (`Встроенный TV-тюнер` " +
-                "= ?)) AND ((? = 1 AND `Максимальное разрешение` IS NULL) OR (`Максимальное разре" +
-                "шение` = ?)))";
+                "део карты` = ?, `Тип подключения` = ?, `Название видеопроцессора` = ?, `Количест" +
+                "во видеопроцессоров` = ?, `Частота памяти` = ?, `Объем памяти` = ?, `Тип памяти`" +
+                " = ?, `Количество поддерживаемых мониторов` = ?, `Количество выходов DVI-I` = ?," +
+                " `Поддержка HDCP` = ?, `Количество выходов HDMI` = ?, `Максимальное разрешение` " +
+                "= ? WHERE ((`Код` = ?) AND ((? = 1 AND `Производитель` IS NULL) OR (`Производите" +
+                "ль` = ?)) AND ((? = 1 AND `Название` IS NULL) OR (`Название` = ?)) AND ((? = 1 A" +
+                "ND `Цена` IS NULL) OR (`Цена` = ?)) AND ((? = 1 AND `Тип видео карты` IS NULL) O" +
+                "R (`Тип видео карты` = ?)) AND ((? = 1 AND `Тип подключения` IS NULL) OR (`Тип п" +
+                "одключения` = ?)) AND ((? = 1 AND `Название видеопроцессора` IS NULL) OR (`Назва" +
+                "ние видеопроцессора` = ?)) AND ((? = 1 AND `Количество видеопроцессоров` IS NULL" +
+                ") OR (`Количество видеопроцессоров` = ?)) AND ((? = 1 AND `Частота памяти` IS NU" +
+                "LL) OR (`Частота памяти` = ?)) AND ((? = 1 AND `Объем памяти` IS NULL) OR (`Объе" +
+                "м памяти` = ?)) AND ((? = 1 AND `Тип памяти` IS NULL) OR (`Тип памяти` = ?)) AND" +
+                " ((? = 1 AND `Количество поддерживаемых мониторов` IS NULL) OR (`Количество подд" +
+                "ерживаемых мониторов` = ?)) AND ((? = 1 AND `Количество выходов DVI-I` IS NULL) " +
+                "OR (`Количество выходов DVI-I` = ?)) AND ((? = 1 AND `Поддержка HDCP` IS NULL) O" +
+                "R (`Поддержка HDCP` = ?)) AND ((? = 1 AND `Количество выходов HDMI` IS NULL) OR " +
+                "(`Количество выходов HDMI` = ?)) AND ((? = 1 AND `Максимальное разрешение` IS NU" +
+                "LL) OR (`Максимальное разрешение` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Производитель", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Производитель", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Название", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Название", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Цена", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Цена", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Тип_видео_карты", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип видео карты", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Тип_подключения", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип подключения", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Разработчик_видеопроцессора", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Разработчик видеопроцессора", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Линейка", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Линейка", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Название_видеопроцессора", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Название видеопроцессора", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_видеопроцессоров", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество видеопроцессоров", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Частота_памяти", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Частота памяти", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Объем_памяти", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Объем памяти", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Тип_памяти", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип памяти", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_поддерживаемых_мониторов", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество поддерживаемых мониторов", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Поддержка_HDCP", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Поддержка HDCP", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Количество_выходов_HDMI", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов HDMI", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("TV-out", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TV-out", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Встроенный_TV-тюнер", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Встроенный TV-тюнер", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Максимальное_разрешение", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Максимальное разрешение", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Код", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Код", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Производитель", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Производитель", global::System.Data.DataRowVersion.Original, true, null));
@@ -9282,10 +9063,6 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Тип_видео_карты", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип видео карты", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Тип_подключения", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип подключения", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Тип_подключения", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Тип подключения", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Разработчик_видеопроцессора", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Разработчик видеопроцессора", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Разработчик_видеопроцессора", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Разработчик видеопроцессора", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Линейка", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Линейка", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Линейка", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Линейка", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Название_видеопроцессора", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Название видеопроцессора", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Название_видеопроцессора", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Название видеопроцессора", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Количество_видеопроцессоров", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество видеопроцессоров", global::System.Data.DataRowVersion.Original, true, null));
@@ -9299,15 +9076,11 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Количество_поддерживаемых_мониторов", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество поддерживаемых мониторов", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Количество_поддерживаемых_мониторов", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество поддерживаемых мониторов", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Количество_выходов_DVI-I", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов DVI-I", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Поддержка_HDCP", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Поддержка HDCP", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Поддержка_HDCP", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Поддержка HDCP", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Количество_выходов_HDMI", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов HDMI", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Количество_выходов_HDMI", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Количество выходов HDMI", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_TV-out", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TV-out", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_TV-out", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "TV-out", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Встроенный_TV-тюнер", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Встроенный TV-тюнер", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Встроенный_TV-тюнер", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Встроенный TV-тюнер", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Максимальное_разрешение", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Максимальное разрешение", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Максимальное_разрешение", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Максимальное разрешение", global::System.Data.DataRowVersion.Original, false, null));
         }
@@ -9325,7 +9098,7 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT Код, Производитель, Название, Цена, [Тип видео карты], [Тип подключения], [Разработчик видеопроцессора], Линейка, [Название видеопроцессора], [Количество видеопроцессоров], [Частота памяти], [Объем памяти], [Тип памяти], [Количество поддерживаемых мониторов], [Количество выходов DVI-I], [Поддержка HDCP], [Количество выходов HDMI], [TV-out], [Встроенный TV-тюнер], [Максимальное разрешение] FROM [Видео карты]";
+            this._commandCollection[0].CommandText = @"SELECT Код, Производитель, Название, Цена, [Тип видео карты], [Тип подключения], [Название видеопроцессора], [Количество видеопроцессоров], [Частота памяти], [Объем памяти], [Тип памяти], [Количество поддерживаемых мониторов], [Количество выходов DVI-I], [Поддержка HDCP], [Количество выходов HDMI], [Максимальное разрешение] FROM [Видео карты]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -9393,19 +9166,15 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
                     global::System.Nullable<decimal> Original_Цена, 
                     string Original_Тип_видео_карты, 
                     string Original_Тип_подключения, 
-                    string Original_Разработчик_видеопроцессора, 
-                    string Original_Линейка, 
                     string Original_Название_видеопроцессора, 
                     global::System.Nullable<int> Original_Количество_видеопроцессоров, 
                     global::System.Nullable<int> Original_Частота_памяти, 
                     global::System.Nullable<int> Original_Объем_памяти, 
                     string Original_Тип_памяти, 
                     global::System.Nullable<int> Original_Количество_поддерживаемых_мониторов, 
-                    string _Original_Количество_выходов_DVI_I, 
+                    global::System.Nullable<int> _Original_Количество_выходов_DVI_I, 
                     bool Original_Поддержка_HDCP, 
                     global::System.Nullable<int> Original_Количество_выходов_HDMI, 
-                    bool _Original_TV_out, 
-                    bool _Original_Встроенный_TV_тюнер, 
                     string Original_Максимальное_разрешение) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Код));
             if ((Original_Производитель == null)) {
@@ -9448,99 +9217,79 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Тип_подключения));
             }
-            if ((Original_Разработчик_видеопроцессора == null)) {
+            if ((Original_Название_видеопроцессора == null)) {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_Разработчик_видеопроцессора));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_Название_видеопроцессора));
             }
-            if ((Original_Линейка == null)) {
+            if ((Original_Количество_видеопроцессоров.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((int)(Original_Количество_видеопроцессоров.Value));
+            }
+            else {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_Линейка));
+            if ((Original_Частота_памяти.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((int)(Original_Частота_памяти.Value));
             }
-            if ((Original_Название_видеопроцессора == null)) {
+            else {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_Название_видеопроцессора));
-            }
-            if ((Original_Количество_видеопроцессоров.HasValue == true)) {
+            if ((Original_Объем_памяти.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((int)(Original_Количество_видеопроцессоров.Value));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((int)(Original_Объем_памяти.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
-            if ((Original_Частота_памяти.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((int)(Original_Частота_памяти.Value));
-            }
-            else {
+            if ((Original_Тип_памяти == null)) {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
-            if ((Original_Объем_памяти.HasValue == true)) {
+            else {
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_Тип_памяти));
+            }
+            if ((Original_Количество_поддерживаемых_мониторов.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[22].Value = ((int)(Original_Объем_памяти.Value));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((int)(Original_Количество_поддерживаемых_мониторов.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
-            if ((Original_Тип_памяти == null)) {
+            if ((_Original_Количество_выходов_DVI_I.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[24].Value = ((int)(_Original_Количество_выходов_DVI_I.Value));
+            }
+            else {
                 this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[24].Value = ((string)(Original_Тип_памяти));
-            }
-            if ((Original_Количество_поддерживаемых_мониторов.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[26].Value = ((int)(Original_Количество_поддерживаемых_мониторов.Value));
+            this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
+            this.Adapter.DeleteCommand.Parameters[26].Value = ((bool)(Original_Поддержка_HDCP));
+            if ((Original_Количество_выходов_HDMI.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[28].Value = ((int)(Original_Количество_выходов_HDMI.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[26].Value = global::System.DBNull.Value;
-            }
-            if ((_Original_Количество_выходов_DVI_I == null)) {
                 this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(_Original_Количество_выходов_DVI_I));
-            }
-            this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[30].Value = ((bool)(Original_Поддержка_HDCP));
-            if ((Original_Количество_выходов_HDMI.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[32].Value = ((int)(Original_Количество_выходов_HDMI.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[31].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[32].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.DeleteCommand.Parameters[33].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[34].Value = ((bool)(_Original_TV_out));
-            this.Adapter.DeleteCommand.Parameters[35].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[36].Value = ((bool)(_Original_Встроенный_TV_тюнер));
             if ((Original_Максимальное_разрешение == null)) {
-                this.Adapter.DeleteCommand.Parameters[37].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[38].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[37].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[38].Value = ((string)(Original_Максимальное_разрешение));
+                this.Adapter.DeleteCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[30].Value = ((string)(Original_Максимальное_разрешение));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -9562,26 +9311,7 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(
-                    string Производитель, 
-                    string Название, 
-                    global::System.Nullable<decimal> Цена, 
-                    string Тип_видео_карты, 
-                    string Тип_подключения, 
-                    string Разработчик_видеопроцессора, 
-                    string Линейка, 
-                    string Название_видеопроцессора, 
-                    global::System.Nullable<int> Количество_видеопроцессоров, 
-                    global::System.Nullable<int> Частота_памяти, 
-                    global::System.Nullable<int> Объем_памяти, 
-                    string Тип_памяти, 
-                    global::System.Nullable<int> Количество_поддерживаемых_мониторов, 
-                    string _Количество_выходов_DVI_I, 
-                    bool Поддержка_HDCP, 
-                    global::System.Nullable<int> Количество_выходов_HDMI, 
-                    bool _TV_out, 
-                    bool _Встроенный_TV_тюнер, 
-                    string Максимальное_разрешение) {
+        public virtual int Insert(string Производитель, string Название, global::System.Nullable<decimal> Цена, string Тип_видео_карты, string Тип_подключения, string Название_видеопроцессора, global::System.Nullable<int> Количество_видеопроцессоров, global::System.Nullable<int> Частота_памяти, global::System.Nullable<int> Объем_памяти, string Тип_памяти, global::System.Nullable<int> Количество_поддерживаемых_мониторов, global::System.Nullable<int> _Количество_выходов_DVI_I, bool Поддержка_HDCP, global::System.Nullable<int> Количество_выходов_HDMI, string Максимальное_разрешение) {
             if ((Производитель == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -9612,74 +9342,60 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Тип_подключения));
             }
-            if ((Разработчик_видеопроцессора == null)) {
+            if ((Название_видеопроцессора == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Разработчик_видеопроцессора));
-            }
-            if ((Линейка == null)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Линейка));
-            }
-            if ((Название_видеопроцессора == null)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Название_видеопроцессора));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Название_видеопроцессора));
             }
             if ((Количество_видеопроцессоров.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(Количество_видеопроцессоров.Value));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(Количество_видеопроцессоров.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Частота_памяти.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((int)(Частота_памяти.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((Объем_памяти.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((int)(Объем_памяти.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Частота_памяти.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((int)(Частота_памяти.Value));
-            }
-            else {
+            if ((Тип_памяти == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((Объем_памяти.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((int)(Объем_памяти.Value));
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Тип_памяти));
+            }
+            if ((Количество_поддерживаемых_мониторов.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((int)(Количество_поддерживаемых_мониторов.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
-            if ((Тип_памяти == null)) {
+            if ((_Количество_выходов_DVI_I.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((int)(_Количество_выходов_DVI_I.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Тип_памяти));
-            }
-            if ((Количество_поддерживаемых_мониторов.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((int)(Количество_поддерживаемых_мониторов.Value));
+            this.Adapter.InsertCommand.Parameters[12].Value = ((bool)(Поддержка_HDCP));
+            if ((Количество_выходов_HDMI.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((int)(Количество_выходов_HDMI.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            if ((_Количество_выходов_DVI_I == null)) {
                 this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(_Количество_выходов_DVI_I));
-            }
-            this.Adapter.InsertCommand.Parameters[14].Value = ((bool)(Поддержка_HDCP));
-            if ((Количество_выходов_HDMI.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[15].Value = ((int)(Количество_выходов_HDMI.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.InsertCommand.Parameters[16].Value = ((bool)(_TV_out));
-            this.Adapter.InsertCommand.Parameters[17].Value = ((bool)(_Встроенный_TV_тюнер));
             if ((Максимальное_разрешение == null)) {
-                this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[18].Value = ((string)(Максимальное_разрешение));
+                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(Максимальное_разрешение));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -9707,19 +9423,15 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
                     global::System.Nullable<decimal> Цена, 
                     string Тип_видео_карты, 
                     string Тип_подключения, 
-                    string Разработчик_видеопроцессора, 
-                    string Линейка, 
                     string Название_видеопроцессора, 
                     global::System.Nullable<int> Количество_видеопроцессоров, 
                     global::System.Nullable<int> Частота_памяти, 
                     global::System.Nullable<int> Объем_памяти, 
                     string Тип_памяти, 
                     global::System.Nullable<int> Количество_поддерживаемых_мониторов, 
-                    string _Количество_выходов_DVI_I, 
+                    global::System.Nullable<int> _Количество_выходов_DVI_I, 
                     bool Поддержка_HDCP, 
                     global::System.Nullable<int> Количество_выходов_HDMI, 
-                    bool _TV_out, 
-                    bool _Встроенный_TV_тюнер, 
                     string Максимальное_разрешение, 
                     int Original_Код, 
                     string Original_Производитель, 
@@ -9727,19 +9439,15 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
                     global::System.Nullable<decimal> Original_Цена, 
                     string Original_Тип_видео_карты, 
                     string Original_Тип_подключения, 
-                    string Original_Разработчик_видеопроцессора, 
-                    string Original_Линейка, 
                     string Original_Название_видеопроцессора, 
                     global::System.Nullable<int> Original_Количество_видеопроцессоров, 
                     global::System.Nullable<int> Original_Частота_памяти, 
                     global::System.Nullable<int> Original_Объем_памяти, 
                     string Original_Тип_памяти, 
                     global::System.Nullable<int> Original_Количество_поддерживаемых_мониторов, 
-                    string _Original_Количество_выходов_DVI_I, 
+                    global::System.Nullable<int> _Original_Количество_выходов_DVI_I, 
                     bool Original_Поддержка_HDCP, 
                     global::System.Nullable<int> Original_Количество_выходов_HDMI, 
-                    bool _Original_TV_out, 
-                    bool _Original_Встроенный_TV_тюнер, 
                     string Original_Максимальное_разрешение) {
             if ((Производитель == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -9771,209 +9479,175 @@ namespace System_Constructor.Database_Computer_PartsDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Тип_подключения));
             }
-            if ((Разработчик_видеопроцессора == null)) {
+            if ((Название_видеопроцессора == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Разработчик_видеопроцессора));
-            }
-            if ((Линейка == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Линейка));
-            }
-            if ((Название_видеопроцессора == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Название_видеопроцессора));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Название_видеопроцессора));
             }
             if ((Количество_видеопроцессоров.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Количество_видеопроцессоров.Value));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Количество_видеопроцессоров.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Частота_памяти.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Частота_памяти.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((Объем_памяти.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Объем_памяти.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Частота_памяти.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Частота_памяти.Value));
-            }
-            else {
+            if ((Тип_памяти == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((Объем_памяти.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Объем_памяти.Value));
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Тип_памяти));
+            }
+            if ((Количество_поддерживаемых_мониторов.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Количество_поддерживаемых_мониторов.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
-            if ((Тип_памяти == null)) {
+            if ((_Количество_выходов_DVI_I.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(_Количество_выходов_DVI_I.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Тип_памяти));
-            }
-            if ((Количество_поддерживаемых_мониторов.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Количество_поддерживаемых_мониторов.Value));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((bool)(Поддержка_HDCP));
+            if ((Количество_выходов_HDMI.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Количество_выходов_HDMI.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            if ((_Количество_выходов_DVI_I == null)) {
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(_Количество_выходов_DVI_I));
-            }
-            this.Adapter.UpdateCommand.Parameters[14].Value = ((bool)(Поддержка_HDCP));
-            if ((Количество_выходов_HDMI.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Количество_выходов_HDMI.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((bool)(_TV_out));
-            this.Adapter.UpdateCommand.Parameters[17].Value = ((bool)(_Встроенный_TV_тюнер));
             if ((Максимальное_разрешение == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Максимальное_разрешение));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Максимальное_разрешение));
             }
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original_Код));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_Код));
             if ((Original_Производитель == null)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Производитель));
+            }
+            if ((Original_Название == null)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Название));
+            }
+            if ((Original_Цена.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((decimal)(Original_Цена.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Производитель));
-            }
-            if ((Original_Название == null)) {
+            if ((Original_Тип_видео_карты == null)) {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_Название));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_Тип_видео_карты));
             }
-            if ((Original_Цена.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((decimal)(Original_Цена.Value));
-            }
-            else {
+            if ((Original_Тип_подключения == null)) {
                 this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
-            if ((Original_Тип_видео_карты == null)) {
+            else {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_Тип_подключения));
+            }
+            if ((Original_Название_видеопроцессора == null)) {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_Тип_видео_карты));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_Название_видеопроцессора));
             }
-            if ((Original_Тип_подключения == null)) {
+            if ((Original_Количество_видеопроцессоров.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((int)(Original_Количество_видеопроцессоров.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_Тип_подключения));
+            if ((Original_Частота_памяти.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((int)(Original_Частота_памяти.Value));
             }
-            if ((Original_Разработчик_видеопроцессора == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_Разработчик_видеопроцессора));
+            if ((Original_Объем_памяти.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((int)(Original_Объем_памяти.Value));
             }
-            if ((Original_Линейка == null)) {
+            else {
                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_Линейка));
-            }
-            if ((Original_Название_видеопроцессора == null)) {
+            if ((Original_Тип_памяти == null)) {
                 this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_Название_видеопроцессора));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_Тип_памяти));
             }
-            if ((Original_Количество_видеопроцессоров.HasValue == true)) {
+            if ((Original_Количество_поддерживаемых_мониторов.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((int)(Original_Количество_видеопроцессоров.Value));
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((int)(Original_Количество_поддерживаемых_мониторов.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
             }
-            if ((Original_Частота_памяти.HasValue == true)) {
+            if ((_Original_Количество_выходов_DVI_I.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((int)(Original_Частота_памяти.Value));
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((int)(_Original_Количество_выходов_DVI_I.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[39].Value = global::System.DBNull.Value;
             }
-            if ((Original_Объем_памяти.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[41].Value = ((int)(Original_Объем_памяти.Value));
+            this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(0));
+            this.Adapter.UpdateCommand.Parameters[41].Value = ((bool)(Original_Поддержка_HDCP));
+            if ((Original_Количество_выходов_HDMI.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[43].Value = ((int)(Original_Количество_выходов_HDMI.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[40].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[41].Value = global::System.DBNull.Value;
-            }
-            if ((Original_Тип_памяти == null)) {
                 this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[43].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[42].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[43].Value = ((string)(Original_Тип_памяти));
-            }
-            if ((Original_Количество_поддерживаемых_мониторов.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[45].Value = ((int)(Original_Количество_поддерживаемых_мониторов.Value));
-            }
-            else {
+            if ((Original_Максимальное_разрешение == null)) {
                 this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[45].Value = global::System.DBNull.Value;
             }
-            if ((_Original_Количество_выходов_DVI_I == null)) {
-                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[47].Value = global::System.DBNull.Value;
-            }
             else {
-                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[47].Value = ((string)(_Original_Количество_выходов_DVI_I));
-            }
-            this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[49].Value = ((bool)(Original_Поддержка_HDCP));
-            if ((Original_Количество_выходов_HDMI.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[51].Value = ((int)(Original_Количество_выходов_HDMI.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[51].Value = global::System.DBNull.Value;
-            }
-            this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[53].Value = ((bool)(_Original_TV_out));
-            this.Adapter.UpdateCommand.Parameters[54].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[55].Value = ((bool)(_Original_Встроенный_TV_тюнер));
-            if ((Original_Максимальное_разрешение == null)) {
-                this.Adapter.UpdateCommand.Parameters[56].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[57].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[56].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[57].Value = ((string)(Original_Максимальное_разрешение));
+                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[45].Value = ((string)(Original_Максимальное_разрешение));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
