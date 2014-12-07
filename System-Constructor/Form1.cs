@@ -14,11 +14,13 @@ namespace System_Constructor
     public partial class FormSystemConstructor : Form
     {
         public Database_Computer_PartsDataSet dbc;
+        public Configuration Config;
         public FormSystemConstructor()
         {
 
             InitializeComponent();  
             //dbc=new Database_Computer_PartsDataSet();
+            Config = new Configuration();
             dbc = database_Computer_PartsDataSet;
 
             DataTable ProcTable= dbc.Процессоры; 
@@ -41,7 +43,24 @@ namespace System_Constructor
 
         private void buttonSelectProc_Click(object sender, EventArgs e)
         {
-            //Some method
+            Processor proc = new Processor();
+            proc.Developer = dataGridViewProcessor.SelectedRows[0].Cells[1].Value.ToString();
+            proc.Name = dataGridViewProcessor.SelectedRows[0].Cells[2].Value.ToString();
+            proc.Cost = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[3].Value.ToString());
+            proc.Frequency = (int)dataGridViewProcessor.SelectedRows[0].Cells[4].Value;
+            proc.NumberOfCores = (int)dataGridViewProcessor.SelectedRows[0].Cells[5].Value;
+            proc.Socket = dataGridViewProcessor.SelectedRows[0].Cells[6].Value.ToString();
+
+            proc.MultiplierAccess = (bool)dataGridViewProcessor.SelectedRows[0].Cells[8].Value;
+            proc.CashL1 = (int)dataGridViewProcessor.SelectedRows[0].Cells[9].Value;
+            proc.CashL2 = (int)dataGridViewProcessor.SelectedRows[0].Cells[10].Value;
+            proc.CashL3 = (int)dataGridViewProcessor.SelectedRows[0].Cells[11].Value;
+
+            proc.MultiplierNumber = (int)dataGridViewProcessor.SelectedRows[0].Cells[13].Value;
+            proc.Temprature = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[14].Value.ToString());
+            Config.CPU = proc;
+            labelProcessor.Text = proc.Name;
+
         }
 
         private void FormSystemConstructor_Load(object sender, EventArgs e)
