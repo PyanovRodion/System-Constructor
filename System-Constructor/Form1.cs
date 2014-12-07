@@ -19,7 +19,7 @@ namespace System_Constructor
             InitializeComponent();
             Database_Computer_PartsDataSet dbc=new Database_Computer_PartsDataSet();
 
-            DataTable ProcTable= dbc.Процессоры;
+            DataTable ProcTable= dbc.Процессоры; 
             DataTable BlockpitTable = dbc.Блоки_питания;
             DataTable ZvukKartaTable = dbc.Звуковые_карты;
             DataTable VideoKardsTable = dbc.Видео_карты;
