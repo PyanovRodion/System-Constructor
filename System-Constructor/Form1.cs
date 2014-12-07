@@ -60,7 +60,7 @@ namespace System_Constructor
             proc.Temprature = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[14].Value.ToString());
             Config.CPU = proc;
             labelProcessor.Text = proc.Name;
-            //RefreshDataGridView();       !!!!!!!!!!!!!!!!!!!!!!!!!NEEDS UPDATE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            RefreshDataGridView();
 
         }
 
@@ -99,56 +99,17 @@ namespace System_Constructor
         public void RefreshDataGridView()
         {
             dataGridViewProcessor.DataSource = dbc.Процессоры;
-            dataGridViewMotherboard.DataSource = null;
-            dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Select(m=>(m.Socket==Config.CPU.Socket || Config.CPU == null));
-            
+            dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Select(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU.Socket == "");
             //dataGridViewCooler.DataSource = 
             //dataGridViewHardDisk.DataSource = HarddrivesTable;
             //dataGridViewPowerUnit.DataSource = BlockpitTable;
             //dataGridViewSCard.DataSource = ZvukKartaTable;
             //dataGridViewVCard.DataSource = VideoKardsTable;
-
-
         }
 
-        private void buttonSelectVCard_Click(object sender, EventArgs e)
+        private void dataGridViewROM_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            VCard vc = new VCard();
-            vc.Developer = dataGridViewVCard.SelectedRows[0].Cells[1].Value.ToString();
-            vc.Name = dataGridViewVCard.SelectedRows[0].Cells[2].Value.ToString();
-            vc.Cost = int.Parse(dataGridViewVCard.SelectedRows[0].Cells[3].Value.ToString());
-            vc.TypeOfCard = dataGridViewVCard.SelectedRows[0].Cells[4].Value.ToString();
-            vc.TypeOfConnection = dataGridViewVCard.SelectedRows[0].Cells[5].Value.ToString();
-            vc.ProcessorName = dataGridViewVCard.SelectedRows[0].Cells[6].Value.ToString();
-            vc.NumberOfProcessors = (int)dataGridViewVCard.SelectedRows[0].Cells[7].Value;
-            vc.MemoryFrequency = (int)dataGridViewVCard.SelectedRows[0].Cells[8].Value;
-            vc.MemoryVolume = (int)dataGridViewVCard.SelectedRows[0].Cells[9].Value;
-            vc.MemoryType = dataGridViewVCard.SelectedRows[0].Cells[10].Value.ToString();
-            vc.MonitorsConnected = (int)dataGridViewVCard.SelectedRows[0].Cells[11].Value;
-            vc.DVIOut = int.Parse(dataGridViewVCard.SelectedRows[0].Cells[12].Value.ToString());
-            vc.HDCP = (bool)dataGridViewVCard.SelectedRows[0].Cells[13].Value;
-            vc.HDMIOut = (int)dataGridViewVCard.SelectedRows[0].Cells[14].Value;
-            vc.Resolution = dataGridViewVCard.SelectedRows[0].Cells[15].Value.ToString();
-            Config.VideoCard = vc;
-            labelVCard.Text = vc.Name;
-            //RefreshDataGridView();
-        }
 
-        private void buttonSelectSCard_Click(object sender, EventArgs e)
-        {
-            SCard sc = new SCard();
-            sc.Developer = dataGridViewSCard.SelectedRows[0].Cells[1].Value.ToString();
-            sc.Name = dataGridViewSCard.SelectedRows[0].Cells[2].Value.ToString();
-            sc.Cost = int.Parse(dataGridViewSCard.SelectedRows[0].Cells[3].Value.ToString());
-            sc.Type = dataGridViewSCard.SelectedRows[0].Cells[4].Value.ToString();
-            sc.ConnectionType = dataGridViewSCard.SelectedRows[0].Cells[5].Value.ToString();
-            sc.AdditionalPower = (bool)dataGridViewSCard.SelectedRows[0].Cells[6].Value;
-            sc.FrequencyACP = (int)dataGridViewSCard.SelectedRows[0].Cells[7].Value;
-            sc.FrequencyCAP = (int)dataGridViewSCard.SelectedRows[0].Cells[8].Value;
-            sc.MAXFrequencyCAP = (int)dataGridViewSCard.SelectedRows[0].Cells[9].Value;
-            sc.InChanelsNumber = (int)dataGridViewSCard.SelectedRows[0].Cells[10].Value;
-            Config.SoundCard = sc;
-            labelSCard.Text = sc.Name;
         }
 
         private void buttonSelectMotherboard_Click(object sender, EventArgs e)
