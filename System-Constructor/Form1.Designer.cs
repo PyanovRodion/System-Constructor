@@ -209,6 +209,7 @@
             this.кулеры_и_системы_охлажденияTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Кулеры_и_системы_охлажденияTableAdapter();
             this.ошибки_вставкиTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Ошибки_вставкиTableAdapter();
             this.жесткие_диски_и_сетевые_накопителиTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Жесткие_диски_и_сетевые_накопителиTableAdapter();
+            this.ошибкиВставкиBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl.SuspendLayout();
             this.tabPageProcessor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcessor)).BeginInit();
@@ -235,6 +236,7 @@
             this.tabPageHardDisk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.жесткиеДискиИСетевыеНакопителиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ошибкиВставкиBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -1288,11 +1290,12 @@
             this.dataGridViewROM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewROM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.поле0DataGridViewTextBoxColumn});
-            this.dataGridViewROM.DataSource = this.ошибкиВставкиBindingSource;
+            this.dataGridViewROM.DataSource = this.ошибкиВставкиBindingSource1;
             this.dataGridViewROM.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewROM.Name = "dataGridViewROM";
             this.dataGridViewROM.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewROM.TabIndex = 0;
+            this.dataGridViewROM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewROM_CellContentClick);
             // 
             // поле0DataGridViewTextBoxColumn
             // 
@@ -1691,6 +1694,11 @@
             // 
             this.жесткие_диски_и_сетевые_накопителиTableAdapter.ClearBeforeFill = true;
             // 
+            // ошибкиВставкиBindingSource1
+            // 
+            this.ошибкиВставкиBindingSource1.DataMember = "Ошибки вставки";
+            this.ошибкиВставкиBindingSource1.DataSource = this.database_Computer_PartsDataSet;
+            // 
             // FormSystemConstructor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1749,6 +1757,7 @@
             this.tabPageHardDisk.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.жесткиеДискиИСетевыеНакопителиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ошибкиВставкиBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1936,6 +1945,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn скоростьЧтенияDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn скоростьЗаписиDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn объемБуфераDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource ошибкиВставкиBindingSource1;
     }
 }
 

@@ -60,6 +60,7 @@ namespace System_Constructor
             proc.Temprature = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[14].Value.ToString());
             Config.CPU = proc;
             labelProcessor.Text = proc.Name;
+            RefreshDataGridView();
 
         }
 
@@ -99,11 +100,17 @@ namespace System_Constructor
         {
             dataGridViewProcessor.DataSource = dbc.Процессоры;
             dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Select(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU.Socket == "");
+            this.материнские_платыTableAdapter.F
             //dataGridViewCooler.DataSource = 
             //dataGridViewHardDisk.DataSource = HarddrivesTable;
             //dataGridViewPowerUnit.DataSource = BlockpitTable;
             //dataGridViewSCard.DataSource = ZvukKartaTable;
             //dataGridViewVCard.DataSource = VideoKardsTable;
+        }
+
+        private void dataGridViewROM_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
