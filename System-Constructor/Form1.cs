@@ -66,6 +66,8 @@ namespace System_Constructor
 
         private void FormSystemConstructor_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Оперативная_память' table. You can move, or remove it, as needed.
+            this.оперативная_памятьTableAdapter.Fill(this.database_Computer_PartsDataSet.Оперативная_память);
             // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Жесткие_диски_и_сетевые_накопители' table. You can move, or remove it, as needed.
             this.жесткие_диски_и_сетевые_накопителиTableAdapter.Fill(this.database_Computer_PartsDataSet.Жесткие_диски_и_сетевые_накопители);
             // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Ошибки_вставки' table. You can move, or remove it, as needed.
