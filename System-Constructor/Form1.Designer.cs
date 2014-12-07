@@ -61,8 +61,6 @@
             this.ценаDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.типВидеоКартыDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.типПодключенияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.линейкаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.названиеВидеопроцессораDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.количествоВидеопроцессоровDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.частотаПамятиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,8 +70,6 @@
             this.количествоВыходовDVIIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.поддержкаHDCPDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.количествоВыходовHDMIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tVoutDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.максимальноеРазрешениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.видеоКартыBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPageSCard = new System.Windows.Forms.TabPage();
@@ -314,6 +310,7 @@
             this.максимальнаяРабочаяТемператураDataGridViewTextBoxColumn});
             this.dataGridViewProcessor.DataSource = this.процессорыBindingSource;
             this.dataGridViewProcessor.Location = new System.Drawing.Point(7, 31);
+            this.dataGridViewProcessor.MultiSelect = false;
             this.dataGridViewProcessor.Name = "dataGridViewProcessor";
             this.dataGridViewProcessor.ReadOnly = true;
             this.dataGridViewProcessor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -457,6 +454,7 @@
             this.buttonSelectVCard.TabIndex = 2;
             this.buttonSelectVCard.Text = "Выбрать";
             this.buttonSelectVCard.UseVisualStyleBackColor = false;
+            this.buttonSelectVCard.Click += new System.EventHandler(this.buttonSelectVCard_Click);
             // 
             // buttonCancelVCard
             // 
@@ -484,8 +482,6 @@
             this.ценаDataGridViewTextBoxColumn1,
             this.типВидеоКартыDataGridViewTextBoxColumn,
             this.типПодключенияDataGridViewTextBoxColumn,
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn,
-            this.линейкаDataGridViewTextBoxColumn,
             this.названиеВидеопроцессораDataGridViewTextBoxColumn,
             this.количествоВидеопроцессоровDataGridViewTextBoxColumn,
             this.частотаПамятиDataGridViewTextBoxColumn,
@@ -495,12 +491,12 @@
             this.количествоВыходовDVIIDataGridViewTextBoxColumn,
             this.поддержкаHDCPDataGridViewCheckBoxColumn,
             this.количествоВыходовHDMIDataGridViewTextBoxColumn,
-            this.tVoutDataGridViewCheckBoxColumn,
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn,
             this.максимальноеРазрешениеDataGridViewTextBoxColumn});
             this.dataGridViewVCard.DataSource = this.видеоКартыBindingSource;
             this.dataGridViewVCard.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewVCard.MultiSelect = false;
             this.dataGridViewVCard.Name = "dataGridViewVCard";
+            this.dataGridViewVCard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewVCard.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewVCard.TabIndex = 0;
             // 
@@ -539,18 +535,6 @@
             this.типПодключенияDataGridViewTextBoxColumn.DataPropertyName = "Тип подключения";
             this.типПодключенияDataGridViewTextBoxColumn.HeaderText = "Тип подключения";
             this.типПодключенияDataGridViewTextBoxColumn.Name = "типПодключенияDataGridViewTextBoxColumn";
-            // 
-            // разработчикВидеопроцессораDataGridViewTextBoxColumn
-            // 
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn.DataPropertyName = "Разработчик видеопроцессора";
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn.HeaderText = "Разработчик видеопроцессора";
-            this.разработчикВидеопроцессораDataGridViewTextBoxColumn.Name = "разработчикВидеопроцессораDataGridViewTextBoxColumn";
-            // 
-            // линейкаDataGridViewTextBoxColumn
-            // 
-            this.линейкаDataGridViewTextBoxColumn.DataPropertyName = "Линейка";
-            this.линейкаDataGridViewTextBoxColumn.HeaderText = "Линейка";
-            this.линейкаDataGridViewTextBoxColumn.Name = "линейкаDataGridViewTextBoxColumn";
             // 
             // названиеВидеопроцессораDataGridViewTextBoxColumn
             // 
@@ -606,18 +590,6 @@
             this.количествоВыходовHDMIDataGridViewTextBoxColumn.HeaderText = "Количество выходов HDMI";
             this.количествоВыходовHDMIDataGridViewTextBoxColumn.Name = "количествоВыходовHDMIDataGridViewTextBoxColumn";
             // 
-            // tVoutDataGridViewCheckBoxColumn
-            // 
-            this.tVoutDataGridViewCheckBoxColumn.DataPropertyName = "TV-out";
-            this.tVoutDataGridViewCheckBoxColumn.HeaderText = "TV-out";
-            this.tVoutDataGridViewCheckBoxColumn.Name = "tVoutDataGridViewCheckBoxColumn";
-            // 
-            // встроенныйTVтюнерDataGridViewCheckBoxColumn
-            // 
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn.DataPropertyName = "Встроенный TV-тюнер";
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn.HeaderText = "Встроенный TV-тюнер";
-            this.встроенныйTVтюнерDataGridViewCheckBoxColumn.Name = "встроенныйTVтюнерDataGridViewCheckBoxColumn";
-            // 
             // максимальноеРазрешениеDataGridViewTextBoxColumn
             // 
             this.максимальноеРазрешениеDataGridViewTextBoxColumn.DataPropertyName = "Максимальное разрешение";
@@ -651,6 +623,7 @@
             this.buttonSelectSCard.TabIndex = 2;
             this.buttonSelectSCard.Text = "Выбрать";
             this.buttonSelectSCard.UseVisualStyleBackColor = false;
+            this.buttonSelectSCard.Click += new System.EventHandler(this.buttonSelectSCard_Click);
             // 
             // buttonCancelSCard
             // 
@@ -685,7 +658,9 @@
             this.количествоВходныхАналоговыхКаналовDataGridViewTextBoxColumn});
             this.dataGridViewSCard.DataSource = this.звуковыеКартыBindingSource;
             this.dataGridViewSCard.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewSCard.MultiSelect = false;
             this.dataGridViewSCard.Name = "dataGridViewSCard";
+            this.dataGridViewSCard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewSCard.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewSCard.TabIndex = 0;
             // 
