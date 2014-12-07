@@ -203,6 +203,7 @@
             this.dataGridViewVCard.AllowUserToAddRows = false;
             this.dataGridViewVCard.AllowUserToResizeColumns = false;
             this.dataGridViewVCard.AllowUserToResizeRows = false;
+            this.dataGridViewVCard.BackgroundColor = System.Drawing.Color.Gold;
             this.dataGridViewVCard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVCard.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewVCard.Name = "dataGridViewVCard";
