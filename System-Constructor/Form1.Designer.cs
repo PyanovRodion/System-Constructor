@@ -757,6 +757,7 @@
             this.buttonSelectMotherboard.TabIndex = 2;
             this.buttonSelectMotherboard.Text = "Выбрать";
             this.buttonSelectMotherboard.UseVisualStyleBackColor = false;
+            this.buttonSelectMotherboard.Click += new System.EventHandler(this.buttonSelectMotherboard_Click);
             // 
             // buttonCancelMotherboard
             // 
@@ -801,7 +802,9 @@
             this.dVIDataGridViewCheckBoxColumn});
             this.dataGridViewMotherboard.DataSource = this.материнскиеПлатыBindingSource;
             this.dataGridViewMotherboard.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewMotherboard.MultiSelect = false;
             this.dataGridViewMotherboard.Name = "dataGridViewMotherboard";
+            this.dataGridViewMotherboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMotherboard.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewMotherboard.TabIndex = 0;
             // 

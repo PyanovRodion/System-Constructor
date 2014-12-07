@@ -150,5 +150,32 @@ namespace System_Constructor
             Config.SoundCard = sc;
             labelSCard.Text = sc.Name;
         }
+
+        private void buttonSelectMotherboard_Click(object sender, EventArgs e)
+        {            
+            Motherboard mb = new Motherboard();
+            mb.Developer = dataGridViewMotherboard.SelectedRows[0].Cells[1].Value.ToString();
+            mb.Name = dataGridViewMotherboard.SelectedRows[0].Cells[2].Value.ToString();
+            mb.Cost = int.Parse(dataGridViewMotherboard.SelectedRows[0].Cells[3].Value.ToString());
+            mb.FormFactor = dataGridViewMotherboard.SelectedRows[0].Cells[4].Value.ToString();
+            mb.Socket = dataGridViewMotherboard.SelectedRows[0].Cells[5].Value.ToString();
+            mb.Chipset = dataGridViewMotherboard.SelectedRows[0].Cells[6].Value.ToString();
+            mb.MultiProcessor = (bool)dataGridViewMotherboard.SelectedRows[0].Cells[7].Value;
+            mb.BIOS = dataGridViewMotherboard.SelectedRows[0].Cells[8].Value.ToString();
+            mb.CrossFire = dataGridViewMotherboard.SelectedRows[0].Cells[9].Value.ToString();
+            mb.SLI = dataGridViewMotherboard.SelectedRows[0].Cells[10].Value.ToString();
+            mb.MemoryType = dataGridViewMotherboard.SelectedRows[0].Cells[11].Value.ToString();
+            mb.MAXMemoryVolume = int.Parse(dataGridViewMotherboard.SelectedRows[0].Cells[12].Value.ToString());
+            mb.SATA = dataGridViewMotherboard.SelectedRows[0].Cells[13].Value.ToString();
+            mb.Sounds = dataGridViewMotherboard.SelectedRows[0].Cells[14].Value.ToString();
+            mb.Ethernet = dataGridViewMotherboard.SelectedRows[0].Cells[15].Value.ToString();
+            mb.PCINumber = (int)dataGridViewMotherboard.SelectedRows[0].Cells[16].Value;
+            mb.PCIExpressNumber = (int)dataGridViewMotherboard.SelectedRows[0].Cells[17].Value;
+            mb.USB = (int)dataGridViewMotherboard.SelectedRows[0].Cells[18].Value;
+            mb.HDMI = (int)dataGridViewMotherboard.SelectedRows[0].Cells[19].Value;
+            mb.DVI = (bool)dataGridViewMotherboard.SelectedRows[0].Cells[20].Value;
+            Config.MBoard = mb;
+            labelMotherboard.Text = mb.Name;
+        }
     }
 }
