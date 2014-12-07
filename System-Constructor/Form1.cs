@@ -16,7 +16,7 @@ namespace System_Constructor
         public FormSystemConstructor()
         {
 
-            InitializeComponent();
+            InitializeComponent();  
             Database_Computer_PartsDataSet dbc=new Database_Computer_PartsDataSet();
 
             DataTable ProcTable= dbc.Процессоры; 
