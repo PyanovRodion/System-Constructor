@@ -41,5 +41,17 @@ namespace System_Constructor
         {
             //Some method
         }
+
+        private void FormSystemConstructor_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'database_Computer_PartsDataSet.Видео_карты' table. You can move, or remove it, as needed.
+            this.видео_картыTableAdapter.Fill(this.database_Computer_PartsDataSet.Видео_карты);
+
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

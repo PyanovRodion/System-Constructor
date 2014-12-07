@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageProcessor = new System.Windows.Forms.TabPage();
             this.buttonCancelProc = new System.Windows.Forms.Button();
@@ -79,6 +80,10 @@
             this.labelROM = new System.Windows.Forms.Label();
             this.labelHardDisc = new System.Windows.Forms.Label();
             this.buttonSendOrder = new System.Windows.Forms.Button();
+            this.database_Computer_PartsDataSet = new System_Constructor.Database_Computer_PartsDataSet();
+            this.видеоКартыBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.видео_картыTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Видео_картыTableAdapter();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPageProcessor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcessor)).BeginInit();
@@ -96,6 +101,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewROM)).BeginInit();
             this.tabPageHardDisk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_Computer_PartsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.видеоКартыBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -116,6 +123,7 @@
             // 
             // tabPageProcessor
             // 
+            this.tabPageProcessor.BackColor = System.Drawing.Color.Gold;
             this.tabPageProcessor.Controls.Add(this.buttonCancelProc);
             this.tabPageProcessor.Controls.Add(this.buttonSelectProc);
             this.tabPageProcessor.Controls.Add(this.dataGridViewProcessor);
@@ -125,31 +133,33 @@
             this.tabPageProcessor.Size = new System.Drawing.Size(688, 351);
             this.tabPageProcessor.TabIndex = 0;
             this.tabPageProcessor.Text = "Процессор";
-            this.tabPageProcessor.UseVisualStyleBackColor = true;
             // 
             // buttonCancelProc
             // 
+            this.buttonCancelProc.BackColor = System.Drawing.Color.Yellow;
             this.buttonCancelProc.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelProc.Name = "buttonCancelProc";
             this.buttonCancelProc.Size = new System.Drawing.Size(182, 23);
             this.buttonCancelProc.TabIndex = 2;
             this.buttonCancelProc.Text = "Сбросить";
-            this.buttonCancelProc.UseVisualStyleBackColor = true;
+            this.buttonCancelProc.UseVisualStyleBackColor = false;
             // 
             // buttonSelectProc
             // 
+            this.buttonSelectProc.BackColor = System.Drawing.Color.Yellow;
             this.buttonSelectProc.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectProc.Name = "buttonSelectProc";
             this.buttonSelectProc.Size = new System.Drawing.Size(182, 23);
             this.buttonSelectProc.TabIndex = 1;
             this.buttonSelectProc.Text = "Выбрать";
-            this.buttonSelectProc.UseVisualStyleBackColor = true;
+            this.buttonSelectProc.UseVisualStyleBackColor = false;
             this.buttonSelectProc.Click += new System.EventHandler(this.buttonSelectProc_Click);
             // 
             // dataGridViewProcessor
             // 
             this.dataGridViewProcessor.AllowUserToAddRows = false;
             this.dataGridViewProcessor.AllowUserToDeleteRows = false;
+            this.dataGridViewProcessor.BackgroundColor = System.Drawing.Color.LemonChiffon;
             this.dataGridViewProcessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProcessor.Location = new System.Drawing.Point(7, 31);
             this.dataGridViewProcessor.Name = "dataGridViewProcessor";
@@ -190,6 +200,9 @@
             // 
             // dataGridViewVCard
             // 
+            this.dataGridViewVCard.AllowUserToAddRows = false;
+            this.dataGridViewVCard.AllowUserToResizeColumns = false;
+            this.dataGridViewVCard.AllowUserToResizeRows = false;
             this.dataGridViewVCard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVCard.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewVCard.Name = "dataGridViewVCard";
@@ -433,7 +446,7 @@
             // labelConfig
             // 
             this.labelConfig.AutoSize = true;
-            this.labelConfig.Location = new System.Drawing.Point(752, 15);
+            this.labelConfig.Location = new System.Drawing.Point(799, 21);
             this.labelConfig.Name = "labelConfig";
             this.labelConfig.Size = new System.Drawing.Size(145, 13);
             this.labelConfig.TabIndex = 1;
@@ -442,7 +455,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(710, 65);
+            this.label1.Location = new System.Drawing.Point(757, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 2;
@@ -451,7 +464,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(710, 100);
+            this.label2.Location = new System.Drawing.Point(757, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 3;
@@ -460,7 +473,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(710, 137);
+            this.label3.Location = new System.Drawing.Point(757, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 13);
             this.label3.TabIndex = 4;
@@ -469,7 +482,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(710, 173);
+            this.label4.Location = new System.Drawing.Point(757, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 5;
@@ -478,7 +491,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(710, 210);
+            this.label5.Location = new System.Drawing.Point(757, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 6;
@@ -487,7 +500,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(710, 249);
+            this.label6.Location = new System.Drawing.Point(757, 255);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 7;
@@ -496,7 +509,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(710, 286);
+            this.label7.Location = new System.Drawing.Point(757, 292);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(117, 13);
             this.label7.TabIndex = 8;
@@ -505,7 +518,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(710, 324);
+            this.label8.Location = new System.Drawing.Point(757, 330);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 13);
             this.label8.TabIndex = 9;
@@ -514,7 +527,7 @@
             // labelProcessor
             // 
             this.labelProcessor.AutoSize = true;
-            this.labelProcessor.Location = new System.Drawing.Point(829, 65);
+            this.labelProcessor.Location = new System.Drawing.Point(876, 71);
             this.labelProcessor.Name = "labelProcessor";
             this.labelProcessor.Size = new System.Drawing.Size(68, 13);
             this.labelProcessor.TabIndex = 10;
@@ -523,7 +536,7 @@
             // labelVCard
             // 
             this.labelVCard.AutoSize = true;
-            this.labelVCard.Location = new System.Drawing.Point(829, 100);
+            this.labelVCard.Location = new System.Drawing.Point(876, 106);
             this.labelVCard.Name = "labelVCard";
             this.labelVCard.Size = new System.Drawing.Size(68, 13);
             this.labelVCard.TabIndex = 11;
@@ -532,7 +545,7 @@
             // labelSCard
             // 
             this.labelSCard.AutoSize = true;
-            this.labelSCard.Location = new System.Drawing.Point(829, 137);
+            this.labelSCard.Location = new System.Drawing.Point(876, 143);
             this.labelSCard.Name = "labelSCard";
             this.labelSCard.Size = new System.Drawing.Size(68, 13);
             this.labelSCard.TabIndex = 12;
@@ -541,7 +554,7 @@
             // labelMotherboard
             // 
             this.labelMotherboard.AutoSize = true;
-            this.labelMotherboard.Location = new System.Drawing.Point(829, 173);
+            this.labelMotherboard.Location = new System.Drawing.Point(876, 179);
             this.labelMotherboard.Name = "labelMotherboard";
             this.labelMotherboard.Size = new System.Drawing.Size(68, 13);
             this.labelMotherboard.TabIndex = 13;
@@ -550,7 +563,7 @@
             // labelPowerUnit
             // 
             this.labelPowerUnit.AutoSize = true;
-            this.labelPowerUnit.Location = new System.Drawing.Point(829, 210);
+            this.labelPowerUnit.Location = new System.Drawing.Point(876, 216);
             this.labelPowerUnit.Name = "labelPowerUnit";
             this.labelPowerUnit.Size = new System.Drawing.Size(68, 13);
             this.labelPowerUnit.TabIndex = 14;
@@ -559,7 +572,7 @@
             // labelCooler
             // 
             this.labelCooler.AutoSize = true;
-            this.labelCooler.Location = new System.Drawing.Point(829, 249);
+            this.labelCooler.Location = new System.Drawing.Point(876, 255);
             this.labelCooler.Name = "labelCooler";
             this.labelCooler.Size = new System.Drawing.Size(68, 13);
             this.labelCooler.TabIndex = 15;
@@ -568,7 +581,7 @@
             // labelROM
             // 
             this.labelROM.AutoSize = true;
-            this.labelROM.Location = new System.Drawing.Point(829, 286);
+            this.labelROM.Location = new System.Drawing.Point(876, 292);
             this.labelROM.Name = "labelROM";
             this.labelROM.Size = new System.Drawing.Size(68, 13);
             this.labelROM.TabIndex = 16;
@@ -577,7 +590,7 @@
             // labelHardDisc
             // 
             this.labelHardDisc.AutoSize = true;
-            this.labelHardDisc.Location = new System.Drawing.Point(829, 324);
+            this.labelHardDisc.Location = new System.Drawing.Point(876, 330);
             this.labelHardDisc.Name = "labelHardDisc";
             this.labelHardDisc.Size = new System.Drawing.Size(68, 13);
             this.labelHardDisc.TabIndex = 17;
@@ -585,18 +598,48 @@
             // 
             // buttonSendOrder
             // 
-            this.buttonSendOrder.Location = new System.Drawing.Point(730, 362);
+            this.buttonSendOrder.BackColor = System.Drawing.Color.Aquamarine;
+            this.buttonSendOrder.Location = new System.Drawing.Point(777, 368);
             this.buttonSendOrder.Name = "buttonSendOrder";
             this.buttonSendOrder.Size = new System.Drawing.Size(187, 23);
             this.buttonSendOrder.TabIndex = 18;
             this.buttonSendOrder.Text = "Отправить заказ";
-            this.buttonSendOrder.UseVisualStyleBackColor = true;
+            this.buttonSendOrder.UseVisualStyleBackColor = false;
+            // 
+            // database_Computer_PartsDataSet
+            // 
+            this.database_Computer_PartsDataSet.DataSetName = "Database_Computer_PartsDataSet";
+            this.database_Computer_PartsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // видеоКартыBindingSource
+            // 
+            this.видеоКартыBindingSource.DataMember = "Видео карты";
+            this.видеоКартыBindingSource.DataSource = this.database_Computer_PartsDataSet;
+            // 
+            // видео_картыTableAdapter
+            // 
+            this.видео_картыTableAdapter.ClearBeforeFill = true;
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonClose.Location = new System.Drawing.Point(889, 397);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.TabIndex = 19;
+            this.buttonClose.Text = "Закрыть";
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // FormSystemConstructor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 417);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ClientSize = new System.Drawing.Size(970, 430);
+            this.ControlBox = false;
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonSendOrder);
             this.Controls.Add(this.labelHardDisc);
             this.Controls.Add(this.labelROM);
@@ -617,7 +660,9 @@
             this.Controls.Add(this.labelConfig);
             this.Controls.Add(this.tabControl);
             this.Name = "FormSystemConstructor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Constructor";
+            this.Load += new System.EventHandler(this.FormSystemConstructor_Load);
             this.tabControl.ResumeLayout(false);
             this.tabPageProcessor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcessor)).EndInit();
@@ -635,6 +680,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewROM)).EndInit();
             this.tabPageHardDisk.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database_Computer_PartsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.видеоКартыBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -693,6 +740,10 @@
         private System.Windows.Forms.Button buttonSelectROM;
         private System.Windows.Forms.Button buttonSelectHardDisk;
         private System.Windows.Forms.Button buttonSendOrder;
+        private Database_Computer_PartsDataSet database_Computer_PartsDataSet;
+        private System.Windows.Forms.BindingSource видеоКартыBindingSource;
+        private Database_Computer_PartsDataSetTableAdapters.Видео_картыTableAdapter видео_картыTableAdapter;
+        private System.Windows.Forms.Button buttonClose;
     }
 }
 
