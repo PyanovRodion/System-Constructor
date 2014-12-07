@@ -50,12 +50,12 @@ namespace System_Constructor
             proc.Frequency = (int)dataGridViewProcessor.SelectedRows[0].Cells[4].Value;
             proc.NumberOfCores = (int)dataGridViewProcessor.SelectedRows[0].Cells[5].Value;
             proc.Socket = dataGridViewProcessor.SelectedRows[0].Cells[6].Value.ToString();
-
+            proc.Core = dataGridViewProcessor.SelectedRows[0].Cells[7].Value.ToString();
             proc.MultiplierAccess = (bool)dataGridViewProcessor.SelectedRows[0].Cells[8].Value;
             proc.CashL1 = (int)dataGridViewProcessor.SelectedRows[0].Cells[9].Value;
             proc.CashL2 = (int)dataGridViewProcessor.SelectedRows[0].Cells[10].Value;
             proc.CashL3 = (int)dataGridViewProcessor.SelectedRows[0].Cells[11].Value;
-
+            
             proc.MultiplierNumber = (int)dataGridViewProcessor.SelectedRows[0].Cells[13].Value;
             proc.Temprature = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[14].Value.ToString());
             Config.CPU = proc;
