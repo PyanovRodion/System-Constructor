@@ -153,7 +153,15 @@
             this.buttonSelectROM = new System.Windows.Forms.Button();
             this.buttonCancelROM = new System.Windows.Forms.Button();
             this.dataGridViewROM = new System.Windows.Forms.DataGridView();
-            this.ошибкиВставкиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.кодDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.производительDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.названиеDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ценаDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.типDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.формфакторDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.объемОдногоМодуляDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.оперативнаяПамятьBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPageHardDisk = new System.Windows.Forms.TabPage();
             this.buttonSelectHardDisk = new System.Windows.Forms.Button();
             this.buttonCancelHardDisk = new System.Windows.Forms.Button();
@@ -177,6 +185,7 @@
             this.скоростьЗаписиDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.объемБуфераDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.жесткиеДискиИСетевыеНакопителиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ошибкиВставкиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelConfig = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -204,16 +213,7 @@
             this.кулеры_и_системы_охлажденияTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Кулеры_и_системы_охлажденияTableAdapter();
             this.ошибки_вставкиTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Ошибки_вставкиTableAdapter();
             this.жесткие_диски_и_сетевые_накопителиTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Жесткие_диски_и_сетевые_накопителиTableAdapter();
-            this.оперативнаяПамятьBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.оперативная_памятьTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Оперативная_памятьTableAdapter();
-            this.кодDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.производительDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.названиеDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ценаDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.типDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.формфакторDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.объемОдногоМодуляDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabPageProcessor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcessor)).BeginInit();
@@ -236,11 +236,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.кулерыИСистемыОхлажденияBindingSource)).BeginInit();
             this.tabPageROM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewROM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ошибкиВставкиBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.оперативнаяПамятьBindingSource)).BeginInit();
             this.tabPageHardDisk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.жесткиеДискиИСетевыеНакопителиBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.оперативнаяПамятьBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ошибкиВставкиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -971,6 +971,7 @@
             this.buttonSelectPowerUnit.TabIndex = 2;
             this.buttonSelectPowerUnit.Text = "Выбрать";
             this.buttonSelectPowerUnit.UseVisualStyleBackColor = false;
+            this.buttonSelectPowerUnit.Click += new System.EventHandler(this.buttonSelectPowerUnit_Click);
             // 
             // buttonCancelPowerUnit
             // 
@@ -1010,7 +1011,9 @@
             this.защитаОтКороткогоЗамыканияDataGridViewCheckBoxColumn});
             this.dataGridViewPowerUnit.DataSource = this.блокиПитанияBindingSource;
             this.dataGridViewPowerUnit.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewPowerUnit.MultiSelect = false;
             this.dataGridViewPowerUnit.Name = "dataGridViewPowerUnit";
+            this.dataGridViewPowerUnit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewPowerUnit.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewPowerUnit.TabIndex = 0;
             // 
@@ -1137,6 +1140,7 @@
             this.buttonSelectCooler.TabIndex = 2;
             this.buttonSelectCooler.Text = "Выбрать";
             this.buttonSelectCooler.UseVisualStyleBackColor = false;
+            this.buttonSelectCooler.Click += new System.EventHandler(this.buttonSelectCooler_Click);
             // 
             // buttonCancelCooler
             // 
@@ -1169,7 +1173,9 @@
             this.socketDataGridViewTextBoxColumn2});
             this.dataGridViewCooler.DataSource = this.кулерыИСистемыОхлажденияBindingSource;
             this.dataGridViewCooler.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewCooler.MultiSelect = false;
             this.dataGridViewCooler.Name = "dataGridViewCooler";
+            this.dataGridViewCooler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCooler.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewCooler.TabIndex = 0;
             // 
@@ -1254,6 +1260,7 @@
             this.buttonSelectROM.TabIndex = 2;
             this.buttonSelectROM.Text = "Выбрать";
             this.buttonSelectROM.UseVisualStyleBackColor = false;
+            this.buttonSelectROM.Click += new System.EventHandler(this.buttonSelectROM_Click);
             // 
             // buttonCancelROM
             // 
@@ -1285,14 +1292,64 @@
             this.объемОдногоМодуляDataGridViewTextBoxColumn});
             this.dataGridViewROM.DataSource = this.оперативнаяПамятьBindingSource;
             this.dataGridViewROM.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewROM.MultiSelect = false;
             this.dataGridViewROM.Name = "dataGridViewROM";
+            this.dataGridViewROM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewROM.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewROM.TabIndex = 0;
             // 
-            // ошибкиВставкиBindingSource
+            // кодDataGridViewTextBoxColumn7
             // 
-            this.ошибкиВставкиBindingSource.DataMember = "Ошибки вставки";
-            this.ошибкиВставкиBindingSource.DataSource = this.database_Computer_PartsDataSet;
+            this.кодDataGridViewTextBoxColumn7.DataPropertyName = "Код";
+            this.кодDataGridViewTextBoxColumn7.HeaderText = "Код";
+            this.кодDataGridViewTextBoxColumn7.Name = "кодDataGridViewTextBoxColumn7";
+            // 
+            // производительDataGridViewTextBoxColumn7
+            // 
+            this.производительDataGridViewTextBoxColumn7.DataPropertyName = "Производитель";
+            this.производительDataGridViewTextBoxColumn7.HeaderText = "Производитель";
+            this.производительDataGridViewTextBoxColumn7.Name = "производительDataGridViewTextBoxColumn7";
+            // 
+            // названиеDataGridViewTextBoxColumn7
+            // 
+            this.названиеDataGridViewTextBoxColumn7.DataPropertyName = "Название";
+            this.названиеDataGridViewTextBoxColumn7.HeaderText = "Название";
+            this.названиеDataGridViewTextBoxColumn7.Name = "названиеDataGridViewTextBoxColumn7";
+            // 
+            // ценаDataGridViewTextBoxColumn7
+            // 
+            this.ценаDataGridViewTextBoxColumn7.DataPropertyName = "Цена";
+            this.ценаDataGridViewTextBoxColumn7.HeaderText = "Цена";
+            this.ценаDataGridViewTextBoxColumn7.Name = "ценаDataGridViewTextBoxColumn7";
+            // 
+            // типDataGridViewTextBoxColumn2
+            // 
+            this.типDataGridViewTextBoxColumn2.DataPropertyName = "Тип";
+            this.типDataGridViewTextBoxColumn2.HeaderText = "Тип";
+            this.типDataGridViewTextBoxColumn2.Name = "типDataGridViewTextBoxColumn2";
+            // 
+            // формфакторDataGridViewTextBoxColumn2
+            // 
+            this.формфакторDataGridViewTextBoxColumn2.DataPropertyName = "Форм-фактор";
+            this.формфакторDataGridViewTextBoxColumn2.HeaderText = "Форм-фактор";
+            this.формфакторDataGridViewTextBoxColumn2.Name = "формфакторDataGridViewTextBoxColumn2";
+            // 
+            // количествоМодулейВКомплектеDataGridViewTextBoxColumn
+            // 
+            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.DataPropertyName = "Количество модулей в комплекте";
+            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.HeaderText = "Количество модулей в комплекте";
+            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.Name = "количествоМодулейВКомплектеDataGridViewTextBoxColumn";
+            // 
+            // объемОдногоМодуляDataGridViewTextBoxColumn
+            // 
+            this.объемОдногоМодуляDataGridViewTextBoxColumn.DataPropertyName = "Объем одного модуля";
+            this.объемОдногоМодуляDataGridViewTextBoxColumn.HeaderText = "Объем одного модуля";
+            this.объемОдногоМодуляDataGridViewTextBoxColumn.Name = "объемОдногоМодуляDataGridViewTextBoxColumn";
+            // 
+            // оперативнаяПамятьBindingSource
+            // 
+            this.оперативнаяПамятьBindingSource.DataMember = "Оперативная память";
+            this.оперативнаяПамятьBindingSource.DataSource = this.database_Computer_PartsDataSet;
             // 
             // tabPageHardDisk
             // 
@@ -1316,6 +1373,7 @@
             this.buttonSelectHardDisk.TabIndex = 2;
             this.buttonSelectHardDisk.Text = "Выбрать";
             this.buttonSelectHardDisk.UseVisualStyleBackColor = false;
+            this.buttonSelectHardDisk.Click += new System.EventHandler(this.buttonSelectHardDisk_Click);
             // 
             // buttonCancelHardDisk
             // 
@@ -1357,7 +1415,9 @@
             this.объемБуфераDataGridViewTextBoxColumn});
             this.dataGridViewHardDisk.DataSource = this.жесткиеДискиИСетевыеНакопителиBindingSource;
             this.dataGridViewHardDisk.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewHardDisk.MultiSelect = false;
             this.dataGridViewHardDisk.Name = "dataGridViewHardDisk";
+            this.dataGridViewHardDisk.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewHardDisk.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewHardDisk.TabIndex = 0;
             // 
@@ -1473,6 +1533,11 @@
             // 
             this.жесткиеДискиИСетевыеНакопителиBindingSource.DataMember = "Жесткие диски и сетевые накопители";
             this.жесткиеДискиИСетевыеНакопителиBindingSource.DataSource = this.database_Computer_PartsDataSet;
+            // 
+            // ошибкиВставкиBindingSource
+            // 
+            this.ошибкиВставкиBindingSource.DataMember = "Ошибки вставки";
+            this.ошибкиВставкиBindingSource.DataSource = this.database_Computer_PartsDataSet;
             // 
             // labelConfig
             // 
@@ -1680,62 +1745,9 @@
             // 
             this.жесткие_диски_и_сетевые_накопителиTableAdapter.ClearBeforeFill = true;
             // 
-            // оперативнаяПамятьBindingSource
-            // 
-            this.оперативнаяПамятьBindingSource.DataMember = "Оперативная память";
-            this.оперативнаяПамятьBindingSource.DataSource = this.database_Computer_PartsDataSet;
-            // 
             // оперативная_памятьTableAdapter
             // 
             this.оперативная_памятьTableAdapter.ClearBeforeFill = true;
-            // 
-            // кодDataGridViewTextBoxColumn7
-            // 
-            this.кодDataGridViewTextBoxColumn7.DataPropertyName = "Код";
-            this.кодDataGridViewTextBoxColumn7.HeaderText = "Код";
-            this.кодDataGridViewTextBoxColumn7.Name = "кодDataGridViewTextBoxColumn7";
-            // 
-            // производительDataGridViewTextBoxColumn7
-            // 
-            this.производительDataGridViewTextBoxColumn7.DataPropertyName = "Производитель";
-            this.производительDataGridViewTextBoxColumn7.HeaderText = "Производитель";
-            this.производительDataGridViewTextBoxColumn7.Name = "производительDataGridViewTextBoxColumn7";
-            // 
-            // названиеDataGridViewTextBoxColumn7
-            // 
-            this.названиеDataGridViewTextBoxColumn7.DataPropertyName = "Название";
-            this.названиеDataGridViewTextBoxColumn7.HeaderText = "Название";
-            this.названиеDataGridViewTextBoxColumn7.Name = "названиеDataGridViewTextBoxColumn7";
-            // 
-            // ценаDataGridViewTextBoxColumn7
-            // 
-            this.ценаDataGridViewTextBoxColumn7.DataPropertyName = "Цена";
-            this.ценаDataGridViewTextBoxColumn7.HeaderText = "Цена";
-            this.ценаDataGridViewTextBoxColumn7.Name = "ценаDataGridViewTextBoxColumn7";
-            // 
-            // типDataGridViewTextBoxColumn2
-            // 
-            this.типDataGridViewTextBoxColumn2.DataPropertyName = "Тип";
-            this.типDataGridViewTextBoxColumn2.HeaderText = "Тип";
-            this.типDataGridViewTextBoxColumn2.Name = "типDataGridViewTextBoxColumn2";
-            // 
-            // формфакторDataGridViewTextBoxColumn2
-            // 
-            this.формфакторDataGridViewTextBoxColumn2.DataPropertyName = "Форм-фактор";
-            this.формфакторDataGridViewTextBoxColumn2.HeaderText = "Форм-фактор";
-            this.формфакторDataGridViewTextBoxColumn2.Name = "формфакторDataGridViewTextBoxColumn2";
-            // 
-            // количествоМодулейВКомплектеDataGridViewTextBoxColumn
-            // 
-            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.DataPropertyName = "Количество модулей в комплекте";
-            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.HeaderText = "Количество модулей в комплекте";
-            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.Name = "количествоМодулейВКомплектеDataGridViewTextBoxColumn";
-            // 
-            // объемОдногоМодуляDataGridViewTextBoxColumn
-            // 
-            this.объемОдногоМодуляDataGridViewTextBoxColumn.DataPropertyName = "Объем одного модуля";
-            this.объемОдногоМодуляDataGridViewTextBoxColumn.HeaderText = "Объем одного модуля";
-            this.объемОдногоМодуляDataGridViewTextBoxColumn.Name = "объемОдногоМодуляDataGridViewTextBoxColumn";
             // 
             // FormSystemConstructor
             // 
@@ -1791,11 +1803,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.кулерыИСистемыОхлажденияBindingSource)).EndInit();
             this.tabPageROM.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewROM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ошибкиВставкиBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.оперативнаяПамятьBindingSource)).EndInit();
             this.tabPageHardDisk.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHardDisk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.жесткиеДискиИСетевыеНакопителиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.оперативнаяПамятьBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ошибкиВставкиBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

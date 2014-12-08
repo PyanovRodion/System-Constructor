@@ -186,5 +186,78 @@ namespace System_Constructor
             Config.SoundCard = sc;
             labelSCard.Text = sc.Name;
          }
+
+        private void buttonSelectPowerUnit_Click(object sender, EventArgs e)
+        {
+            PowerUnit pu = new PowerUnit();
+            pu.Developer = dataGridViewPowerUnit.SelectedRows[0].Cells[1].Value.ToString();
+            pu.Name = dataGridViewPowerUnit.SelectedRows[0].Cells[2].Value.ToString();
+            pu.Cost = int.Parse(dataGridViewPowerUnit.SelectedRows[0].Cells[3].Value.ToString());
+            pu.Power = int.Parse(dataGridViewPowerUnit.SelectedRows[0].Cells[4].Value.ToString());
+            pu.Sertificate80Plus = dataGridViewPowerUnit.SelectedRows[0].Cells[5].Value.ToString();
+            pu.CoolerSystem = (int)dataGridViewPowerUnit.SelectedRows[0].Cells[6].Value;
+            pu.CoolerSize = (int)dataGridViewPowerUnit.SelectedRows[0].Cells[7].Value;
+            pu.SeconderyCoolerSize = (int)dataGridViewPowerUnit.SelectedRows[0].Cells[8].Value;
+            pu.PFS = dataGridViewPowerUnit.SelectedRows[0].Cells[9].Value.ToString();
+            pu.ATX12VVersion = dataGridViewPowerUnit.SelectedRows[0].Cells[10].Value.ToString();
+            pu.MotherboardConnectionType = dataGridViewPowerUnit.SelectedRows[0].Cells[11].Value.ToString();
+            pu.SpecialCables = (bool)dataGridViewPowerUnit.SelectedRows[0].Cells[12].Value;
+            pu.Surge = (bool)dataGridViewPowerUnit.SelectedRows[0].Cells[13].Value;
+            pu.ShortCircuit = (bool)dataGridViewPowerUnit.SelectedRows[0].Cells[14].Value;
+            Config.Power = pu;
+            labelPowerUnit.Text = pu.Name;
+        }
+
+        private void buttonSelectCooler_Click(object sender, EventArgs e)
+        {
+            Cooler c = new Cooler();
+            c.Developer = dataGridViewCooler.SelectedRows[0].Cells[1].Value.ToString();
+            c.Name = dataGridViewCooler.SelectedRows[0].Cells[2].Value.ToString();
+            c.Cost = int.Parse(dataGridViewCooler.SelectedRows[0].Cells[3].Value.ToString());
+            c.Usage = dataGridViewCooler.SelectedRows[0].Cells[4].Value.ToString();
+            c.WaterCool = (bool)dataGridViewCooler.SelectedRows[0].Cells[5].Value;
+            c.NumberOfFans = (int)dataGridViewCooler.SelectedRows[0].Cells[6].Value;
+            c.FansSize = (int)dataGridViewCooler.SelectedRows[0].Cells[7].Value;
+            c.Socket = dataGridViewCooler.SelectedRows[0].Cells[8].Value.ToString();
+            Config.Cooler = c;
+            labelCooler.Text = c.Name;
+        }
+
+        private void buttonSelectROM_Click(object sender, EventArgs e)
+        {
+            ROM r = new ROM();
+            r.Developer = dataGridViewROM.SelectedRows[0].Cells[1].Value.ToString();
+            r.Name = dataGridViewROM.SelectedRows[0].Cells[2].Value.ToString();
+            r.Cost = int.Parse(dataGridViewROM.SelectedRows[0].Cells[3].Value.ToString());
+            r.Type = dataGridViewROM.SelectedRows[0].Cells[4].Value.ToString();
+            r.FormFactor = dataGridViewROM.SelectedRows[0].Cells[5].Value.ToString();
+            r.NumberOfBlocks = int.Parse(dataGridViewROM.SelectedRows[0].Cells[6].Value.ToString());
+            r.BlockVolume = int.Parse(dataGridViewROM.SelectedRows[0].Cells[7].Value.ToString());
+            Config.ROM = r;
+            labelROM.Text = r.Developer+" "+r.Name;
+        }
+
+        private void buttonSelectHardDisk_Click(object sender, EventArgs e)
+        {
+            HardDisk hd = new HardDisk();
+            hd.Developer = dataGridViewHardDisk.SelectedRows[0].Cells[1].Value.ToString();
+            hd.Name = dataGridViewHardDisk.SelectedRows[0].Cells[2].Value.ToString();
+            hd.Cost = int.Parse(dataGridViewHardDisk.SelectedRows[0].Cells[3].Value.ToString());
+            hd.FormFactor = double.Parse(dataGridViewHardDisk.SelectedRows[0].Cells[4].Value.ToString());
+            hd.Volume = int.Parse(dataGridViewHardDisk.SelectedRows[0].Cells[5].Value.ToString());
+            hd.Type = dataGridViewHardDisk.SelectedRows[0].Cells[6].Value.ToString();
+            hd.SATAConnection = (int)dataGridViewHardDisk.SelectedRows[0].Cells[7].Value;
+            hd.IDE = (bool)dataGridViewHardDisk.SelectedRows[0].Cells[8].Value;
+            hd.PCIEConnection = (bool)dataGridViewHardDisk.SelectedRows[0].Cells[9].Value;
+            int.TryParse(dataGridViewHardDisk.SelectedRows[0].Cells[10].Value.ToString(), out hd.PCIType);
+            hd.ZIF40Pin = (bool)dataGridViewHardDisk.SelectedRows[0].Cells[11].Value;
+            hd.eSATA = (bool)dataGridViewHardDisk.SelectedRows[0].Cells[12].Value;
+            hd.mSATA = (bool)dataGridViewHardDisk.SelectedRows[0].Cells[13].Value;
+            int.TryParse(dataGridViewHardDisk.SelectedRows[0].Cells[14].Value.ToString(), out hd.SpinSpeed);
+            int.TryParse(dataGridViewHardDisk.SelectedRows[0].Cells[15].Value.ToString(), out hd.ReadSpeed);
+            int.TryParse(dataGridViewHardDisk.SelectedRows[0].Cells[16].Value.ToString(), out hd.WriteSpeed);
+            Config.HardDisk = hd;
+            labelHardDisc.Text = hd.Developer + " " + hd.Name;
+        }
     }
 }

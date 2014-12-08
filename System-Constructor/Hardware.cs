@@ -130,7 +130,7 @@ namespace System_Constructor
         public string Name;
         public int Cost;
 
-        public int FormFactor;
+        public double FormFactor;
         public int Volume;
         public string Type;
         public int SATAConnection;
