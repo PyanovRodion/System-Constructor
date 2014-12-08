@@ -1695,7 +1695,7 @@
             // 
             // buttonSendOrder
             // 
-            this.buttonSendOrder.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonSendOrder.BackColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSendOrder.Location = new System.Drawing.Point(760, 368);
             this.buttonSendOrder.Name = "buttonSendOrder";
             this.buttonSendOrder.Size = new System.Drawing.Size(204, 23);
@@ -1709,7 +1709,7 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.BackColor = System.Drawing.Color.LightPink;
+            this.buttonClose.BackColor = System.Drawing.Color.MediumPurple;
             this.buttonClose.Location = new System.Drawing.Point(889, 397);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
@@ -1755,7 +1755,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(970, 430);
             this.ControlBox = false;
             this.Controls.Add(this.buttonClose);
