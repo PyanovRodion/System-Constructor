@@ -103,12 +103,21 @@ namespace System_Constructor
 
         public void RefreshDataGridView()
         {
-            dataGridViewProcessor.DataSource = dbc.Процессоры;
-
-            var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU.Socket == "").ToList(); ;
-            motherBoardBindingSource.DataSource = request;
-            dataGridViewMotherboard.DataSource = motherBoardBindingSource;
-
+            //dataGridViewProcessor.DataSource = dbc.Процессоры;
+            try
+            {
+                var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket));
+                motherBoardBindingSource.DataSource = request;
+                dataGridViewMotherboard.DataSource = motherBoardBindingSource;
+            }
+            catch { }
+            try
+            {
+                BindingSource ProcessorBindingSource = new BindingSource();
+                ProcessorBindingSource.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket));
+                dataGridViewProcessor.DataSource = ProcessorBindingSource;
+            }
+            catch { }
             //dataGridViewCooler.DataSource = 
             //dataGridViewHardDisk.DataSource = HarddrivesTable;
             //dataGridViewPowerUnit.DataSource = BlockpitTable;
@@ -146,6 +155,7 @@ namespace System_Constructor
             mb.DVI = (bool)dataGridViewMotherboard.SelectedRows[0].Cells[20].Value;
             Config.MBoard = mb;
             labelMotherboard.Text = mb.Name;
+            RefreshDataGridView();
         }
         private void buttonSelectVCard_Click(object sender, EventArgs e)
         {
