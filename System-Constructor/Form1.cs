@@ -60,7 +60,7 @@ namespace System_Constructor
             proc.Temprature = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[14].Value.ToString());
             Config.CPU = proc;
             labelProcessor.Text = proc.Name;
-            //RefreshDataGridView();
+            RefreshDataGridView();
 
         }
 
@@ -98,10 +98,17 @@ namespace System_Constructor
         {
 
         }
+
+        BindingSource motherBoardBindingSource = new BindingSource();
+
         public void RefreshDataGridView()
         {
             dataGridViewProcessor.DataSource = dbc.Процессоры;
-            dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Select(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU.Socket == "");
+
+            var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU.Socket == "").ToList(); ;
+            motherBoardBindingSource.DataSource = request;
+            dataGridViewMotherboard.DataSource = motherBoardBindingSource;
+
             //dataGridViewCooler.DataSource = 
             //dataGridViewHardDisk.DataSource = HarddrivesTable;
             //dataGridViewPowerUnit.DataSource = BlockpitTable;
