@@ -258,10 +258,11 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(696, 377);
             this.tabControl.TabIndex = 0;
+            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged_1);
             // 
             // tabPageProcessor
             // 
-            this.tabPageProcessor.BackColor = System.Drawing.Color.Gold;
+            this.tabPageProcessor.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPageProcessor.Controls.Add(this.buttonCancelProc);
             this.tabPageProcessor.Controls.Add(this.buttonSelectProc);
             this.tabPageProcessor.Controls.Add(this.dataGridViewProcessor);
@@ -274,7 +275,7 @@
             // 
             // buttonCancelProc
             // 
-            this.buttonCancelProc.BackColor = System.Drawing.Color.Yellow;
+            this.buttonCancelProc.BackColor = System.Drawing.Color.Linen;
             this.buttonCancelProc.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelProc.Name = "buttonCancelProc";
             this.buttonCancelProc.Size = new System.Drawing.Size(182, 23);
@@ -284,7 +285,7 @@
             // 
             // buttonSelectProc
             // 
-            this.buttonSelectProc.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSelectProc.BackColor = System.Drawing.Color.Linen;
             this.buttonSelectProc.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectProc.Name = "buttonSelectProc";
             this.buttonSelectProc.Size = new System.Drawing.Size(182, 23);
@@ -300,7 +301,7 @@
             this.dataGridViewProcessor.AllowUserToResizeColumns = false;
             this.dataGridViewProcessor.AllowUserToResizeRows = false;
             this.dataGridViewProcessor.AutoGenerateColumns = false;
-            this.dataGridViewProcessor.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridViewProcessor.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dataGridViewProcessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProcessor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn,
@@ -319,7 +320,7 @@
             this.коэффициентУмноженияDataGridViewTextBoxColumn,
             this.максимальнаяРабочаяТемператураDataGridViewTextBoxColumn});
             this.dataGridViewProcessor.DataSource = this.процессорыBindingSource;
-            this.dataGridViewProcessor.Location = new System.Drawing.Point(7, 31);
+            this.dataGridViewProcessor.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewProcessor.MultiSelect = false;
             this.dataGridViewProcessor.Name = "dataGridViewProcessor";
             this.dataGridViewProcessor.ReadOnly = true;
@@ -444,7 +445,7 @@
             // 
             // tabPageVCard
             // 
-            this.tabPageVCard.BackColor = System.Drawing.Color.Gold;
+            this.tabPageVCard.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPageVCard.Controls.Add(this.buttonSelectVCard);
             this.tabPageVCard.Controls.Add(this.buttonCancelVCard);
             this.tabPageVCard.Controls.Add(this.dataGridViewVCard);
@@ -457,7 +458,7 @@
             // 
             // buttonSelectVCard
             // 
-            this.buttonSelectVCard.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSelectVCard.BackColor = System.Drawing.Color.Linen;
             this.buttonSelectVCard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectVCard.Name = "buttonSelectVCard";
             this.buttonSelectVCard.Size = new System.Drawing.Size(182, 23);
@@ -468,7 +469,7 @@
             // 
             // buttonCancelVCard
             // 
-            this.buttonCancelVCard.BackColor = System.Drawing.Color.Yellow;
+            this.buttonCancelVCard.BackColor = System.Drawing.Color.Linen;
             this.buttonCancelVCard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelVCard.Name = "buttonCancelVCard";
             this.buttonCancelVCard.Size = new System.Drawing.Size(182, 23);
@@ -483,7 +484,7 @@
             this.dataGridViewVCard.AllowUserToResizeColumns = false;
             this.dataGridViewVCard.AllowUserToResizeRows = false;
             this.dataGridViewVCard.AutoGenerateColumns = false;
-            this.dataGridViewVCard.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridViewVCard.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dataGridViewVCard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVCard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn1,
@@ -613,7 +614,7 @@
             // 
             // tabPageSCard
             // 
-            this.tabPageSCard.BackColor = System.Drawing.Color.Gold;
+            this.tabPageSCard.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPageSCard.Controls.Add(this.buttonSelectSCard);
             this.tabPageSCard.Controls.Add(this.buttonCancelSCard);
             this.tabPageSCard.Controls.Add(this.dataGridViewSCard);
@@ -626,7 +627,7 @@
             // 
             // buttonSelectSCard
             // 
-            this.buttonSelectSCard.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSelectSCard.BackColor = System.Drawing.Color.Linen;
             this.buttonSelectSCard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectSCard.Name = "buttonSelectSCard";
             this.buttonSelectSCard.Size = new System.Drawing.Size(182, 23);
@@ -637,7 +638,7 @@
             // 
             // buttonCancelSCard
             // 
-            this.buttonCancelSCard.BackColor = System.Drawing.Color.Yellow;
+            this.buttonCancelSCard.BackColor = System.Drawing.Color.Linen;
             this.buttonCancelSCard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelSCard.Name = "buttonCancelSCard";
             this.buttonCancelSCard.Size = new System.Drawing.Size(182, 23);
@@ -652,7 +653,7 @@
             this.dataGridViewSCard.AllowUserToResizeColumns = false;
             this.dataGridViewSCard.AllowUserToResizeRows = false;
             this.dataGridViewSCard.AutoGenerateColumns = false;
-            this.dataGridViewSCard.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridViewSCard.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dataGridViewSCard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSCard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn2,
@@ -747,7 +748,7 @@
             // 
             // tabPageMotherboard
             // 
-            this.tabPageMotherboard.BackColor = System.Drawing.Color.Gold;
+            this.tabPageMotherboard.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPageMotherboard.Controls.Add(this.buttonSelectMotherboard);
             this.tabPageMotherboard.Controls.Add(this.buttonCancelMotherboard);
             this.tabPageMotherboard.Controls.Add(this.dataGridViewMotherboard);
@@ -760,7 +761,7 @@
             // 
             // buttonSelectMotherboard
             // 
-            this.buttonSelectMotherboard.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSelectMotherboard.BackColor = System.Drawing.Color.Linen;
             this.buttonSelectMotherboard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectMotherboard.Name = "buttonSelectMotherboard";
             this.buttonSelectMotherboard.Size = new System.Drawing.Size(182, 23);
@@ -771,7 +772,7 @@
             // 
             // buttonCancelMotherboard
             // 
-            this.buttonCancelMotherboard.BackColor = System.Drawing.Color.Yellow;
+            this.buttonCancelMotherboard.BackColor = System.Drawing.Color.Linen;
             this.buttonCancelMotherboard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelMotherboard.Name = "buttonCancelMotherboard";
             this.buttonCancelMotherboard.Size = new System.Drawing.Size(182, 23);
@@ -786,7 +787,7 @@
             this.dataGridViewMotherboard.AllowUserToResizeColumns = false;
             this.dataGridViewMotherboard.AllowUserToResizeRows = false;
             this.dataGridViewMotherboard.AutoGenerateColumns = false;
-            this.dataGridViewMotherboard.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridViewMotherboard.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dataGridViewMotherboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMotherboard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn3,
@@ -951,7 +952,7 @@
             // 
             // tabPagePowerUnit
             // 
-            this.tabPagePowerUnit.BackColor = System.Drawing.Color.Gold;
+            this.tabPagePowerUnit.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPagePowerUnit.Controls.Add(this.buttonSelectPowerUnit);
             this.tabPagePowerUnit.Controls.Add(this.buttonCancelPowerUnit);
             this.tabPagePowerUnit.Controls.Add(this.dataGridViewPowerUnit);
@@ -964,7 +965,7 @@
             // 
             // buttonSelectPowerUnit
             // 
-            this.buttonSelectPowerUnit.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSelectPowerUnit.BackColor = System.Drawing.Color.Linen;
             this.buttonSelectPowerUnit.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectPowerUnit.Name = "buttonSelectPowerUnit";
             this.buttonSelectPowerUnit.Size = new System.Drawing.Size(182, 23);
@@ -975,7 +976,7 @@
             // 
             // buttonCancelPowerUnit
             // 
-            this.buttonCancelPowerUnit.BackColor = System.Drawing.Color.Yellow;
+            this.buttonCancelPowerUnit.BackColor = System.Drawing.Color.Linen;
             this.buttonCancelPowerUnit.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelPowerUnit.Name = "buttonCancelPowerUnit";
             this.buttonCancelPowerUnit.Size = new System.Drawing.Size(182, 23);
@@ -990,7 +991,7 @@
             this.dataGridViewPowerUnit.AllowUserToResizeColumns = false;
             this.dataGridViewPowerUnit.AllowUserToResizeRows = false;
             this.dataGridViewPowerUnit.AutoGenerateColumns = false;
-            this.dataGridViewPowerUnit.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridViewPowerUnit.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dataGridViewPowerUnit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPowerUnit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn4,
@@ -1120,7 +1121,7 @@
             // 
             // tabPageCooler
             // 
-            this.tabPageCooler.BackColor = System.Drawing.Color.Gold;
+            this.tabPageCooler.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPageCooler.Controls.Add(this.buttonSelectCooler);
             this.tabPageCooler.Controls.Add(this.buttonCancelCooler);
             this.tabPageCooler.Controls.Add(this.dataGridViewCooler);
@@ -1133,7 +1134,7 @@
             // 
             // buttonSelectCooler
             // 
-            this.buttonSelectCooler.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSelectCooler.BackColor = System.Drawing.Color.Linen;
             this.buttonSelectCooler.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectCooler.Name = "buttonSelectCooler";
             this.buttonSelectCooler.Size = new System.Drawing.Size(182, 23);
@@ -1144,7 +1145,7 @@
             // 
             // buttonCancelCooler
             // 
-            this.buttonCancelCooler.BackColor = System.Drawing.Color.Yellow;
+            this.buttonCancelCooler.BackColor = System.Drawing.Color.Linen;
             this.buttonCancelCooler.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelCooler.Name = "buttonCancelCooler";
             this.buttonCancelCooler.Size = new System.Drawing.Size(182, 23);
@@ -1159,7 +1160,7 @@
             this.dataGridViewCooler.AllowUserToResizeColumns = false;
             this.dataGridViewCooler.AllowUserToResizeRows = false;
             this.dataGridViewCooler.AutoGenerateColumns = false;
-            this.dataGridViewCooler.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridViewCooler.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dataGridViewCooler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCooler.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn5,
@@ -1240,7 +1241,7 @@
             // 
             // tabPageROM
             // 
-            this.tabPageROM.BackColor = System.Drawing.Color.Gold;
+            this.tabPageROM.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPageROM.Controls.Add(this.buttonSelectROM);
             this.tabPageROM.Controls.Add(this.buttonCancelROM);
             this.tabPageROM.Controls.Add(this.dataGridViewROM);
@@ -1253,7 +1254,7 @@
             // 
             // buttonSelectROM
             // 
-            this.buttonSelectROM.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSelectROM.BackColor = System.Drawing.Color.Linen;
             this.buttonSelectROM.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectROM.Name = "buttonSelectROM";
             this.buttonSelectROM.Size = new System.Drawing.Size(182, 23);
@@ -1264,7 +1265,7 @@
             // 
             // buttonCancelROM
             // 
-            this.buttonCancelROM.BackColor = System.Drawing.Color.Yellow;
+            this.buttonCancelROM.BackColor = System.Drawing.Color.Linen;
             this.buttonCancelROM.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelROM.Name = "buttonCancelROM";
             this.buttonCancelROM.Size = new System.Drawing.Size(182, 23);
@@ -1279,7 +1280,7 @@
             this.dataGridViewROM.AllowUserToResizeColumns = false;
             this.dataGridViewROM.AllowUserToResizeRows = false;
             this.dataGridViewROM.AutoGenerateColumns = false;
-            this.dataGridViewROM.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridViewROM.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dataGridViewROM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewROM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn7,
@@ -1353,7 +1354,7 @@
             // 
             // tabPageHardDisk
             // 
-            this.tabPageHardDisk.BackColor = System.Drawing.Color.Gold;
+            this.tabPageHardDisk.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPageHardDisk.Controls.Add(this.buttonSelectHardDisk);
             this.tabPageHardDisk.Controls.Add(this.buttonCancelHardDisk);
             this.tabPageHardDisk.Controls.Add(this.dataGridViewHardDisk);
@@ -1366,7 +1367,7 @@
             // 
             // buttonSelectHardDisk
             // 
-            this.buttonSelectHardDisk.BackColor = System.Drawing.Color.Yellow;
+            this.buttonSelectHardDisk.BackColor = System.Drawing.Color.Linen;
             this.buttonSelectHardDisk.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectHardDisk.Name = "buttonSelectHardDisk";
             this.buttonSelectHardDisk.Size = new System.Drawing.Size(182, 23);
@@ -1377,7 +1378,7 @@
             // 
             // buttonCancelHardDisk
             // 
-            this.buttonCancelHardDisk.BackColor = System.Drawing.Color.Yellow;
+            this.buttonCancelHardDisk.BackColor = System.Drawing.Color.Linen;
             this.buttonCancelHardDisk.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelHardDisk.Name = "buttonCancelHardDisk";
             this.buttonCancelHardDisk.Size = new System.Drawing.Size(182, 23);
@@ -1392,7 +1393,7 @@
             this.dataGridViewHardDisk.AllowUserToResizeColumns = false;
             this.dataGridViewHardDisk.AllowUserToResizeRows = false;
             this.dataGridViewHardDisk.AutoGenerateColumns = false;
-            this.dataGridViewHardDisk.BackgroundColor = System.Drawing.Color.LemonChiffon;
+            this.dataGridViewHardDisk.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dataGridViewHardDisk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHardDisk.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn6,
@@ -1694,10 +1695,10 @@
             // 
             // buttonSendOrder
             // 
-            this.buttonSendOrder.BackColor = System.Drawing.Color.Aquamarine;
-            this.buttonSendOrder.Location = new System.Drawing.Point(777, 368);
+            this.buttonSendOrder.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonSendOrder.Location = new System.Drawing.Point(760, 368);
             this.buttonSendOrder.Name = "buttonSendOrder";
-            this.buttonSendOrder.Size = new System.Drawing.Size(187, 23);
+            this.buttonSendOrder.Size = new System.Drawing.Size(204, 23);
             this.buttonSendOrder.TabIndex = 18;
             this.buttonSendOrder.Text = "Отправить заказ";
             this.buttonSendOrder.UseVisualStyleBackColor = false;
@@ -1708,7 +1709,7 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonClose.BackColor = System.Drawing.Color.LightPink;
             this.buttonClose.Location = new System.Drawing.Point(889, 397);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
@@ -1754,7 +1755,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(970, 430);
             this.ControlBox = false;
             this.Controls.Add(this.buttonClose);

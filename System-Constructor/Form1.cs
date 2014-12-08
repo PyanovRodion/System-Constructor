@@ -269,5 +269,10 @@ namespace System_Constructor
             Config.HardDisk = hd;
             labelHardDisc.Text = hd.Developer + " " + hd.Name;
         }
+
+        private void tabControl_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
