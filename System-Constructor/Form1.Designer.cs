@@ -1885,7 +1885,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ценаDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn типВидеоКартыDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn типПодключенияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn разработчикВидеопроцессораDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn разработчикВидеопроцессораDataGridViewTextBoxColumn; 
         private System.Windows.Forms.DataGridViewTextBoxColumn линейкаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn названиеВидеопроцессораDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn количествоВидеопроцессоровDataGridViewTextBoxColumn;
