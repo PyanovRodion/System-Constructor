@@ -107,18 +107,20 @@ namespace System_Constructor
             //dataGridViewProcessor.DataSource = dbc.Процессоры;
             try
             {
-                dataGridViewMotherboard.AutoGenerateColumns=true;
+                //dataGridViewMotherboard.AutoGenerateColumns=true;
                
                 //var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket));
-                motherBoardBindingSource.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU == null);
-                dataGridViewMotherboard.DataSource = motherBoardBindingSource;
+                //motherBoardBindingSource.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU == null);
+                //dataGridViewMotherboard.DataSource = motherBoardBindingSource;
+
+                dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket)).CopyToDataTable();
             }
             catch { }
             try
             {
-                dataGridViewProcessor.AutoGenerateColumns = true;
-                ProcessorBindingSource.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket));
-                dataGridViewProcessor.DataSource = ProcessorBindingSource;
+                //dataGridViewProcessor.AutoGenerateColumns = true;
+                //ProcessorBindingSource.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket));
+                dataGridViewProcessor.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket)).CopyToDataTable();
             }
             catch { }
             //dataGridViewCooler.DataSource = 
