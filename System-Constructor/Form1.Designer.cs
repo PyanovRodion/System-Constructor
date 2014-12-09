@@ -1712,6 +1712,7 @@
             this.buttonSendOrder.TabIndex = 18;
             this.buttonSendOrder.Text = "Отправить заказ";
             this.buttonSendOrder.UseVisualStyleBackColor = false;
+            this.buttonSendOrder.Click += new System.EventHandler(this.buttonSendOrder_Click);
             // 
             // видео_картыTableAdapter
             // 
