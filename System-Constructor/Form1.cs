@@ -355,23 +355,12 @@ namespace System_Constructor
 
         private void buttonSendOrder_Click(object sender, EventArgs e)
         {
-            try
+            if ((Config.CPU != null) && (Config.MBoard != null) && (Config.Power != null) && (Config.ROM != null) && (Config.SoundCard != null) && (Config.VideoCard != null) && (Config.HardDisk != null) && (Config.Cooler != null))
             {
-                string request = Config.CPU.Name + "\n" + Config.VideoCard.Name + "\n" + Config.SoundCard.Name + "\n" + Config.MBoard.Name + "\n" + Config.Power.Name + "\n" + Config.Cooler.Name + "\n" + Config.ROM.Name + "\n" + Config.HardDisk.Name;
-                string subject = "NewProjectToBuild";
-                MailMessage m1 = new MailMessage("scappuser@rambler.ru", "scappuser@rambler.ru", subject, request);
-
-                SmtpClient client = new SmtpClient("smtp.rambler.ru");
-                client.Port = 587;
-                string username = "scappuser@rambler.ru";
-                string pass = "ipsis1010";
-                client.Credentials = new System.Net.NetworkCredential(username, pass);
-                client.EnableSsl = true;
-                client.Send(m1);
-               MessageBox.Show("Запрос на сборку успешно отправлен в компанию System-Constructor. Спасибо, что воспользовались нашими услугами!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch { MessageBox.Show("Не до конца заполнен запрос.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-                
+                SendOrder sof = new SendOrder(Config, price);
+                sof.ShowDialog();      
+           }
+            else { MessageBox.Show("Не до конца указана комплектация.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
         
     }
