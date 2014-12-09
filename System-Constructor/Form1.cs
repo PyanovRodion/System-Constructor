@@ -113,7 +113,7 @@ namespace System_Constructor
             labelPrice.Text = price.ToString();
         }
 
-        //------------------------------------------------------------------Selections
+        //------------------------------------------------------------------Selections 
 
         private void buttonSelectProc_Click(object sender, EventArgs e)
         {
