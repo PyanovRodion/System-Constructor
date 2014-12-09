@@ -812,7 +812,7 @@
             this.hDMIDataGridViewTextBoxColumn,
             this.dVIDataGridViewCheckBoxColumn});
             this.dataGridViewMotherboard.DataSource = this.материнскиеПлатыBindingSource;
-            this.dataGridViewMotherboard.Location = new System.Drawing.Point(6, 31);
+            this.dataGridViewMotherboard.Location = new System.Drawing.Point(7, 22);
             this.dataGridViewMotherboard.MultiSelect = false;
             this.dataGridViewMotherboard.Name = "dataGridViewMotherboard";
             this.dataGridViewMotherboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1756,7 +1756,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(970, 430);
+            this.ClientSize = new System.Drawing.Size(1087, 430);
             this.ControlBox = false;
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonSendOrder);

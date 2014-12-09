@@ -100,12 +100,15 @@ namespace System_Constructor
         }
 
         BindingSource motherBoardBindingSource = new BindingSource();
+        BindingSource ProcessorBindingSource = new BindingSource();
 
         public void RefreshDataGridView()
         {
             //dataGridViewProcessor.DataSource = dbc.Процессоры;
             try
             {
+                dataGridViewMotherboard.AutoGenerateColumns=true;
+               
                 var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket));
                 motherBoardBindingSource.DataSource = request;
                 dataGridViewMotherboard.DataSource = motherBoardBindingSource;
@@ -113,7 +116,7 @@ namespace System_Constructor
             catch { }
             try
             {
-                BindingSource ProcessorBindingSource = new BindingSource();
+                dataGridViewProcessor.AutoGenerateColumns = true;
                 ProcessorBindingSource.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket));
                 dataGridViewProcessor.DataSource = ProcessorBindingSource;
             }
