@@ -110,6 +110,14 @@ namespace System_Constructor
                 }
                 catch { }
             }
+            if (Config.MBoard == null)
+            {
+                dataGridViewROM.DataSource = dbc.Оперативная_память.CopyToDataTable();
+            }
+            else
+            {
+                dataGridViewROM.DataSource = dbc.Оперативная_память.Where(r => Config.MBoard.MemoryType.Contains(r.Тип)).CopyToDataTable();
+            }
             labelPrice.Text = price.ToString();
         }
 
