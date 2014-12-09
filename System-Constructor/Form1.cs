@@ -357,20 +357,18 @@ namespace System_Constructor
         {
             try
             {
-                string request = Config.CPU.Name + "\n+" + Config.VideoCard.Name + "\n" + Config.SoundCard.Name + "\n" + Config.MBoard.Name + "\n" + Config.Power.Name + "\n" + Config.Cooler.Name + "\n" + Config.ROM.Name + "\n" + Config.HardDisk.Name;
+                string request = Config.CPU.Name + "\n" + Config.VideoCard.Name + "\n" + Config.SoundCard.Name + "\n" + Config.MBoard.Name + "\n" + Config.Power.Name + "\n" + Config.Cooler.Name + "\n" + Config.ROM.Name + "\n" + Config.HardDisk.Name;
                 string subject = "NewProjectToBuild";
-                string TO = "scappuser@rambler.ru";
-                MessageBox.Show(request);
-                MailMessage m1 = new MailMessage("AppUser", TO, subject, request);
+                MailMessage m1 = new MailMessage("scappuser@rambler.ru", "scappuser@rambler.ru", subject, request);
 
                 SmtpClient client = new SmtpClient("smtp.rambler.ru");
-                client.Port = 465;
+                client.Port = 587;
                 string username = "scappuser@rambler.ru";
                 string pass = "ipsis1010";
                 client.Credentials = new System.Net.NetworkCredential(username, pass);
                 client.EnableSsl = true;
                 client.Send(m1);
-                MessageBox.Show("Запрос на сборку успешно отправлен в компанию System-Constructor. Спасибо, что воспользовались нашими услугами!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               MessageBox.Show("Запрос на сборку успешно отправлен в компанию System-Constructor. Спасибо, что воспользовались нашими услугами!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch { MessageBox.Show("Не до конца заполнен запрос.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                 
