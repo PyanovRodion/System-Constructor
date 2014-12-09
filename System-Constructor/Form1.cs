@@ -105,24 +105,38 @@ namespace System_Constructor
         public void RefreshDataGridView()
         {
             //dataGridViewProcessor.DataSource = dbc.Процессоры;
-            try
+            if (Config.CPU == null)
             {
-                //dataGridViewMotherboard.AutoGenerateColumns=true;
-               
-                //var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket));
-                //motherBoardBindingSource.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU == null);
-                //dataGridViewMotherboard.DataSource = motherBoardBindingSource;
+                dataGridViewMotherboard.DataSource = dbc.Материнские_платы.CopyToDataTable();
+            }
+            else
+            {
+                try
+                {
+                    //dataGridViewMotherboard.AutoGenerateColumns=true;
 
-                dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket)).CopyToDataTable();
+                    //var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket));
+                    //motherBoardBindingSource.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU == null);
+                    //dataGridViewMotherboard.DataSource = motherBoardBindingSource;
+
+                    dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket)).CopyToDataTable();
+                }
+                catch { }
             }
-            catch { }
-            try
+            if (Config.MBoard == null)
             {
-                //dataGridViewProcessor.AutoGenerateColumns = true;
-                //ProcessorBindingSource.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket));
-                dataGridViewProcessor.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket)).CopyToDataTable();
+                dataGridViewProcessor.DataSource = dbc.Процессоры.CopyToDataTable();
             }
-            catch { }
+            else
+            {
+                try
+                {
+                    //dataGridViewProcessor.AutoGenerateColumns = true;
+                    //ProcessorBindingSource.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket));
+                    dataGridViewProcessor.DataSource = dbc.Процессоры.Where(p => p.Socket.Equals(Config.MBoard.Socket)).CopyToDataTable();
+                }
+                catch { }
+            }
             //dataGridViewCooler.DataSource = 
             //dataGridViewHardDisk.DataSource = HarddrivesTable;
             //dataGridViewPowerUnit.DataSource = BlockpitTable;
