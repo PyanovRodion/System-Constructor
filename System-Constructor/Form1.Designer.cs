@@ -1720,7 +1720,7 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.BackColor = System.Drawing.Color.MediumPurple;
+            this.buttonClose.BackColor = System.Drawing.Color.Aquamarine;
             this.buttonClose.Location = new System.Drawing.Point(889, 397);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
