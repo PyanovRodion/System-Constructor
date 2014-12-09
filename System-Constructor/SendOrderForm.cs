@@ -28,7 +28,7 @@ namespace System_Constructor
                 try
                 {
                     string request = Config.CPU.Name + "\n" + Config.VideoCard.Name + "\n" + Config.SoundCard.Name + "\n" + Config.MBoard.Name + "\n" + Config.Power.Name + "\n" + Config.Cooler.Name + "\n" + Config.ROM.Name + "\n" + Config.HardDisk.Name + "\n" + "\n" + "Итого: " + Price.ToString() + "\n" + "\n" + "Обратная связь: "+ textBox1.Text;
-                    string subject = "NewProjectToBuild";
+                    string subject = "NewProjectToBuild "+textBox1.Text;
                     MailMessage m1 = new MailMessage("scappuser@rambler.ru", "scappuser@rambler.ru", subject, request);
 
                     SmtpClient client = new SmtpClient("smtp.rambler.ru");
