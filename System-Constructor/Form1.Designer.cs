@@ -282,6 +282,7 @@
             this.buttonCancelProc.TabIndex = 2;
             this.buttonCancelProc.Text = "Сбросить";
             this.buttonCancelProc.UseVisualStyleBackColor = false;
+            this.buttonCancelProc.Click += new System.EventHandler(this.buttonCancelProc_Click);
             // 
             // buttonSelectProc
             // 
@@ -476,6 +477,7 @@
             this.buttonCancelVCard.TabIndex = 1;
             this.buttonCancelVCard.Text = "Сбросить";
             this.buttonCancelVCard.UseVisualStyleBackColor = false;
+            this.buttonCancelVCard.Click += new System.EventHandler(this.buttonCancelVCard_Click);
             // 
             // dataGridViewVCard
             // 
@@ -645,6 +647,7 @@
             this.buttonCancelSCard.TabIndex = 1;
             this.buttonCancelSCard.Text = "Сбросить";
             this.buttonCancelSCard.UseVisualStyleBackColor = false;
+            this.buttonCancelSCard.Click += new System.EventHandler(this.buttonCancelSCard_Click);
             // 
             // dataGridViewSCard
             // 
@@ -779,6 +782,7 @@
             this.buttonCancelMotherboard.TabIndex = 1;
             this.buttonCancelMotherboard.Text = "Сбросить";
             this.buttonCancelMotherboard.UseVisualStyleBackColor = false;
+            this.buttonCancelMotherboard.Click += new System.EventHandler(this.buttonCancelMotherboard_Click);
             // 
             // dataGridViewMotherboard
             // 
@@ -983,6 +987,7 @@
             this.buttonCancelPowerUnit.TabIndex = 1;
             this.buttonCancelPowerUnit.Text = "Сбросить";
             this.buttonCancelPowerUnit.UseVisualStyleBackColor = false;
+            this.buttonCancelPowerUnit.Click += new System.EventHandler(this.buttonCancelPowerUnit_Click);
             // 
             // dataGridViewPowerUnit
             // 
@@ -1152,6 +1157,7 @@
             this.buttonCancelCooler.TabIndex = 1;
             this.buttonCancelCooler.Text = "Сбросить";
             this.buttonCancelCooler.UseVisualStyleBackColor = false;
+            this.buttonCancelCooler.Click += new System.EventHandler(this.buttonCancelCooler_Click);
             // 
             // dataGridViewCooler
             // 
@@ -1272,6 +1278,7 @@
             this.buttonCancelROM.TabIndex = 1;
             this.buttonCancelROM.Text = "Сбросить";
             this.buttonCancelROM.UseVisualStyleBackColor = false;
+            this.buttonCancelROM.Click += new System.EventHandler(this.buttonCancelROM_Click);
             // 
             // dataGridViewROM
             // 
@@ -1385,6 +1392,7 @@
             this.buttonCancelHardDisk.TabIndex = 1;
             this.buttonCancelHardDisk.Text = "Сбросить";
             this.buttonCancelHardDisk.UseVisualStyleBackColor = false;
+            this.buttonCancelHardDisk.Click += new System.EventHandler(this.buttonCancelHardDisk_Click);
             // 
             // dataGridViewHardDisk
             // 

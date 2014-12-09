@@ -109,8 +109,8 @@ namespace System_Constructor
             {
                 dataGridViewMotherboard.AutoGenerateColumns=true;
                
-                var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket));
-                motherBoardBindingSource.DataSource = request;
+                //var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket));
+                motherBoardBindingSource.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU == null);
                 dataGridViewMotherboard.DataSource = motherBoardBindingSource;
             }
             catch { }
@@ -277,5 +277,62 @@ namespace System_Constructor
         {
 
         }
+
+        private void buttonCancelProc_Click(object sender, EventArgs e)
+        {
+            Config.CPU = null;
+            labelProcessor.Text = "Не выбрано";
+            RefreshDataGridView();
+        }
+
+        private void buttonCancelVCard_Click(object sender, EventArgs e)
+        {
+            Config.VideoCard = null;
+            labelVCard.Text = "Не выбрано";
+            RefreshDataGridView();
+        }
+
+        private void buttonCancelSCard_Click(object sender, EventArgs e)
+        {
+            Config.SoundCard = null;
+            labelSCard.Text = "Не выбрано";
+            RefreshDataGridView();
+        }
+
+        private void buttonCancelMotherboard_Click(object sender, EventArgs e)
+        {
+            Config.MBoard = null;
+            labelMotherboard.Text = "Не выбрано";
+            RefreshDataGridView();
+        }
+
+        private void buttonCancelPowerUnit_Click(object sender, EventArgs e)
+        {
+            Config.Power = null;
+            labelPowerUnit.Text = "Не выбрано";
+            RefreshDataGridView();
+        }
+
+        private void buttonCancelCooler_Click(object sender, EventArgs e)
+        {
+            Config.Cooler = null;
+            labelCooler.Text = "Не выбрано";
+            RefreshDataGridView();
+        }
+
+        private void buttonCancelROM_Click(object sender, EventArgs e)
+        {
+            Config.ROM = null;
+            labelROM.Text = "Не выбрано";
+            RefreshDataGridView();
+        }
+
+        private void buttonCancelHardDisk_Click(object sender, EventArgs e)
+        {
+            Config.HardDisk = null;
+            labelHardDisc.Text = "Не выбрано";
+            RefreshDataGridView();
+        }
+        
     }
 }
