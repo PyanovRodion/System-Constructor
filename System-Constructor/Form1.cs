@@ -15,11 +15,14 @@ namespace System_Constructor
     {
         public Database_Computer_PartsDataSet dbc;
         public Configuration Config;
+        BindingSource motherBoardBindingSource = new BindingSource();
+        BindingSource ProcessorBindingSource = new BindingSource();
+        public int price { get; set; }
+
         public FormSystemConstructor()
         {
 
             InitializeComponent();  
-            //dbc=new Database_Computer_PartsDataSet();
             Config = new Configuration();
             dbc = database_Computer_PartsDataSet;
 
@@ -41,28 +44,7 @@ namespace System_Constructor
 
         }
 
-        private void buttonSelectProc_Click(object sender, EventArgs e)
-        {
-            Processor proc = new Processor();
-            proc.Developer = dataGridViewProcessor.SelectedRows[0].Cells[1].Value.ToString();
-            proc.Name = dataGridViewProcessor.SelectedRows[0].Cells[2].Value.ToString();
-            proc.Cost = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[3].Value.ToString());
-            proc.Frequency = (int)dataGridViewProcessor.SelectedRows[0].Cells[4].Value;
-            proc.NumberOfCores = (int)dataGridViewProcessor.SelectedRows[0].Cells[5].Value;
-            proc.Socket = dataGridViewProcessor.SelectedRows[0].Cells[6].Value.ToString();
-            proc.Core = dataGridViewProcessor.SelectedRows[0].Cells[7].Value.ToString();
-            proc.MultiplierAccess = (bool)dataGridViewProcessor.SelectedRows[0].Cells[8].Value;
-            proc.CashL1 = (int)dataGridViewProcessor.SelectedRows[0].Cells[9].Value;
-            proc.CashL2 = (int)dataGridViewProcessor.SelectedRows[0].Cells[10].Value;
-            proc.CashL3 = (int)dataGridViewProcessor.SelectedRows[0].Cells[11].Value;
-            
-            proc.MultiplierNumber = (int)dataGridViewProcessor.SelectedRows[0].Cells[13].Value;
-            proc.Temprature = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[14].Value.ToString());
-            Config.CPU = proc;
-            labelProcessor.Text = proc.Name;
-            RefreshDataGridView();
 
-        }
 
         private void FormSystemConstructor_Load(object sender, EventArgs e)
         {
@@ -88,19 +70,11 @@ namespace System_Constructor
             this.видео_картыTableAdapter.Fill(this.database_Computer_PartsDataSet.Видео_карты);
 
         }
-
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        BindingSource motherBoardBindingSource = new BindingSource();
-        BindingSource ProcessorBindingSource = new BindingSource();
 
         public void RefreshDataGridView()
         {
@@ -114,12 +88,11 @@ namespace System_Constructor
                 try
                 {
                     //dataGridViewMotherboard.AutoGenerateColumns=true;
-
                     //var request = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket));
                     //motherBoardBindingSource.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket) || Config.CPU == null);
                     //dataGridViewMotherboard.DataSource = motherBoardBindingSource;
 
-                    dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Where(m => m.Socket.Equals(Config.CPU.Socket)).CopyToDataTable();
+                    dataGridViewMotherboard.DataSource = dbc.Материнские_платы.Where(m => (m.Socket.Equals(Config.CPU.Socket))).CopyToDataTable();
                 }
                 catch { }
             }
@@ -137,18 +110,34 @@ namespace System_Constructor
                 }
                 catch { }
             }
-            //dataGridViewCooler.DataSource = 
-            //dataGridViewHardDisk.DataSource = HarddrivesTable;
-            //dataGridViewPowerUnit.DataSource = BlockpitTable;
-            //dataGridViewSCard.DataSource = ZvukKartaTable;
-            //dataGridViewVCard.DataSource = VideoKardsTable;
+            labelPrice.Text = price.ToString();
         }
 
-        private void dataGridViewROM_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //------------------------------------------------------------------Selections
+
+        private void buttonSelectProc_Click(object sender, EventArgs e)
         {
+            Processor proc = new Processor();
+            proc.Developer = dataGridViewProcessor.SelectedRows[0].Cells[1].Value.ToString();
+            proc.Name = dataGridViewProcessor.SelectedRows[0].Cells[2].Value.ToString();
+            proc.Cost = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[3].Value.ToString());
+            proc.Frequency = (int)dataGridViewProcessor.SelectedRows[0].Cells[4].Value;
+            proc.NumberOfCores = (int)dataGridViewProcessor.SelectedRows[0].Cells[5].Value;
+            proc.Socket = dataGridViewProcessor.SelectedRows[0].Cells[6].Value.ToString();
+            proc.Core = dataGridViewProcessor.SelectedRows[0].Cells[7].Value.ToString();
+            proc.MultiplierAccess = (bool)dataGridViewProcessor.SelectedRows[0].Cells[8].Value;
+            proc.CashL1 = (int)dataGridViewProcessor.SelectedRows[0].Cells[9].Value;
+            proc.CashL2 = (int)dataGridViewProcessor.SelectedRows[0].Cells[10].Value;
+            proc.CashL3 = (int)dataGridViewProcessor.SelectedRows[0].Cells[11].Value;
+
+            proc.MultiplierNumber = (int)dataGridViewProcessor.SelectedRows[0].Cells[13].Value;
+            proc.Temprature = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[14].Value.ToString());
+            Config.CPU = proc;
+            labelProcessor.Text = proc.Name;
+            price += proc.Cost;
+            RefreshDataGridView();
 
         }
-
         private void buttonSelectMotherboard_Click(object sender, EventArgs e)
         {            
             Motherboard mb = new Motherboard();
@@ -174,6 +163,7 @@ namespace System_Constructor
             mb.DVI = (bool)dataGridViewMotherboard.SelectedRows[0].Cells[20].Value;
             Config.MBoard = mb;
             labelMotherboard.Text = mb.Name;
+            price += mb.Cost;
             RefreshDataGridView();
         }
         private void buttonSelectVCard_Click(object sender, EventArgs e)
@@ -196,9 +186,9 @@ namespace System_Constructor
             vc.Resolution = dataGridViewVCard.SelectedRows[0].Cells[15].Value.ToString();
             Config.VideoCard = vc;
             labelVCard.Text = vc.Name;
-            //RefreshDataGridView();
+            price += vc.Cost;
+            RefreshDataGridView();
         }
-
         private void buttonSelectSCard_Click(object sender, EventArgs e)
         {
             SCard sc = new SCard();
@@ -214,8 +204,9 @@ namespace System_Constructor
             sc.InChanelsNumber = (int)dataGridViewSCard.SelectedRows[0].Cells[10].Value;
             Config.SoundCard = sc;
             labelSCard.Text = sc.Name;
+            price += sc.Cost;
+            RefreshDataGridView();
          }
-
         private void buttonSelectPowerUnit_Click(object sender, EventArgs e)
         {
             PowerUnit pu = new PowerUnit();
@@ -235,8 +226,9 @@ namespace System_Constructor
             pu.ShortCircuit = (bool)dataGridViewPowerUnit.SelectedRows[0].Cells[14].Value;
             Config.Power = pu;
             labelPowerUnit.Text = pu.Name;
+            price += pu.Cost;
+            RefreshDataGridView();
         }
-
         private void buttonSelectCooler_Click(object sender, EventArgs e)
         {
             Cooler c = new Cooler();
@@ -250,8 +242,9 @@ namespace System_Constructor
             c.Socket = dataGridViewCooler.SelectedRows[0].Cells[8].Value.ToString();
             Config.Cooler = c;
             labelCooler.Text = c.Name;
+            price += c.Cost;
+            RefreshDataGridView();
         }
-
         private void buttonSelectROM_Click(object sender, EventArgs e)
         {
             ROM r = new ROM();
@@ -263,9 +256,10 @@ namespace System_Constructor
             r.NumberOfBlocks = int.Parse(dataGridViewROM.SelectedRows[0].Cells[6].Value.ToString());
             r.BlockVolume = int.Parse(dataGridViewROM.SelectedRows[0].Cells[7].Value.ToString());
             Config.ROM = r;
+            price += r.Cost;
             labelROM.Text = r.Developer+" "+r.Name;
+            RefreshDataGridView();
         }
-
         private void buttonSelectHardDisk_Click(object sender, EventArgs e)
         {
             HardDisk hd = new HardDisk();
@@ -286,65 +280,65 @@ namespace System_Constructor
             int.TryParse(dataGridViewHardDisk.SelectedRows[0].Cells[15].Value.ToString(), out hd.ReadSpeed);
             int.TryParse(dataGridViewHardDisk.SelectedRows[0].Cells[16].Value.ToString(), out hd.WriteSpeed);
             Config.HardDisk = hd;
+            price += hd.Cost;
             labelHardDisc.Text = hd.Developer + " " + hd.Name;
+            RefreshDataGridView();
         }
 
-        private void tabControl_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
+        //------------------------------------------------------------------Cancellations
 
         private void buttonCancelProc_Click(object sender, EventArgs e)
         {
+            price -= Config.CPU.Cost;
             Config.CPU = null;
             labelProcessor.Text = "Не выбрано";
             RefreshDataGridView();
         }
-
         private void buttonCancelVCard_Click(object sender, EventArgs e)
         {
+            price -= Config.VideoCard.Cost;
             Config.VideoCard = null;
             labelVCard.Text = "Не выбрано";
             RefreshDataGridView();
         }
-
         private void buttonCancelSCard_Click(object sender, EventArgs e)
         {
+            price -= Config.SoundCard.Cost;
             Config.SoundCard = null;
             labelSCard.Text = "Не выбрано";
             RefreshDataGridView();
         }
-
         private void buttonCancelMotherboard_Click(object sender, EventArgs e)
         {
+            price -= Config.MBoard.Cost;
             Config.MBoard = null;
             labelMotherboard.Text = "Не выбрано";
             RefreshDataGridView();
         }
-
         private void buttonCancelPowerUnit_Click(object sender, EventArgs e)
         {
+            price -= Config.Power.Cost;
             Config.Power = null;
             labelPowerUnit.Text = "Не выбрано";
             RefreshDataGridView();
         }
-
         private void buttonCancelCooler_Click(object sender, EventArgs e)
         {
+            price -= Config.Cooler.Cost;
             Config.Cooler = null;
             labelCooler.Text = "Не выбрано";
             RefreshDataGridView();
         }
-
         private void buttonCancelROM_Click(object sender, EventArgs e)
         {
+            price -= Config.ROM.Cost;
             Config.ROM = null;
             labelROM.Text = "Не выбрано";
             RefreshDataGridView();
         }
-
         private void buttonCancelHardDisk_Click(object sender, EventArgs e)
         {
+            price -= Config.HardDisk.Cost;
             Config.HardDisk = null;
             labelHardDisc.Text = "Не выбрано";
             RefreshDataGridView();

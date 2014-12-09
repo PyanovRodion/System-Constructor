@@ -214,6 +214,9 @@
             this.ошибки_вставкиTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Ошибки_вставкиTableAdapter();
             this.жесткие_диски_и_сетевые_накопителиTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Жесткие_диски_и_сетевые_накопителиTableAdapter();
             this.оперативная_памятьTableAdapter = new System_Constructor.Database_Computer_PartsDataSetTableAdapters.Оперативная_памятьTableAdapter();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.labelPrice = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPageProcessor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProcessor)).BeginInit();
@@ -258,7 +261,6 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(696, 377);
             this.tabControl.TabIndex = 0;
-            this.tabControl.SelectedIndexChanged += new System.EventHandler(this.tabControl_SelectedIndexChanged_1);
             // 
             // tabPageProcessor
             // 
@@ -1758,6 +1760,38 @@
             // 
             this.оперативная_памятьTableAdapter.ClearBeforeFill = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(462, 405);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(143, 16);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Стоимость корзины: ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(680, 407);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(24, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "руб";
+            // 
+            // labelPrice
+            // 
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelPrice.Location = new System.Drawing.Point(632, 405);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(15, 16);
+            this.labelPrice.TabIndex = 22;
+            this.labelPrice.Text = "0";
+            // 
             // FormSystemConstructor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1766,6 +1800,9 @@
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(1087, 430);
             this.ControlBox = false;
+            this.Controls.Add(this.labelPrice);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonSendOrder);
             this.Controls.Add(this.labelHardDisc);
@@ -1906,8 +1943,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ценаDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn типВидеоКартыDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn типПодключенияDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn разработчикВидеопроцессораDataGridViewTextBoxColumn; 
-        private System.Windows.Forms.DataGridViewTextBoxColumn линейкаDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn названиеВидеопроцессораDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn количествоВидеопроцессоровDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn частотаПамятиDataGridViewTextBoxColumn;
@@ -1917,8 +1952,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn количествоВыходовDVIIDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn поддержкаHDCPDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn количествоВыходовHDMIDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn tVoutDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn встроенныйTVтюнерDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn максимальноеРазрешениеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn кодDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn производительDataGridViewTextBoxColumn2;
@@ -2013,6 +2046,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn формфакторDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn количествоМодулейВКомплектеDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn объемОдногоМодуляDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelPrice;
     }
 }
 
