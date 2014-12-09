@@ -143,7 +143,7 @@ namespace System_Constructor
             proc.Temprature = int.Parse(dataGridViewProcessor.SelectedRows[0].Cells[14].Value.ToString());
             Config.CPU = proc;
             labelProcessor.Text = proc.Name;
-            price += proc.Cost;
+            RefreshPrice();
             RefreshDataGridView();
 
         }
@@ -172,7 +172,7 @@ namespace System_Constructor
             mb.DVI = (bool)dataGridViewMotherboard.SelectedRows[0].Cells[20].Value;
             Config.MBoard = mb;
             labelMotherboard.Text = mb.Name;
-            price += mb.Cost;
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonSelectVCard_Click(object sender, EventArgs e)
@@ -195,7 +195,7 @@ namespace System_Constructor
             vc.Resolution = dataGridViewVCard.SelectedRows[0].Cells[15].Value.ToString();
             Config.VideoCard = vc;
             labelVCard.Text = vc.Name;
-            price += vc.Cost;
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonSelectSCard_Click(object sender, EventArgs e)
@@ -213,7 +213,7 @@ namespace System_Constructor
             sc.InChanelsNumber = (int)dataGridViewSCard.SelectedRows[0].Cells[10].Value;
             Config.SoundCard = sc;
             labelSCard.Text = sc.Name;
-            price += sc.Cost;
+            RefreshPrice();
             RefreshDataGridView();
          }
         private void buttonSelectPowerUnit_Click(object sender, EventArgs e)
@@ -235,7 +235,7 @@ namespace System_Constructor
             pu.ShortCircuit = (bool)dataGridViewPowerUnit.SelectedRows[0].Cells[14].Value;
             Config.Power = pu;
             labelPowerUnit.Text = pu.Name;
-            price += pu.Cost;
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonSelectCooler_Click(object sender, EventArgs e)
@@ -251,7 +251,7 @@ namespace System_Constructor
             c.Socket = dataGridViewCooler.SelectedRows[0].Cells[8].Value.ToString();
             Config.Cooler = c;
             labelCooler.Text = c.Name;
-            price += c.Cost;
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonSelectROM_Click(object sender, EventArgs e)
@@ -265,7 +265,7 @@ namespace System_Constructor
             r.NumberOfBlocks = int.Parse(dataGridViewROM.SelectedRows[0].Cells[6].Value.ToString());
             r.BlockVolume = int.Parse(dataGridViewROM.SelectedRows[0].Cells[7].Value.ToString());
             Config.ROM = r;
-            price += r.Cost;
+            RefreshPrice();
             labelROM.Text = r.Developer+" "+r.Name;
             RefreshDataGridView();
         }
@@ -289,7 +289,7 @@ namespace System_Constructor
             int.TryParse(dataGridViewHardDisk.SelectedRows[0].Cells[15].Value.ToString(), out hd.ReadSpeed);
             int.TryParse(dataGridViewHardDisk.SelectedRows[0].Cells[16].Value.ToString(), out hd.WriteSpeed);
             Config.HardDisk = hd;
-            price += hd.Cost;
+            RefreshPrice();
             labelHardDisc.Text = hd.Developer + " " + hd.Name;
             RefreshDataGridView();
         }
@@ -298,58 +298,58 @@ namespace System_Constructor
 
         private void buttonCancelProc_Click(object sender, EventArgs e)
         {
-            price -= Config.CPU.Cost;
             Config.CPU = null;
             labelProcessor.Text = "Не выбрано";
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonCancelVCard_Click(object sender, EventArgs e)
         {
-            price -= Config.VideoCard.Cost;
             Config.VideoCard = null;
             labelVCard.Text = "Не выбрано";
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonCancelSCard_Click(object sender, EventArgs e)
         {
-            price -= Config.SoundCard.Cost;
             Config.SoundCard = null;
             labelSCard.Text = "Не выбрано";
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonCancelMotherboard_Click(object sender, EventArgs e)
         {
-            price -= Config.MBoard.Cost;
             Config.MBoard = null;
             labelMotherboard.Text = "Не выбрано";
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonCancelPowerUnit_Click(object sender, EventArgs e)
         {
-            price -= Config.Power.Cost;
             Config.Power = null;
             labelPowerUnit.Text = "Не выбрано";
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonCancelCooler_Click(object sender, EventArgs e)
         {
-            price -= Config.Cooler.Cost;
             Config.Cooler = null;
             labelCooler.Text = "Не выбрано";
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonCancelROM_Click(object sender, EventArgs e)
         {
-            price -= Config.ROM.Cost;
             Config.ROM = null;
             labelROM.Text = "Не выбрано";
+            RefreshPrice();
             RefreshDataGridView();
         }
         private void buttonCancelHardDisk_Click(object sender, EventArgs e)
         {
-            price -= Config.HardDisk.Cost;
             Config.HardDisk = null;
             labelHardDisc.Text = "Не выбрано";
+            RefreshPrice();
             RefreshDataGridView();
         }
 
@@ -361,6 +361,19 @@ namespace System_Constructor
                 sof.ShowDialog();      
            }
             else { MessageBox.Show("Не до конца указана комплектация.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+
+        public void RefreshPrice()
+        {
+            price = 0;
+            if (Config.CPU != null) price += Config.CPU.Cost;
+            if (Config.MBoard != null) price += Config.MBoard.Cost;
+            if (Config.Power != null) price += Config.Power.Cost;
+            if (Config.SoundCard != null) price += Config.SoundCard.Cost;
+            if (Config.VideoCard != null) price += Config.VideoCard.Cost;
+            if (Config.ROM != null) price += Config.ROM.Cost;
+            if (Config.HardDisk != null) price += Config.CPU.Cost;
+            if (Config.Cooler!= null) price += Config.CPU.Cost;
         }
         
     }
