@@ -111,14 +111,14 @@ namespace System_Constructor
                 }
                 catch { }
             }
-            if (Config.MBoard == null)
-            {
-                dataGridViewROM.DataSource = dbc.Оперативная_память.CopyToDataTable();
-            }
-            else
-            {
-                dataGridViewROM.DataSource = dbc.Оперативная_память.Where(r => Config.MBoard.MemoryType.Contains(r.Тип)).CopyToDataTable();
-            }
+            //if (Config.MBoard == null)
+            //{
+            //    dataGridViewROM.DataSource = dbc.Оперативная_память.CopyToDataTable();
+            //}
+            //else
+            //{
+            //    dataGridViewROM.DataSource = dbc.Оперативная_память.Where(r => Config.MBoard.MemoryType.Contains(r.Тип)).CopyToDataTable();
+            //}
             labelPrice.Text = price.ToString();
         }
 
@@ -372,8 +372,8 @@ namespace System_Constructor
             if (Config.SoundCard != null) price += Config.SoundCard.Cost;
             if (Config.VideoCard != null) price += Config.VideoCard.Cost;
             if (Config.ROM != null) price += Config.ROM.Cost;
-            if (Config.HardDisk != null) price += Config.CPU.Cost;
-            if (Config.Cooler!= null) price += Config.CPU.Cost;
+            if (Config.HardDisk != null) price += Config.HardDisk.Cost;
+            if (Config.Cooler!= null) price += Config.Cooler.Cost;
         }
         
     }
