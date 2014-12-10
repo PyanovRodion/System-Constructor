@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSystemConstructor));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageProcessor = new System.Windows.Forms.TabPage();
             this.buttonCancelProc = new System.Windows.Forms.Button();
@@ -264,10 +265,11 @@
             // 
             // tabPageProcessor
             // 
-            this.tabPageProcessor.BackColor = System.Drawing.Color.PeachPuff;
+            this.tabPageProcessor.BackColor = System.Drawing.Color.Black;
             this.tabPageProcessor.Controls.Add(this.buttonCancelProc);
             this.tabPageProcessor.Controls.Add(this.buttonSelectProc);
             this.tabPageProcessor.Controls.Add(this.dataGridViewProcessor);
+            this.tabPageProcessor.ForeColor = System.Drawing.Color.Black;
             this.tabPageProcessor.Location = new System.Drawing.Point(4, 22);
             this.tabPageProcessor.Name = "tabPageProcessor";
             this.tabPageProcessor.Padding = new System.Windows.Forms.Padding(3);
@@ -277,7 +279,8 @@
             // 
             // buttonCancelProc
             // 
-            this.buttonCancelProc.BackColor = System.Drawing.Color.Linen;
+            this.buttonCancelProc.BackColor = System.Drawing.Color.MintCream;
+            this.buttonCancelProc.ForeColor = System.Drawing.Color.Black;
             this.buttonCancelProc.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelProc.Name = "buttonCancelProc";
             this.buttonCancelProc.Size = new System.Drawing.Size(182, 23);
@@ -288,7 +291,8 @@
             // 
             // buttonSelectProc
             // 
-            this.buttonSelectProc.BackColor = System.Drawing.Color.Linen;
+            this.buttonSelectProc.BackColor = System.Drawing.Color.MintCream;
+            this.buttonSelectProc.ForeColor = System.Drawing.Color.Black;
             this.buttonSelectProc.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectProc.Name = "buttonSelectProc";
             this.buttonSelectProc.Size = new System.Drawing.Size(182, 23);
@@ -304,7 +308,7 @@
             this.dataGridViewProcessor.AllowUserToResizeColumns = false;
             this.dataGridViewProcessor.AllowUserToResizeRows = false;
             this.dataGridViewProcessor.AutoGenerateColumns = false;
-            this.dataGridViewProcessor.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dataGridViewProcessor.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridViewProcessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProcessor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn,
@@ -448,10 +452,11 @@
             // 
             // tabPageVCard
             // 
-            this.tabPageVCard.BackColor = System.Drawing.Color.PeachPuff;
+            this.tabPageVCard.BackColor = System.Drawing.Color.Black;
             this.tabPageVCard.Controls.Add(this.buttonSelectVCard);
             this.tabPageVCard.Controls.Add(this.buttonCancelVCard);
             this.tabPageVCard.Controls.Add(this.dataGridViewVCard);
+            this.tabPageVCard.ForeColor = System.Drawing.Color.Black;
             this.tabPageVCard.Location = new System.Drawing.Point(4, 22);
             this.tabPageVCard.Name = "tabPageVCard";
             this.tabPageVCard.Padding = new System.Windows.Forms.Padding(3);
@@ -461,7 +466,7 @@
             // 
             // buttonSelectVCard
             // 
-            this.buttonSelectVCard.BackColor = System.Drawing.Color.Linen;
+            this.buttonSelectVCard.BackColor = System.Drawing.Color.MintCream;
             this.buttonSelectVCard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectVCard.Name = "buttonSelectVCard";
             this.buttonSelectVCard.Size = new System.Drawing.Size(182, 23);
@@ -472,7 +477,7 @@
             // 
             // buttonCancelVCard
             // 
-            this.buttonCancelVCard.BackColor = System.Drawing.Color.Linen;
+            this.buttonCancelVCard.BackColor = System.Drawing.Color.MintCream;
             this.buttonCancelVCard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelVCard.Name = "buttonCancelVCard";
             this.buttonCancelVCard.Size = new System.Drawing.Size(182, 23);
@@ -488,7 +493,7 @@
             this.dataGridViewVCard.AllowUserToResizeColumns = false;
             this.dataGridViewVCard.AllowUserToResizeRows = false;
             this.dataGridViewVCard.AutoGenerateColumns = false;
-            this.dataGridViewVCard.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dataGridViewVCard.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridViewVCard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVCard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn1,
@@ -635,10 +640,11 @@
             // 
             // tabPageSCard
             // 
-            this.tabPageSCard.BackColor = System.Drawing.Color.PeachPuff;
+            this.tabPageSCard.BackColor = System.Drawing.Color.Black;
             this.tabPageSCard.Controls.Add(this.buttonSelectSCard);
             this.tabPageSCard.Controls.Add(this.buttonCancelSCard);
             this.tabPageSCard.Controls.Add(this.dataGridViewSCard);
+            this.tabPageSCard.ForeColor = System.Drawing.Color.Black;
             this.tabPageSCard.Location = new System.Drawing.Point(4, 22);
             this.tabPageSCard.Name = "tabPageSCard";
             this.tabPageSCard.Padding = new System.Windows.Forms.Padding(3);
@@ -648,7 +654,7 @@
             // 
             // buttonSelectSCard
             // 
-            this.buttonSelectSCard.BackColor = System.Drawing.Color.Linen;
+            this.buttonSelectSCard.BackColor = System.Drawing.Color.MintCream;
             this.buttonSelectSCard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectSCard.Name = "buttonSelectSCard";
             this.buttonSelectSCard.Size = new System.Drawing.Size(182, 23);
@@ -659,7 +665,7 @@
             // 
             // buttonCancelSCard
             // 
-            this.buttonCancelSCard.BackColor = System.Drawing.Color.Linen;
+            this.buttonCancelSCard.BackColor = System.Drawing.Color.MintCream;
             this.buttonCancelSCard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelSCard.Name = "buttonCancelSCard";
             this.buttonCancelSCard.Size = new System.Drawing.Size(182, 23);
@@ -675,7 +681,7 @@
             this.dataGridViewSCard.AllowUserToResizeColumns = false;
             this.dataGridViewSCard.AllowUserToResizeRows = false;
             this.dataGridViewSCard.AutoGenerateColumns = false;
-            this.dataGridViewSCard.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dataGridViewSCard.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridViewSCard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSCard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn2,
@@ -782,10 +788,11 @@
             // 
             // tabPageMotherboard
             // 
-            this.tabPageMotherboard.BackColor = System.Drawing.Color.PeachPuff;
+            this.tabPageMotherboard.BackColor = System.Drawing.Color.Black;
             this.tabPageMotherboard.Controls.Add(this.buttonSelectMotherboard);
             this.tabPageMotherboard.Controls.Add(this.buttonCancelMotherboard);
             this.tabPageMotherboard.Controls.Add(this.dataGridViewMotherboard);
+            this.tabPageMotherboard.ForeColor = System.Drawing.Color.Black;
             this.tabPageMotherboard.Location = new System.Drawing.Point(4, 22);
             this.tabPageMotherboard.Name = "tabPageMotherboard";
             this.tabPageMotherboard.Padding = new System.Windows.Forms.Padding(3);
@@ -795,7 +802,7 @@
             // 
             // buttonSelectMotherboard
             // 
-            this.buttonSelectMotherboard.BackColor = System.Drawing.Color.Linen;
+            this.buttonSelectMotherboard.BackColor = System.Drawing.Color.MintCream;
             this.buttonSelectMotherboard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectMotherboard.Name = "buttonSelectMotherboard";
             this.buttonSelectMotherboard.Size = new System.Drawing.Size(182, 23);
@@ -806,7 +813,7 @@
             // 
             // buttonCancelMotherboard
             // 
-            this.buttonCancelMotherboard.BackColor = System.Drawing.Color.Linen;
+            this.buttonCancelMotherboard.BackColor = System.Drawing.Color.MintCream;
             this.buttonCancelMotherboard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelMotherboard.Name = "buttonCancelMotherboard";
             this.buttonCancelMotherboard.Size = new System.Drawing.Size(182, 23);
@@ -822,7 +829,7 @@
             this.dataGridViewMotherboard.AllowUserToResizeColumns = false;
             this.dataGridViewMotherboard.AllowUserToResizeRows = false;
             this.dataGridViewMotherboard.AutoGenerateColumns = false;
-            this.dataGridViewMotherboard.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dataGridViewMotherboard.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridViewMotherboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMotherboard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn3,
@@ -1009,10 +1016,11 @@
             // 
             // tabPagePowerUnit
             // 
-            this.tabPagePowerUnit.BackColor = System.Drawing.Color.PeachPuff;
+            this.tabPagePowerUnit.BackColor = System.Drawing.Color.Black;
             this.tabPagePowerUnit.Controls.Add(this.buttonSelectPowerUnit);
             this.tabPagePowerUnit.Controls.Add(this.buttonCancelPowerUnit);
             this.tabPagePowerUnit.Controls.Add(this.dataGridViewPowerUnit);
+            this.tabPagePowerUnit.ForeColor = System.Drawing.Color.Black;
             this.tabPagePowerUnit.Location = new System.Drawing.Point(4, 22);
             this.tabPagePowerUnit.Name = "tabPagePowerUnit";
             this.tabPagePowerUnit.Padding = new System.Windows.Forms.Padding(3);
@@ -1022,7 +1030,7 @@
             // 
             // buttonSelectPowerUnit
             // 
-            this.buttonSelectPowerUnit.BackColor = System.Drawing.Color.Linen;
+            this.buttonSelectPowerUnit.BackColor = System.Drawing.Color.MintCream;
             this.buttonSelectPowerUnit.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectPowerUnit.Name = "buttonSelectPowerUnit";
             this.buttonSelectPowerUnit.Size = new System.Drawing.Size(182, 23);
@@ -1033,7 +1041,7 @@
             // 
             // buttonCancelPowerUnit
             // 
-            this.buttonCancelPowerUnit.BackColor = System.Drawing.Color.Linen;
+            this.buttonCancelPowerUnit.BackColor = System.Drawing.Color.MintCream;
             this.buttonCancelPowerUnit.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelPowerUnit.Name = "buttonCancelPowerUnit";
             this.buttonCancelPowerUnit.Size = new System.Drawing.Size(182, 23);
@@ -1049,7 +1057,7 @@
             this.dataGridViewPowerUnit.AllowUserToResizeColumns = false;
             this.dataGridViewPowerUnit.AllowUserToResizeRows = false;
             this.dataGridViewPowerUnit.AutoGenerateColumns = false;
-            this.dataGridViewPowerUnit.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dataGridViewPowerUnit.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridViewPowerUnit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPowerUnit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn4,
@@ -1196,10 +1204,11 @@
             // 
             // tabPageCooler
             // 
-            this.tabPageCooler.BackColor = System.Drawing.Color.PeachPuff;
+            this.tabPageCooler.BackColor = System.Drawing.Color.Black;
             this.tabPageCooler.Controls.Add(this.buttonSelectCooler);
             this.tabPageCooler.Controls.Add(this.buttonCancelCooler);
             this.tabPageCooler.Controls.Add(this.dataGridViewCooler);
+            this.tabPageCooler.ForeColor = System.Drawing.Color.Black;
             this.tabPageCooler.Location = new System.Drawing.Point(4, 22);
             this.tabPageCooler.Name = "tabPageCooler";
             this.tabPageCooler.Padding = new System.Windows.Forms.Padding(3);
@@ -1209,7 +1218,7 @@
             // 
             // buttonSelectCooler
             // 
-            this.buttonSelectCooler.BackColor = System.Drawing.Color.Linen;
+            this.buttonSelectCooler.BackColor = System.Drawing.Color.MintCream;
             this.buttonSelectCooler.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectCooler.Name = "buttonSelectCooler";
             this.buttonSelectCooler.Size = new System.Drawing.Size(182, 23);
@@ -1220,7 +1229,7 @@
             // 
             // buttonCancelCooler
             // 
-            this.buttonCancelCooler.BackColor = System.Drawing.Color.Linen;
+            this.buttonCancelCooler.BackColor = System.Drawing.Color.MintCream;
             this.buttonCancelCooler.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelCooler.Name = "buttonCancelCooler";
             this.buttonCancelCooler.Size = new System.Drawing.Size(182, 23);
@@ -1236,7 +1245,7 @@
             this.dataGridViewCooler.AllowUserToResizeColumns = false;
             this.dataGridViewCooler.AllowUserToResizeRows = false;
             this.dataGridViewCooler.AutoGenerateColumns = false;
-            this.dataGridViewCooler.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dataGridViewCooler.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridViewCooler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCooler.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn5,
@@ -1327,10 +1336,11 @@
             // 
             // tabPageROM
             // 
-            this.tabPageROM.BackColor = System.Drawing.Color.PeachPuff;
+            this.tabPageROM.BackColor = System.Drawing.Color.Black;
             this.tabPageROM.Controls.Add(this.buttonSelectROM);
             this.tabPageROM.Controls.Add(this.buttonCancelROM);
             this.tabPageROM.Controls.Add(this.dataGridViewROM);
+            this.tabPageROM.ForeColor = System.Drawing.Color.Black;
             this.tabPageROM.Location = new System.Drawing.Point(4, 22);
             this.tabPageROM.Name = "tabPageROM";
             this.tabPageROM.Padding = new System.Windows.Forms.Padding(3);
@@ -1340,7 +1350,7 @@
             // 
             // buttonSelectROM
             // 
-            this.buttonSelectROM.BackColor = System.Drawing.Color.Linen;
+            this.buttonSelectROM.BackColor = System.Drawing.Color.MintCream;
             this.buttonSelectROM.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectROM.Name = "buttonSelectROM";
             this.buttonSelectROM.Size = new System.Drawing.Size(182, 23);
@@ -1351,7 +1361,7 @@
             // 
             // buttonCancelROM
             // 
-            this.buttonCancelROM.BackColor = System.Drawing.Color.Linen;
+            this.buttonCancelROM.BackColor = System.Drawing.Color.MintCream;
             this.buttonCancelROM.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelROM.Name = "buttonCancelROM";
             this.buttonCancelROM.Size = new System.Drawing.Size(182, 23);
@@ -1367,7 +1377,7 @@
             this.dataGridViewROM.AllowUserToResizeColumns = false;
             this.dataGridViewROM.AllowUserToResizeRows = false;
             this.dataGridViewROM.AutoGenerateColumns = false;
-            this.dataGridViewROM.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dataGridViewROM.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridViewROM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewROM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn7,
@@ -1450,7 +1460,7 @@
             // 
             // tabPageHardDisk
             // 
-            this.tabPageHardDisk.BackColor = System.Drawing.Color.PeachPuff;
+            this.tabPageHardDisk.BackColor = System.Drawing.Color.Black;
             this.tabPageHardDisk.Controls.Add(this.buttonSelectHardDisk);
             this.tabPageHardDisk.Controls.Add(this.buttonCancelHardDisk);
             this.tabPageHardDisk.Controls.Add(this.dataGridViewHardDisk);
@@ -1463,7 +1473,8 @@
             // 
             // buttonSelectHardDisk
             // 
-            this.buttonSelectHardDisk.BackColor = System.Drawing.Color.Linen;
+            this.buttonSelectHardDisk.BackColor = System.Drawing.Color.MintCream;
+            this.buttonSelectHardDisk.ForeColor = System.Drawing.Color.Black;
             this.buttonSelectHardDisk.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectHardDisk.Name = "buttonSelectHardDisk";
             this.buttonSelectHardDisk.Size = new System.Drawing.Size(182, 23);
@@ -1474,7 +1485,8 @@
             // 
             // buttonCancelHardDisk
             // 
-            this.buttonCancelHardDisk.BackColor = System.Drawing.Color.Linen;
+            this.buttonCancelHardDisk.BackColor = System.Drawing.Color.MintCream;
+            this.buttonCancelHardDisk.ForeColor = System.Drawing.Color.Black;
             this.buttonCancelHardDisk.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelHardDisk.Name = "buttonCancelHardDisk";
             this.buttonCancelHardDisk.Size = new System.Drawing.Size(182, 23);
@@ -1490,7 +1502,7 @@
             this.dataGridViewHardDisk.AllowUserToResizeColumns = false;
             this.dataGridViewHardDisk.AllowUserToResizeRows = false;
             this.dataGridViewHardDisk.AutoGenerateColumns = false;
-            this.dataGridViewHardDisk.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dataGridViewHardDisk.BackgroundColor = System.Drawing.Color.MintCream;
             this.dataGridViewHardDisk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHardDisk.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.кодDataGridViewTextBoxColumn6,
@@ -1659,6 +1671,8 @@
             // labelConfig
             // 
             this.labelConfig.AutoSize = true;
+            this.labelConfig.BackColor = System.Drawing.Color.Black;
+            this.labelConfig.ForeColor = System.Drawing.Color.Turquoise;
             this.labelConfig.Location = new System.Drawing.Point(799, 21);
             this.labelConfig.Name = "labelConfig";
             this.labelConfig.Size = new System.Drawing.Size(145, 13);
@@ -1668,6 +1682,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.Turquoise;
             this.label1.Location = new System.Drawing.Point(757, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
@@ -1677,6 +1693,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.Turquoise;
             this.label2.Location = new System.Drawing.Point(757, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
@@ -1686,6 +1704,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.ForeColor = System.Drawing.Color.Turquoise;
             this.label3.Location = new System.Drawing.Point(757, 143);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 13);
@@ -1695,6 +1715,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.ForeColor = System.Drawing.Color.Turquoise;
             this.label4.Location = new System.Drawing.Point(757, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 13);
@@ -1704,6 +1726,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.ForeColor = System.Drawing.Color.Turquoise;
             this.label5.Location = new System.Drawing.Point(757, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
@@ -1713,6 +1737,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.ForeColor = System.Drawing.Color.Turquoise;
             this.label6.Location = new System.Drawing.Point(757, 255);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
@@ -1722,6 +1748,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.ForeColor = System.Drawing.Color.Turquoise;
             this.label7.Location = new System.Drawing.Point(757, 292);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(117, 13);
@@ -1731,6 +1759,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Black;
+            this.label8.ForeColor = System.Drawing.Color.Turquoise;
             this.label8.Location = new System.Drawing.Point(757, 330);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(83, 13);
@@ -1740,6 +1770,8 @@
             // labelProcessor
             // 
             this.labelProcessor.AutoSize = true;
+            this.labelProcessor.BackColor = System.Drawing.Color.Black;
+            this.labelProcessor.ForeColor = System.Drawing.Color.Turquoise;
             this.labelProcessor.Location = new System.Drawing.Point(876, 71);
             this.labelProcessor.Name = "labelProcessor";
             this.labelProcessor.Size = new System.Drawing.Size(68, 13);
@@ -1749,6 +1781,8 @@
             // labelVCard
             // 
             this.labelVCard.AutoSize = true;
+            this.labelVCard.BackColor = System.Drawing.Color.Black;
+            this.labelVCard.ForeColor = System.Drawing.Color.Turquoise;
             this.labelVCard.Location = new System.Drawing.Point(876, 106);
             this.labelVCard.Name = "labelVCard";
             this.labelVCard.Size = new System.Drawing.Size(68, 13);
@@ -1758,6 +1792,8 @@
             // labelSCard
             // 
             this.labelSCard.AutoSize = true;
+            this.labelSCard.BackColor = System.Drawing.Color.Black;
+            this.labelSCard.ForeColor = System.Drawing.Color.Turquoise;
             this.labelSCard.Location = new System.Drawing.Point(876, 143);
             this.labelSCard.Name = "labelSCard";
             this.labelSCard.Size = new System.Drawing.Size(68, 13);
@@ -1767,6 +1803,8 @@
             // labelMotherboard
             // 
             this.labelMotherboard.AutoSize = true;
+            this.labelMotherboard.BackColor = System.Drawing.Color.Black;
+            this.labelMotherboard.ForeColor = System.Drawing.Color.Turquoise;
             this.labelMotherboard.Location = new System.Drawing.Point(876, 179);
             this.labelMotherboard.Name = "labelMotherboard";
             this.labelMotherboard.Size = new System.Drawing.Size(68, 13);
@@ -1776,6 +1814,8 @@
             // labelPowerUnit
             // 
             this.labelPowerUnit.AutoSize = true;
+            this.labelPowerUnit.BackColor = System.Drawing.Color.Black;
+            this.labelPowerUnit.ForeColor = System.Drawing.Color.Turquoise;
             this.labelPowerUnit.Location = new System.Drawing.Point(876, 216);
             this.labelPowerUnit.Name = "labelPowerUnit";
             this.labelPowerUnit.Size = new System.Drawing.Size(68, 13);
@@ -1785,6 +1825,8 @@
             // labelCooler
             // 
             this.labelCooler.AutoSize = true;
+            this.labelCooler.BackColor = System.Drawing.Color.Black;
+            this.labelCooler.ForeColor = System.Drawing.Color.Turquoise;
             this.labelCooler.Location = new System.Drawing.Point(876, 255);
             this.labelCooler.Name = "labelCooler";
             this.labelCooler.Size = new System.Drawing.Size(68, 13);
@@ -1794,6 +1836,8 @@
             // labelROM
             // 
             this.labelROM.AutoSize = true;
+            this.labelROM.BackColor = System.Drawing.Color.Black;
+            this.labelROM.ForeColor = System.Drawing.Color.Turquoise;
             this.labelROM.Location = new System.Drawing.Point(876, 292);
             this.labelROM.Name = "labelROM";
             this.labelROM.Size = new System.Drawing.Size(68, 13);
@@ -1803,6 +1847,8 @@
             // labelHardDisc
             // 
             this.labelHardDisc.AutoSize = true;
+            this.labelHardDisc.BackColor = System.Drawing.Color.Black;
+            this.labelHardDisc.ForeColor = System.Drawing.Color.Turquoise;
             this.labelHardDisc.Location = new System.Drawing.Point(876, 330);
             this.labelHardDisc.Name = "labelHardDisc";
             this.labelHardDisc.Size = new System.Drawing.Size(68, 13);
@@ -1812,6 +1858,7 @@
             // buttonSendOrder
             // 
             this.buttonSendOrder.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.buttonSendOrder.ForeColor = System.Drawing.Color.Black;
             this.buttonSendOrder.Location = new System.Drawing.Point(760, 368);
             this.buttonSendOrder.Name = "buttonSendOrder";
             this.buttonSendOrder.Size = new System.Drawing.Size(204, 23);
@@ -1827,6 +1874,7 @@
             // buttonClose
             // 
             this.buttonClose.BackColor = System.Drawing.Color.Aquamarine;
+            this.buttonClose.ForeColor = System.Drawing.Color.Black;
             this.buttonClose.Location = new System.Drawing.Point(889, 397);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
@@ -1870,8 +1918,9 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Black;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.ForeColor = System.Drawing.Color.Turquoise;
             this.label9.Location = new System.Drawing.Point(462, 405);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(143, 16);
@@ -1881,7 +1930,8 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.BackColor = System.Drawing.Color.Black;
+            this.label10.ForeColor = System.Drawing.Color.Turquoise;
             this.label10.Location = new System.Drawing.Point(680, 407);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(24, 13);
@@ -1891,8 +1941,9 @@
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
+            this.labelPrice.BackColor = System.Drawing.Color.Black;
             this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelPrice.ForeColor = System.Drawing.Color.Turquoise;
             this.labelPrice.Location = new System.Drawing.Point(632, 405);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(15, 16);
@@ -1904,7 +1955,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1087, 430);
             this.ControlBox = false;
             this.Controls.Add(this.labelPrice);
@@ -1930,6 +1983,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelConfig);
             this.Controls.Add(this.tabControl);
+            this.ForeColor = System.Drawing.Color.Turquoise;
             this.Name = "FormSystemConstructor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Constructor";
