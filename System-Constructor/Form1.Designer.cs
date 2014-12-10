@@ -1464,6 +1464,7 @@
             this.tabPageHardDisk.Controls.Add(this.buttonSelectHardDisk);
             this.tabPageHardDisk.Controls.Add(this.buttonCancelHardDisk);
             this.tabPageHardDisk.Controls.Add(this.dataGridViewHardDisk);
+            this.tabPageHardDisk.ForeColor = System.Drawing.Color.Black;
             this.tabPageHardDisk.Location = new System.Drawing.Point(4, 22);
             this.tabPageHardDisk.Name = "tabPageHardDisk";
             this.tabPageHardDisk.Padding = new System.Windows.Forms.Padding(3);
