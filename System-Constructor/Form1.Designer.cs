@@ -511,6 +511,7 @@
             this.dataGridViewVCard.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewVCard.MultiSelect = false;
             this.dataGridViewVCard.Name = "dataGridViewVCard";
+            this.dataGridViewVCard.ReadOnly = true;
             this.dataGridViewVCard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewVCard.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewVCard.TabIndex = 0;
@@ -520,96 +521,112 @@
             this.кодDataGridViewTextBoxColumn1.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn1.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn1.Name = "кодDataGridViewTextBoxColumn1";
+            this.кодDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // производительDataGridViewTextBoxColumn1
             // 
             this.производительDataGridViewTextBoxColumn1.DataPropertyName = "Производитель";
             this.производительDataGridViewTextBoxColumn1.HeaderText = "Производитель";
             this.производительDataGridViewTextBoxColumn1.Name = "производительDataGridViewTextBoxColumn1";
+            this.производительDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // названиеDataGridViewTextBoxColumn1
             // 
             this.названиеDataGridViewTextBoxColumn1.DataPropertyName = "Название";
             this.названиеDataGridViewTextBoxColumn1.HeaderText = "Название";
             this.названиеDataGridViewTextBoxColumn1.Name = "названиеDataGridViewTextBoxColumn1";
+            this.названиеDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // ценаDataGridViewTextBoxColumn1
             // 
             this.ценаDataGridViewTextBoxColumn1.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn1.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn1.Name = "ценаDataGridViewTextBoxColumn1";
+            this.ценаDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // типВидеоКартыDataGridViewTextBoxColumn
             // 
             this.типВидеоКартыDataGridViewTextBoxColumn.DataPropertyName = "Тип видео карты";
             this.типВидеоКартыDataGridViewTextBoxColumn.HeaderText = "Тип видео карты";
             this.типВидеоКартыDataGridViewTextBoxColumn.Name = "типВидеоКартыDataGridViewTextBoxColumn";
+            this.типВидеоКартыDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // типПодключенияDataGridViewTextBoxColumn
             // 
             this.типПодключенияDataGridViewTextBoxColumn.DataPropertyName = "Тип подключения";
             this.типПодключенияDataGridViewTextBoxColumn.HeaderText = "Тип подключения";
             this.типПодключенияDataGridViewTextBoxColumn.Name = "типПодключенияDataGridViewTextBoxColumn";
+            this.типПодключенияDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // названиеВидеопроцессораDataGridViewTextBoxColumn
             // 
             this.названиеВидеопроцессораDataGridViewTextBoxColumn.DataPropertyName = "Название видеопроцессора";
             this.названиеВидеопроцессораDataGridViewTextBoxColumn.HeaderText = "Название видеопроцессора";
             this.названиеВидеопроцессораDataGridViewTextBoxColumn.Name = "названиеВидеопроцессораDataGridViewTextBoxColumn";
+            this.названиеВидеопроцессораDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // количествоВидеопроцессоровDataGridViewTextBoxColumn
             // 
             this.количествоВидеопроцессоровDataGridViewTextBoxColumn.DataPropertyName = "Количество видеопроцессоров";
             this.количествоВидеопроцессоровDataGridViewTextBoxColumn.HeaderText = "Количество видеопроцессоров";
             this.количествоВидеопроцессоровDataGridViewTextBoxColumn.Name = "количествоВидеопроцессоровDataGridViewTextBoxColumn";
+            this.количествоВидеопроцессоровDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // частотаПамятиDataGridViewTextBoxColumn
             // 
             this.частотаПамятиDataGridViewTextBoxColumn.DataPropertyName = "Частота памяти";
             this.частотаПамятиDataGridViewTextBoxColumn.HeaderText = "Частота памяти";
             this.частотаПамятиDataGridViewTextBoxColumn.Name = "частотаПамятиDataGridViewTextBoxColumn";
+            this.частотаПамятиDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // объемПамятиDataGridViewTextBoxColumn
             // 
             this.объемПамятиDataGridViewTextBoxColumn.DataPropertyName = "Объем памяти";
             this.объемПамятиDataGridViewTextBoxColumn.HeaderText = "Объем памяти";
             this.объемПамятиDataGridViewTextBoxColumn.Name = "объемПамятиDataGridViewTextBoxColumn";
+            this.объемПамятиDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // типПамятиDataGridViewTextBoxColumn
             // 
             this.типПамятиDataGridViewTextBoxColumn.DataPropertyName = "Тип памяти";
             this.типПамятиDataGridViewTextBoxColumn.HeaderText = "Тип памяти";
             this.типПамятиDataGridViewTextBoxColumn.Name = "типПамятиDataGridViewTextBoxColumn";
+            this.типПамятиDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // количествоПоддерживаемыхМониторовDataGridViewTextBoxColumn
             // 
             this.количествоПоддерживаемыхМониторовDataGridViewTextBoxColumn.DataPropertyName = "Количество поддерживаемых мониторов";
             this.количествоПоддерживаемыхМониторовDataGridViewTextBoxColumn.HeaderText = "Количество поддерживаемых мониторов";
             this.количествоПоддерживаемыхМониторовDataGridViewTextBoxColumn.Name = "количествоПоддерживаемыхМониторовDataGridViewTextBoxColumn";
+            this.количествоПоддерживаемыхМониторовDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // количествоВыходовDVIIDataGridViewTextBoxColumn
             // 
             this.количествоВыходовDVIIDataGridViewTextBoxColumn.DataPropertyName = "Количество выходов DVI-I";
             this.количествоВыходовDVIIDataGridViewTextBoxColumn.HeaderText = "Количество выходов DVI-I";
             this.количествоВыходовDVIIDataGridViewTextBoxColumn.Name = "количествоВыходовDVIIDataGridViewTextBoxColumn";
+            this.количествоВыходовDVIIDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // поддержкаHDCPDataGridViewCheckBoxColumn
             // 
             this.поддержкаHDCPDataGridViewCheckBoxColumn.DataPropertyName = "Поддержка HDCP";
             this.поддержкаHDCPDataGridViewCheckBoxColumn.HeaderText = "Поддержка HDCP";
             this.поддержкаHDCPDataGridViewCheckBoxColumn.Name = "поддержкаHDCPDataGridViewCheckBoxColumn";
+            this.поддержкаHDCPDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // количествоВыходовHDMIDataGridViewTextBoxColumn
             // 
             this.количествоВыходовHDMIDataGridViewTextBoxColumn.DataPropertyName = "Количество выходов HDMI";
             this.количествоВыходовHDMIDataGridViewTextBoxColumn.HeaderText = "Количество выходов HDMI";
             this.количествоВыходовHDMIDataGridViewTextBoxColumn.Name = "количествоВыходовHDMIDataGridViewTextBoxColumn";
+            this.количествоВыходовHDMIDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // максимальноеРазрешениеDataGridViewTextBoxColumn
             // 
             this.максимальноеРазрешениеDataGridViewTextBoxColumn.DataPropertyName = "Максимальное разрешение";
             this.максимальноеРазрешениеDataGridViewTextBoxColumn.HeaderText = "Максимальное разрешение";
             this.максимальноеРазрешениеDataGridViewTextBoxColumn.Name = "максимальноеРазрешениеDataGridViewTextBoxColumn";
+            this.максимальноеРазрешениеDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // видеоКартыBindingSource
             // 
@@ -676,6 +693,7 @@
             this.dataGridViewSCard.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewSCard.MultiSelect = false;
             this.dataGridViewSCard.Name = "dataGridViewSCard";
+            this.dataGridViewSCard.ReadOnly = true;
             this.dataGridViewSCard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewSCard.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewSCard.TabIndex = 0;
@@ -685,66 +703,77 @@
             this.кодDataGridViewTextBoxColumn2.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn2.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn2.Name = "кодDataGridViewTextBoxColumn2";
+            this.кодDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // производительDataGridViewTextBoxColumn2
             // 
             this.производительDataGridViewTextBoxColumn2.DataPropertyName = "Производитель";
             this.производительDataGridViewTextBoxColumn2.HeaderText = "Производитель";
             this.производительDataGridViewTextBoxColumn2.Name = "производительDataGridViewTextBoxColumn2";
+            this.производительDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // названиеDataGridViewTextBoxColumn2
             // 
             this.названиеDataGridViewTextBoxColumn2.DataPropertyName = "Название";
             this.названиеDataGridViewTextBoxColumn2.HeaderText = "Название";
             this.названиеDataGridViewTextBoxColumn2.Name = "названиеDataGridViewTextBoxColumn2";
+            this.названиеDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // ценаDataGridViewTextBoxColumn2
             // 
             this.ценаDataGridViewTextBoxColumn2.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn2.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn2.Name = "ценаDataGridViewTextBoxColumn2";
+            this.ценаDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // типDataGridViewTextBoxColumn
             // 
             this.типDataGridViewTextBoxColumn.DataPropertyName = "Тип";
             this.типDataGridViewTextBoxColumn.HeaderText = "Тип";
             this.типDataGridViewTextBoxColumn.Name = "типDataGridViewTextBoxColumn";
+            this.типDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // типПодключенияDataGridViewTextBoxColumn1
             // 
             this.типПодключенияDataGridViewTextBoxColumn1.DataPropertyName = "Тип подключения";
             this.типПодключенияDataGridViewTextBoxColumn1.HeaderText = "Тип подключения";
             this.типПодключенияDataGridViewTextBoxColumn1.Name = "типПодключенияDataGridViewTextBoxColumn1";
+            this.типПодключенияDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // необходимостьДополнительногоПитанияDataGridViewCheckBoxColumn
             // 
             this.необходимостьДополнительногоПитанияDataGridViewCheckBoxColumn.DataPropertyName = "Необходимость дополнительного питания";
             this.необходимостьДополнительногоПитанияDataGridViewCheckBoxColumn.HeaderText = "Необходимость дополнительного питания";
             this.необходимостьДополнительногоПитанияDataGridViewCheckBoxColumn.Name = "необходимостьДополнительногоПитанияDataGridViewCheckBoxColumn";
+            this.необходимостьДополнительногоПитанияDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // разрядностьАЦПDataGridViewTextBoxColumn
             // 
             this.разрядностьАЦПDataGridViewTextBoxColumn.DataPropertyName = "Разрядность АЦП";
             this.разрядностьАЦПDataGridViewTextBoxColumn.HeaderText = "Разрядность АЦП";
             this.разрядностьАЦПDataGridViewTextBoxColumn.Name = "разрядностьАЦПDataGridViewTextBoxColumn";
+            this.разрядностьАЦПDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // разрядностьЦАПDataGridViewTextBoxColumn
             // 
             this.разрядностьЦАПDataGridViewTextBoxColumn.DataPropertyName = "Разрядность ЦАП";
             this.разрядностьЦАПDataGridViewTextBoxColumn.HeaderText = "Разрядность ЦАП";
             this.разрядностьЦАПDataGridViewTextBoxColumn.Name = "разрядностьЦАПDataGridViewTextBoxColumn";
+            this.разрядностьЦАПDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // максимальнаяЧастотаЦАПмногоканальныйDataGridViewTextBoxColumn
             // 
             this.максимальнаяЧастотаЦАПмногоканальныйDataGridViewTextBoxColumn.DataPropertyName = "Максимальная частота ЦАП (многоканальный)";
             this.максимальнаяЧастотаЦАПмногоканальныйDataGridViewTextBoxColumn.HeaderText = "Максимальная частота ЦАП (многоканальный)";
             this.максимальнаяЧастотаЦАПмногоканальныйDataGridViewTextBoxColumn.Name = "максимальнаяЧастотаЦАПмногоканальныйDataGridViewTextBoxColumn";
+            this.максимальнаяЧастотаЦАПмногоканальныйDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // количествоВходныхАналоговыхКаналовDataGridViewTextBoxColumn
             // 
             this.количествоВходныхАналоговыхКаналовDataGridViewTextBoxColumn.DataPropertyName = "Количество входных аналоговых каналов";
             this.количествоВходныхАналоговыхКаналовDataGridViewTextBoxColumn.HeaderText = "Количество входных аналоговых каналов";
             this.количествоВходныхАналоговыхКаналовDataGridViewTextBoxColumn.Name = "количествоВходныхАналоговыхКаналовDataGridViewTextBoxColumn";
+            this.количествоВходныхАналоговыхКаналовDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // звуковыеКартыBindingSource
             // 
@@ -821,6 +850,7 @@
             this.dataGridViewMotherboard.Location = new System.Drawing.Point(7, 22);
             this.dataGridViewMotherboard.MultiSelect = false;
             this.dataGridViewMotherboard.Name = "dataGridViewMotherboard";
+            this.dataGridViewMotherboard.ReadOnly = true;
             this.dataGridViewMotherboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMotherboard.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewMotherboard.TabIndex = 0;
@@ -830,126 +860,147 @@
             this.кодDataGridViewTextBoxColumn3.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn3.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn3.Name = "кодDataGridViewTextBoxColumn3";
+            this.кодDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // производительDataGridViewTextBoxColumn3
             // 
             this.производительDataGridViewTextBoxColumn3.DataPropertyName = "Производитель";
             this.производительDataGridViewTextBoxColumn3.HeaderText = "Производитель";
             this.производительDataGridViewTextBoxColumn3.Name = "производительDataGridViewTextBoxColumn3";
+            this.производительDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // названиеDataGridViewTextBoxColumn3
             // 
             this.названиеDataGridViewTextBoxColumn3.DataPropertyName = "Название";
             this.названиеDataGridViewTextBoxColumn3.HeaderText = "Название";
             this.названиеDataGridViewTextBoxColumn3.Name = "названиеDataGridViewTextBoxColumn3";
+            this.названиеDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // ценаDataGridViewTextBoxColumn3
             // 
             this.ценаDataGridViewTextBoxColumn3.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn3.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn3.Name = "ценаDataGridViewTextBoxColumn3";
+            this.ценаDataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // формфакторDataGridViewTextBoxColumn
             // 
             this.формфакторDataGridViewTextBoxColumn.DataPropertyName = "Форм-фактор";
             this.формфакторDataGridViewTextBoxColumn.HeaderText = "Форм-фактор";
             this.формфакторDataGridViewTextBoxColumn.Name = "формфакторDataGridViewTextBoxColumn";
+            this.формфакторDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // socketDataGridViewTextBoxColumn1
             // 
             this.socketDataGridViewTextBoxColumn1.DataPropertyName = "Socket";
             this.socketDataGridViewTextBoxColumn1.HeaderText = "Socket";
             this.socketDataGridViewTextBoxColumn1.Name = "socketDataGridViewTextBoxColumn1";
+            this.socketDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // чипсетDataGridViewTextBoxColumn
             // 
             this.чипсетDataGridViewTextBoxColumn.DataPropertyName = "Чипсет";
             this.чипсетDataGridViewTextBoxColumn.HeaderText = "Чипсет";
             this.чипсетDataGridViewTextBoxColumn.Name = "чипсетDataGridViewTextBoxColumn";
+            this.чипсетDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // поддержкаМногоядерныхПроцессоровDataGridViewCheckBoxColumn
             // 
             this.поддержкаМногоядерныхПроцессоровDataGridViewCheckBoxColumn.DataPropertyName = "Поддержка многоядерных процессоров";
             this.поддержкаМногоядерныхПроцессоровDataGridViewCheckBoxColumn.HeaderText = "Поддержка многоядерных процессоров";
             this.поддержкаМногоядерныхПроцессоровDataGridViewCheckBoxColumn.Name = "поддержкаМногоядерныхПроцессоровDataGridViewCheckBoxColumn";
+            this.поддержкаМногоядерныхПроцессоровDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // bIOSDataGridViewTextBoxColumn
             // 
             this.bIOSDataGridViewTextBoxColumn.DataPropertyName = "BIOS";
             this.bIOSDataGridViewTextBoxColumn.HeaderText = "BIOS";
             this.bIOSDataGridViewTextBoxColumn.Name = "bIOSDataGridViewTextBoxColumn";
+            this.bIOSDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // поддержкаCrossFireDataGridViewTextBoxColumn
             // 
             this.поддержкаCrossFireDataGridViewTextBoxColumn.DataPropertyName = "Поддержка CrossFire";
             this.поддержкаCrossFireDataGridViewTextBoxColumn.HeaderText = "Поддержка CrossFire";
             this.поддержкаCrossFireDataGridViewTextBoxColumn.Name = "поддержкаCrossFireDataGridViewTextBoxColumn";
+            this.поддержкаCrossFireDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // поддержкаSLIDataGridViewTextBoxColumn
             // 
             this.поддержкаSLIDataGridViewTextBoxColumn.DataPropertyName = "Поддержка SLI";
             this.поддержкаSLIDataGridViewTextBoxColumn.HeaderText = "Поддержка SLI";
             this.поддержкаSLIDataGridViewTextBoxColumn.Name = "поддержкаSLIDataGridViewTextBoxColumn";
+            this.поддержкаSLIDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // типПамятиDataGridViewTextBoxColumn1
             // 
             this.типПамятиDataGridViewTextBoxColumn1.DataPropertyName = "Тип памяти";
             this.типПамятиDataGridViewTextBoxColumn1.HeaderText = "Тип памяти";
             this.типПамятиDataGridViewTextBoxColumn1.Name = "типПамятиDataGridViewTextBoxColumn1";
+            this.типПамятиDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // максимальныйОбъемDataGridViewTextBoxColumn
             // 
             this.максимальныйОбъемDataGridViewTextBoxColumn.DataPropertyName = "Максимальный объем";
             this.максимальныйОбъемDataGridViewTextBoxColumn.HeaderText = "Максимальный объем";
             this.максимальныйОбъемDataGridViewTextBoxColumn.Name = "максимальныйОбъемDataGridViewTextBoxColumn";
+            this.максимальныйОбъемDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // sATADataGridViewTextBoxColumn
             // 
             this.sATADataGridViewTextBoxColumn.DataPropertyName = "SATA";
             this.sATADataGridViewTextBoxColumn.HeaderText = "SATA";
             this.sATADataGridViewTextBoxColumn.Name = "sATADataGridViewTextBoxColumn";
+            this.sATADataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // звукDataGridViewTextBoxColumn
             // 
             this.звукDataGridViewTextBoxColumn.DataPropertyName = "Звук";
             this.звукDataGridViewTextBoxColumn.HeaderText = "Звук";
             this.звукDataGridViewTextBoxColumn.Name = "звукDataGridViewTextBoxColumn";
+            this.звукDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ethernetDataGridViewTextBoxColumn
             // 
             this.ethernetDataGridViewTextBoxColumn.DataPropertyName = "Ethernet";
             this.ethernetDataGridViewTextBoxColumn.HeaderText = "Ethernet";
             this.ethernetDataGridViewTextBoxColumn.Name = "ethernetDataGridViewTextBoxColumn";
+            this.ethernetDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pCIDataGridViewTextBoxColumn
             // 
             this.pCIDataGridViewTextBoxColumn.DataPropertyName = "PCI";
             this.pCIDataGridViewTextBoxColumn.HeaderText = "PCI";
             this.pCIDataGridViewTextBoxColumn.Name = "pCIDataGridViewTextBoxColumn";
+            this.pCIDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pCIExpressDataGridViewTextBoxColumn
             // 
             this.pCIExpressDataGridViewTextBoxColumn.DataPropertyName = "PCI-Express";
             this.pCIExpressDataGridViewTextBoxColumn.HeaderText = "PCI-Express";
             this.pCIExpressDataGridViewTextBoxColumn.Name = "pCIExpressDataGridViewTextBoxColumn";
+            this.pCIExpressDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // uSBDataGridViewTextBoxColumn
             // 
             this.uSBDataGridViewTextBoxColumn.DataPropertyName = "USB";
             this.uSBDataGridViewTextBoxColumn.HeaderText = "USB";
             this.uSBDataGridViewTextBoxColumn.Name = "uSBDataGridViewTextBoxColumn";
+            this.uSBDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // hDMIDataGridViewTextBoxColumn
             // 
             this.hDMIDataGridViewTextBoxColumn.DataPropertyName = "HDMI";
             this.hDMIDataGridViewTextBoxColumn.HeaderText = "HDMI";
             this.hDMIDataGridViewTextBoxColumn.Name = "hDMIDataGridViewTextBoxColumn";
+            this.hDMIDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dVIDataGridViewCheckBoxColumn
             // 
             this.dVIDataGridViewCheckBoxColumn.DataPropertyName = "DVI";
             this.dVIDataGridViewCheckBoxColumn.HeaderText = "DVI";
             this.dVIDataGridViewCheckBoxColumn.Name = "dVIDataGridViewCheckBoxColumn";
+            this.dVIDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // материнскиеПлатыBindingSource
             // 
@@ -1021,6 +1072,7 @@
             this.dataGridViewPowerUnit.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewPowerUnit.MultiSelect = false;
             this.dataGridViewPowerUnit.Name = "dataGridViewPowerUnit";
+            this.dataGridViewPowerUnit.ReadOnly = true;
             this.dataGridViewPowerUnit.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewPowerUnit.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewPowerUnit.TabIndex = 0;
@@ -1030,96 +1082,112 @@
             this.кодDataGridViewTextBoxColumn4.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn4.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn4.Name = "кодDataGridViewTextBoxColumn4";
+            this.кодDataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // производительDataGridViewTextBoxColumn4
             // 
             this.производительDataGridViewTextBoxColumn4.DataPropertyName = "Производитель";
             this.производительDataGridViewTextBoxColumn4.HeaderText = "Производитель";
             this.производительDataGridViewTextBoxColumn4.Name = "производительDataGridViewTextBoxColumn4";
+            this.производительDataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // названиеDataGridViewTextBoxColumn4
             // 
             this.названиеDataGridViewTextBoxColumn4.DataPropertyName = "Название";
             this.названиеDataGridViewTextBoxColumn4.HeaderText = "Название";
             this.названиеDataGridViewTextBoxColumn4.Name = "названиеDataGridViewTextBoxColumn4";
+            this.названиеDataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // ценаDataGridViewTextBoxColumn4
             // 
             this.ценаDataGridViewTextBoxColumn4.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn4.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn4.Name = "ценаDataGridViewTextBoxColumn4";
+            this.ценаDataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // мощностьDataGridViewTextBoxColumn
             // 
             this.мощностьDataGridViewTextBoxColumn.DataPropertyName = "Мощность";
             this.мощностьDataGridViewTextBoxColumn.HeaderText = "Мощность";
             this.мощностьDataGridViewTextBoxColumn.Name = "мощностьDataGridViewTextBoxColumn";
+            this.мощностьDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // сертификат80PLUSDataGridViewTextBoxColumn
             // 
             this.сертификат80PLUSDataGridViewTextBoxColumn.DataPropertyName = "Сертификат 80 PLUS";
             this.сертификат80PLUSDataGridViewTextBoxColumn.HeaderText = "Сертификат 80 PLUS";
             this.сертификат80PLUSDataGridViewTextBoxColumn.Name = "сертификат80PLUSDataGridViewTextBoxColumn";
+            this.сертификат80PLUSDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // системаОхлажденияDataGridViewTextBoxColumn
             // 
             this.системаОхлажденияDataGridViewTextBoxColumn.DataPropertyName = "Система охлаждения";
             this.системаОхлажденияDataGridViewTextBoxColumn.HeaderText = "Система охлаждения";
             this.системаОхлажденияDataGridViewTextBoxColumn.Name = "системаОхлажденияDataGridViewTextBoxColumn";
+            this.системаОхлажденияDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // диаметрВентилятораDataGridViewTextBoxColumn
             // 
             this.диаметрВентилятораDataGridViewTextBoxColumn.DataPropertyName = "Диаметр вентилятора";
             this.диаметрВентилятораDataGridViewTextBoxColumn.HeaderText = "Диаметр вентилятора";
             this.диаметрВентилятораDataGridViewTextBoxColumn.Name = "диаметрВентилятораDataGridViewTextBoxColumn";
+            this.диаметрВентилятораDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // диаметрВторогоВентилятораDataGridViewTextBoxColumn
             // 
             this.диаметрВторогоВентилятораDataGridViewTextBoxColumn.DataPropertyName = "Диаметр второго вентилятора";
             this.диаметрВторогоВентилятораDataGridViewTextBoxColumn.HeaderText = "Диаметр второго вентилятора";
             this.диаметрВторогоВентилятораDataGridViewTextBoxColumn.Name = "диаметрВторогоВентилятораDataGridViewTextBoxColumn";
+            this.диаметрВторогоВентилятораDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pFCDataGridViewTextBoxColumn
             // 
             this.pFCDataGridViewTextBoxColumn.DataPropertyName = "PFC";
             this.pFCDataGridViewTextBoxColumn.HeaderText = "PFC";
             this.pFCDataGridViewTextBoxColumn.Name = "pFCDataGridViewTextBoxColumn";
+            this.pFCDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // версияATX12VDataGridViewTextBoxColumn
             // 
             this.версияATX12VDataGridViewTextBoxColumn.DataPropertyName = "Версия ATX12V";
             this.версияATX12VDataGridViewTextBoxColumn.HeaderText = "Версия ATX12V";
             this.версияATX12VDataGridViewTextBoxColumn.Name = "версияATX12VDataGridViewTextBoxColumn";
+            this.версияATX12VDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // типРазъемаДляМатеринскойПлатыDataGridViewTextBoxColumn
             // 
             this.типРазъемаДляМатеринскойПлатыDataGridViewTextBoxColumn.DataPropertyName = "Тип разъема для материнской платы";
             this.типРазъемаДляМатеринскойПлатыDataGridViewTextBoxColumn.HeaderText = "Тип разъема для материнской платы";
             this.типРазъемаДляМатеринскойПлатыDataGridViewTextBoxColumn.Name = "типРазъемаДляМатеринскойПлатыDataGridViewTextBoxColumn";
+            this.типРазъемаДляМатеринскойПлатыDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // отстегивающиесяКабелиDataGridViewCheckBoxColumn
             // 
             this.отстегивающиесяКабелиDataGridViewCheckBoxColumn.DataPropertyName = "Отстегивающиеся кабели";
             this.отстегивающиесяКабелиDataGridViewCheckBoxColumn.HeaderText = "Отстегивающиеся кабели";
             this.отстегивающиесяКабелиDataGridViewCheckBoxColumn.Name = "отстегивающиесяКабелиDataGridViewCheckBoxColumn";
+            this.отстегивающиесяКабелиDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // защитаОтПеренапряженияDataGridViewCheckBoxColumn
             // 
             this.защитаОтПеренапряженияDataGridViewCheckBoxColumn.DataPropertyName = "Защита от перенапряжения";
             this.защитаОтПеренапряженияDataGridViewCheckBoxColumn.HeaderText = "Защита от перенапряжения";
             this.защитаОтПеренапряженияDataGridViewCheckBoxColumn.Name = "защитаОтПеренапряженияDataGridViewCheckBoxColumn";
+            this.защитаОтПеренапряженияDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // защитаОтПерегрузкиDataGridViewCheckBoxColumn
             // 
             this.защитаОтПерегрузкиDataGridViewCheckBoxColumn.DataPropertyName = "Защита от перегрузки";
             this.защитаОтПерегрузкиDataGridViewCheckBoxColumn.HeaderText = "Защита от перегрузки";
             this.защитаОтПерегрузкиDataGridViewCheckBoxColumn.Name = "защитаОтПерегрузкиDataGridViewCheckBoxColumn";
+            this.защитаОтПерегрузкиDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // защитаОтКороткогоЗамыканияDataGridViewCheckBoxColumn
             // 
             this.защитаОтКороткогоЗамыканияDataGridViewCheckBoxColumn.DataPropertyName = "Защита от короткого замыкания";
             this.защитаОтКороткогоЗамыканияDataGridViewCheckBoxColumn.HeaderText = "Защита от короткого замыкания";
             this.защитаОтКороткогоЗамыканияDataGridViewCheckBoxColumn.Name = "защитаОтКороткогоЗамыканияDataGridViewCheckBoxColumn";
+            this.защитаОтКороткогоЗамыканияDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // блокиПитанияBindingSource
             // 
@@ -1184,6 +1252,7 @@
             this.dataGridViewCooler.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewCooler.MultiSelect = false;
             this.dataGridViewCooler.Name = "dataGridViewCooler";
+            this.dataGridViewCooler.ReadOnly = true;
             this.dataGridViewCooler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCooler.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewCooler.TabIndex = 0;
@@ -1193,54 +1262,63 @@
             this.кодDataGridViewTextBoxColumn5.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn5.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn5.Name = "кодDataGridViewTextBoxColumn5";
+            this.кодDataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // производительDataGridViewTextBoxColumn5
             // 
             this.производительDataGridViewTextBoxColumn5.DataPropertyName = "Производитель";
             this.производительDataGridViewTextBoxColumn5.HeaderText = "Производитель";
             this.производительDataGridViewTextBoxColumn5.Name = "производительDataGridViewTextBoxColumn5";
+            this.производительDataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // названиеDataGridViewTextBoxColumn5
             // 
             this.названиеDataGridViewTextBoxColumn5.DataPropertyName = "Название";
             this.названиеDataGridViewTextBoxColumn5.HeaderText = "Название";
             this.названиеDataGridViewTextBoxColumn5.Name = "названиеDataGridViewTextBoxColumn5";
+            this.названиеDataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // ценаDataGridViewTextBoxColumn5
             // 
             this.ценаDataGridViewTextBoxColumn5.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn5.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn5.Name = "ценаDataGridViewTextBoxColumn5";
+            this.ценаDataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // назначениеDataGridViewTextBoxColumn
             // 
             this.назначениеDataGridViewTextBoxColumn.DataPropertyName = "Назначение";
             this.назначениеDataGridViewTextBoxColumn.HeaderText = "Назначение";
             this.назначениеDataGridViewTextBoxColumn.Name = "назначениеDataGridViewTextBoxColumn";
+            this.назначениеDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // водяноеОхлаждениеDataGridViewCheckBoxColumn
             // 
             this.водяноеОхлаждениеDataGridViewCheckBoxColumn.DataPropertyName = "Водяное охлаждение";
             this.водяноеОхлаждениеDataGridViewCheckBoxColumn.HeaderText = "Водяное охлаждение";
             this.водяноеОхлаждениеDataGridViewCheckBoxColumn.Name = "водяноеОхлаждениеDataGridViewCheckBoxColumn";
+            this.водяноеОхлаждениеDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // количествоВентиляторовDataGridViewTextBoxColumn
             // 
             this.количествоВентиляторовDataGridViewTextBoxColumn.DataPropertyName = "Количество вентиляторов";
             this.количествоВентиляторовDataGridViewTextBoxColumn.HeaderText = "Количество вентиляторов";
             this.количествоВентиляторовDataGridViewTextBoxColumn.Name = "количествоВентиляторовDataGridViewTextBoxColumn";
+            this.количествоВентиляторовDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // диаметрВентилятораDataGridViewTextBoxColumn1
             // 
             this.диаметрВентилятораDataGridViewTextBoxColumn1.DataPropertyName = "Диаметр вентилятора";
             this.диаметрВентилятораDataGridViewTextBoxColumn1.HeaderText = "Диаметр вентилятора";
             this.диаметрВентилятораDataGridViewTextBoxColumn1.Name = "диаметрВентилятораDataGridViewTextBoxColumn1";
+            this.диаметрВентилятораDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // socketDataGridViewTextBoxColumn2
             // 
             this.socketDataGridViewTextBoxColumn2.DataPropertyName = "Socket";
             this.socketDataGridViewTextBoxColumn2.HeaderText = "Socket";
             this.socketDataGridViewTextBoxColumn2.Name = "socketDataGridViewTextBoxColumn2";
+            this.socketDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // кулерыИСистемыОхлажденияBindingSource
             // 
@@ -1304,6 +1382,7 @@
             this.dataGridViewROM.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewROM.MultiSelect = false;
             this.dataGridViewROM.Name = "dataGridViewROM";
+            this.dataGridViewROM.ReadOnly = true;
             this.dataGridViewROM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewROM.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewROM.TabIndex = 0;
@@ -1313,48 +1392,56 @@
             this.кодDataGridViewTextBoxColumn7.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn7.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn7.Name = "кодDataGridViewTextBoxColumn7";
+            this.кодDataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // производительDataGridViewTextBoxColumn7
             // 
             this.производительDataGridViewTextBoxColumn7.DataPropertyName = "Производитель";
             this.производительDataGridViewTextBoxColumn7.HeaderText = "Производитель";
             this.производительDataGridViewTextBoxColumn7.Name = "производительDataGridViewTextBoxColumn7";
+            this.производительDataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // названиеDataGridViewTextBoxColumn7
             // 
             this.названиеDataGridViewTextBoxColumn7.DataPropertyName = "Название";
             this.названиеDataGridViewTextBoxColumn7.HeaderText = "Название";
             this.названиеDataGridViewTextBoxColumn7.Name = "названиеDataGridViewTextBoxColumn7";
+            this.названиеDataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // ценаDataGridViewTextBoxColumn7
             // 
             this.ценаDataGridViewTextBoxColumn7.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn7.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn7.Name = "ценаDataGridViewTextBoxColumn7";
+            this.ценаDataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // типDataGridViewTextBoxColumn2
             // 
             this.типDataGridViewTextBoxColumn2.DataPropertyName = "Тип";
             this.типDataGridViewTextBoxColumn2.HeaderText = "Тип";
             this.типDataGridViewTextBoxColumn2.Name = "типDataGridViewTextBoxColumn2";
+            this.типDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // формфакторDataGridViewTextBoxColumn2
             // 
             this.формфакторDataGridViewTextBoxColumn2.DataPropertyName = "Форм-фактор";
             this.формфакторDataGridViewTextBoxColumn2.HeaderText = "Форм-фактор";
             this.формфакторDataGridViewTextBoxColumn2.Name = "формфакторDataGridViewTextBoxColumn2";
+            this.формфакторDataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // количествоМодулейВКомплектеDataGridViewTextBoxColumn
             // 
             this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.DataPropertyName = "Количество модулей в комплекте";
             this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.HeaderText = "Количество модулей в комплекте";
             this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.Name = "количествоМодулейВКомплектеDataGridViewTextBoxColumn";
+            this.количествоМодулейВКомплектеDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // объемОдногоМодуляDataGridViewTextBoxColumn
             // 
             this.объемОдногоМодуляDataGridViewTextBoxColumn.DataPropertyName = "Объем одного модуля";
             this.объемОдногоМодуляDataGridViewTextBoxColumn.HeaderText = "Объем одного модуля";
             this.объемОдногоМодуляDataGridViewTextBoxColumn.Name = "объемОдногоМодуляDataGridViewTextBoxColumn";
+            this.объемОдногоМодуляDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // оперативнаяПамятьBindingSource
             // 
@@ -1428,6 +1515,7 @@
             this.dataGridViewHardDisk.Location = new System.Drawing.Point(6, 31);
             this.dataGridViewHardDisk.MultiSelect = false;
             this.dataGridViewHardDisk.Name = "dataGridViewHardDisk";
+            this.dataGridViewHardDisk.ReadOnly = true;
             this.dataGridViewHardDisk.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewHardDisk.Size = new System.Drawing.Size(675, 272);
             this.dataGridViewHardDisk.TabIndex = 0;
@@ -1437,108 +1525,126 @@
             this.кодDataGridViewTextBoxColumn6.DataPropertyName = "Код";
             this.кодDataGridViewTextBoxColumn6.HeaderText = "Код";
             this.кодDataGridViewTextBoxColumn6.Name = "кодDataGridViewTextBoxColumn6";
+            this.кодDataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // производительDataGridViewTextBoxColumn6
             // 
             this.производительDataGridViewTextBoxColumn6.DataPropertyName = "Производитель";
             this.производительDataGridViewTextBoxColumn6.HeaderText = "Производитель";
             this.производительDataGridViewTextBoxColumn6.Name = "производительDataGridViewTextBoxColumn6";
+            this.производительDataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // названиеDataGridViewTextBoxColumn6
             // 
             this.названиеDataGridViewTextBoxColumn6.DataPropertyName = "Название";
             this.названиеDataGridViewTextBoxColumn6.HeaderText = "Название";
             this.названиеDataGridViewTextBoxColumn6.Name = "названиеDataGridViewTextBoxColumn6";
+            this.названиеDataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // ценаDataGridViewTextBoxColumn6
             // 
             this.ценаDataGridViewTextBoxColumn6.DataPropertyName = "Цена";
             this.ценаDataGridViewTextBoxColumn6.HeaderText = "Цена";
             this.ценаDataGridViewTextBoxColumn6.Name = "ценаDataGridViewTextBoxColumn6";
+            this.ценаDataGridViewTextBoxColumn6.ReadOnly = true;
             // 
             // формфакторDataGridViewTextBoxColumn1
             // 
             this.формфакторDataGridViewTextBoxColumn1.DataPropertyName = "Форм-фактор";
             this.формфакторDataGridViewTextBoxColumn1.HeaderText = "Форм-фактор";
             this.формфакторDataGridViewTextBoxColumn1.Name = "формфакторDataGridViewTextBoxColumn1";
+            this.формфакторDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // емкостьDataGridViewTextBoxColumn
             // 
             this.емкостьDataGridViewTextBoxColumn.DataPropertyName = "Емкость";
             this.емкостьDataGridViewTextBoxColumn.HeaderText = "Емкость";
             this.емкостьDataGridViewTextBoxColumn.Name = "емкостьDataGridViewTextBoxColumn";
+            this.емкостьDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // типDataGridViewTextBoxColumn1
             // 
             this.типDataGridViewTextBoxColumn1.DataPropertyName = "Тип";
             this.типDataGridViewTextBoxColumn1.HeaderText = "Тип";
             this.типDataGridViewTextBoxColumn1.Name = "типDataGridViewTextBoxColumn1";
+            this.типDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // интерфейсSATADataGridViewTextBoxColumn
             // 
             this.интерфейсSATADataGridViewTextBoxColumn.DataPropertyName = "Интерфейс SATA";
             this.интерфейсSATADataGridViewTextBoxColumn.HeaderText = "Интерфейс SATA";
             this.интерфейсSATADataGridViewTextBoxColumn.Name = "интерфейсSATADataGridViewTextBoxColumn";
+            this.интерфейсSATADataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // интерфейсIDEDataGridViewCheckBoxColumn
             // 
             this.интерфейсIDEDataGridViewCheckBoxColumn.DataPropertyName = "Интерфейс IDE";
             this.интерфейсIDEDataGridViewCheckBoxColumn.HeaderText = "Интерфейс IDE";
             this.интерфейсIDEDataGridViewCheckBoxColumn.Name = "интерфейсIDEDataGridViewCheckBoxColumn";
+            this.интерфейсIDEDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // интерфейсPCIEDataGridViewCheckBoxColumn
             // 
             this.интерфейсPCIEDataGridViewCheckBoxColumn.DataPropertyName = "Интерфейс PCI-E";
             this.интерфейсPCIEDataGridViewCheckBoxColumn.HeaderText = "Интерфейс PCI-E";
             this.интерфейсPCIEDataGridViewCheckBoxColumn.Name = "интерфейсPCIEDataGridViewCheckBoxColumn";
+            this.интерфейсPCIEDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // типPCIEDataGridViewTextBoxColumn
             // 
             this.типPCIEDataGridViewTextBoxColumn.DataPropertyName = "Тип PCI-E";
             this.типPCIEDataGridViewTextBoxColumn.HeaderText = "Тип PCI-E";
             this.типPCIEDataGridViewTextBoxColumn.Name = "типPCIEDataGridViewTextBoxColumn";
+            this.типPCIEDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // интерфейсZIF40PinDataGridViewCheckBoxColumn
             // 
             this.интерфейсZIF40PinDataGridViewCheckBoxColumn.DataPropertyName = "Интерфейс ZIF 40 pin";
             this.интерфейсZIF40PinDataGridViewCheckBoxColumn.HeaderText = "Интерфейс ZIF 40 pin";
             this.интерфейсZIF40PinDataGridViewCheckBoxColumn.Name = "интерфейсZIF40PinDataGridViewCheckBoxColumn";
+            this.интерфейсZIF40PinDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // интерфейсESATADataGridViewCheckBoxColumn
             // 
             this.интерфейсESATADataGridViewCheckBoxColumn.DataPropertyName = "Интерфейс eSATA";
             this.интерфейсESATADataGridViewCheckBoxColumn.HeaderText = "Интерфейс eSATA";
             this.интерфейсESATADataGridViewCheckBoxColumn.Name = "интерфейсESATADataGridViewCheckBoxColumn";
+            this.интерфейсESATADataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // разъемMSATADataGridViewCheckBoxColumn
             // 
             this.разъемMSATADataGridViewCheckBoxColumn.DataPropertyName = "Разъем mSATA";
             this.разъемMSATADataGridViewCheckBoxColumn.HeaderText = "Разъем mSATA";
             this.разъемMSATADataGridViewCheckBoxColumn.Name = "разъемMSATADataGridViewCheckBoxColumn";
+            this.разъемMSATADataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // скоростьВращенияDataGridViewTextBoxColumn
             // 
             this.скоростьВращенияDataGridViewTextBoxColumn.DataPropertyName = "Скорость вращения";
             this.скоростьВращенияDataGridViewTextBoxColumn.HeaderText = "Скорость вращения";
             this.скоростьВращенияDataGridViewTextBoxColumn.Name = "скоростьВращенияDataGridViewTextBoxColumn";
+            this.скоростьВращенияDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // скоростьЧтенияDataGridViewTextBoxColumn
             // 
             this.скоростьЧтенияDataGridViewTextBoxColumn.DataPropertyName = "Скорость чтения";
             this.скоростьЧтенияDataGridViewTextBoxColumn.HeaderText = "Скорость чтения";
             this.скоростьЧтенияDataGridViewTextBoxColumn.Name = "скоростьЧтенияDataGridViewTextBoxColumn";
+            this.скоростьЧтенияDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // скоростьЗаписиDataGridViewTextBoxColumn
             // 
             this.скоростьЗаписиDataGridViewTextBoxColumn.DataPropertyName = "Скорость записи";
             this.скоростьЗаписиDataGridViewTextBoxColumn.HeaderText = "Скорость записи";
             this.скоростьЗаписиDataGridViewTextBoxColumn.Name = "скоростьЗаписиDataGridViewTextBoxColumn";
+            this.скоростьЗаписиDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // объемБуфераDataGridViewTextBoxColumn
             // 
             this.объемБуфераDataGridViewTextBoxColumn.DataPropertyName = "Объем буфера";
             this.объемБуфераDataGridViewTextBoxColumn.HeaderText = "Объем буфера";
             this.объемБуфераDataGridViewTextBoxColumn.Name = "объемБуфераDataGridViewTextBoxColumn";
+            this.объемБуфераDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // жесткиеДискиИСетевыеНакопителиBindingSource
             // 
