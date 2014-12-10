@@ -1874,6 +1874,7 @@
             // buttonClose
             // 
             this.buttonClose.BackColor = System.Drawing.Color.Aquamarine;
+            this.buttonClose.Enabled = false;
             this.buttonClose.ForeColor = System.Drawing.Color.Black;
             this.buttonClose.Location = new System.Drawing.Point(889, 397);
             this.buttonClose.Name = "buttonClose";
@@ -1881,6 +1882,7 @@
             this.buttonClose.TabIndex = 19;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Visible = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // процессорыTableAdapter
@@ -1959,7 +1961,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1087, 430);
-            this.ControlBox = false;
             this.Controls.Add(this.labelPrice);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -1984,6 +1985,8 @@
             this.Controls.Add(this.labelConfig);
             this.Controls.Add(this.tabControl);
             this.ForeColor = System.Drawing.Color.Turquoise;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormSystemConstructor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Constructor";
