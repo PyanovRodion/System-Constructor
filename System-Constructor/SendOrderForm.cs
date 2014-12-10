@@ -27,7 +27,17 @@ namespace System_Constructor
         {
                 try
                 {
-                    string request = Config.CPU.Name + "\n" + Config.VideoCard.Name + "\n" + Config.SoundCard.Name + "\n" + Config.MBoard.Name + "\n" + Config.Power.Name + "\n" + Config.Cooler.Name + "\n" + Config.ROM.Name + "\n" + Config.HardDisk.Name + "\n" + "\n" + "Итого: " + Price.ToString() + "\n" + "\n" + "Обратная связь: "+ textBox1.Text;
+                    string request="";
+                    if (Config.CPU !=null) {request += Config.CPU.Name + "\n";}
+                    if (Config.VideoCard!=null) {request += Config.VideoCard.Name + "\n";}
+                    if (Config.SoundCard != null) { request += Config.SoundCard.Name + "\n"; }
+                    if (Config.MBoard != null) { request += Config.MBoard.Name + "\n"; }
+                    if (Config.Power != null) { request += Config.Power.Name + "\n"; }
+                    if (Config.Cooler != null) { request += Config.Cooler.Name + "\n"; }
+                    if (Config.ROM != null) { request += Config.ROM.Name + "\n"; }
+                    if (Config.HardDisk != null) { request += Config.HardDisk.Name + "\n"; }
+
+                    request += "\n" + "\n" + "Итого: " + Price.ToString() + "\n" + "\n" + "Обратная связь: "+ textBox1.Text;
                     string subject = "NewProjectToBuild "+textBox1.Text;
                     MailMessage m1 = new MailMessage("scappuser@rambler.ru", "scappuser@rambler.ru", subject, request);
 

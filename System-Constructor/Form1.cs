@@ -355,12 +355,12 @@ namespace System_Constructor
 
         private void buttonSendOrder_Click(object sender, EventArgs e)
         {
-            if ((Config.CPU != null) && (Config.MBoard != null) && (Config.Power != null) && (Config.ROM != null) && (Config.SoundCard != null) && (Config.VideoCard != null) && (Config.HardDisk != null) && (Config.Cooler != null))
+            if ((Config.CPU != null) || (Config.MBoard != null) || (Config.Power != null) || (Config.ROM != null) || (Config.SoundCard != null) || (Config.VideoCard != null) || (Config.HardDisk != null) || (Config.Cooler != null))
             {
                 SendOrder sof = new SendOrder(Config, price);
                 sof.ShowDialog();      
            }
-            else { MessageBox.Show("Не до конца указана комплектация.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            else { MessageBox.Show("Не указан ни один из параметров комплектации", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
 
         public void RefreshPrice()
