@@ -266,6 +266,7 @@
             // tabPageProcessor
             // 
             this.tabPageProcessor.BackColor = System.Drawing.Color.Black;
+            this.tabPageProcessor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPageProcessor.BackgroundImage")));
             this.tabPageProcessor.Controls.Add(this.buttonCancelProc);
             this.tabPageProcessor.Controls.Add(this.buttonSelectProc);
             this.tabPageProcessor.Controls.Add(this.dataGridViewProcessor);
@@ -279,8 +280,10 @@
             // 
             // buttonCancelProc
             // 
-            this.buttonCancelProc.BackColor = System.Drawing.Color.MintCream;
-            this.buttonCancelProc.ForeColor = System.Drawing.Color.Black;
+            this.buttonCancelProc.BackColor = System.Drawing.Color.Black;
+            this.buttonCancelProc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelProc.BackgroundImage")));
+            this.buttonCancelProc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelProc.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonCancelProc.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelProc.Name = "buttonCancelProc";
             this.buttonCancelProc.Size = new System.Drawing.Size(182, 23);
@@ -291,8 +294,10 @@
             // 
             // buttonSelectProc
             // 
-            this.buttonSelectProc.BackColor = System.Drawing.Color.MintCream;
-            this.buttonSelectProc.ForeColor = System.Drawing.Color.Black;
+            this.buttonSelectProc.BackColor = System.Drawing.Color.Black;
+            this.buttonSelectProc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSelectProc.BackgroundImage")));
+            this.buttonSelectProc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelectProc.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSelectProc.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectProc.Name = "buttonSelectProc";
             this.buttonSelectProc.Size = new System.Drawing.Size(182, 23);
@@ -453,6 +458,7 @@
             // tabPageVCard
             // 
             this.tabPageVCard.BackColor = System.Drawing.Color.Black;
+            this.tabPageVCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPageVCard.BackgroundImage")));
             this.tabPageVCard.Controls.Add(this.buttonSelectVCard);
             this.tabPageVCard.Controls.Add(this.buttonCancelVCard);
             this.tabPageVCard.Controls.Add(this.dataGridViewVCard);
@@ -466,7 +472,10 @@
             // 
             // buttonSelectVCard
             // 
-            this.buttonSelectVCard.BackColor = System.Drawing.Color.MintCream;
+            this.buttonSelectVCard.BackColor = System.Drawing.Color.Black;
+            this.buttonSelectVCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSelectVCard.BackgroundImage")));
+            this.buttonSelectVCard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelectVCard.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSelectVCard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectVCard.Name = "buttonSelectVCard";
             this.buttonSelectVCard.Size = new System.Drawing.Size(182, 23);
@@ -477,7 +486,10 @@
             // 
             // buttonCancelVCard
             // 
-            this.buttonCancelVCard.BackColor = System.Drawing.Color.MintCream;
+            this.buttonCancelVCard.BackColor = System.Drawing.Color.Black;
+            this.buttonCancelVCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelVCard.BackgroundImage")));
+            this.buttonCancelVCard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelVCard.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonCancelVCard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelVCard.Name = "buttonCancelVCard";
             this.buttonCancelVCard.Size = new System.Drawing.Size(182, 23);
@@ -641,6 +653,7 @@
             // tabPageSCard
             // 
             this.tabPageSCard.BackColor = System.Drawing.Color.Black;
+            this.tabPageSCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPageSCard.BackgroundImage")));
             this.tabPageSCard.Controls.Add(this.buttonSelectSCard);
             this.tabPageSCard.Controls.Add(this.buttonCancelSCard);
             this.tabPageSCard.Controls.Add(this.dataGridViewSCard);
@@ -654,7 +667,10 @@
             // 
             // buttonSelectSCard
             // 
-            this.buttonSelectSCard.BackColor = System.Drawing.Color.MintCream;
+            this.buttonSelectSCard.BackColor = System.Drawing.Color.Black;
+            this.buttonSelectSCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSelectSCard.BackgroundImage")));
+            this.buttonSelectSCard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelectSCard.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSelectSCard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectSCard.Name = "buttonSelectSCard";
             this.buttonSelectSCard.Size = new System.Drawing.Size(182, 23);
@@ -665,7 +681,10 @@
             // 
             // buttonCancelSCard
             // 
-            this.buttonCancelSCard.BackColor = System.Drawing.Color.MintCream;
+            this.buttonCancelSCard.BackColor = System.Drawing.Color.Black;
+            this.buttonCancelSCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelSCard.BackgroundImage")));
+            this.buttonCancelSCard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelSCard.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonCancelSCard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelSCard.Name = "buttonCancelSCard";
             this.buttonCancelSCard.Size = new System.Drawing.Size(182, 23);
@@ -789,6 +808,7 @@
             // tabPageMotherboard
             // 
             this.tabPageMotherboard.BackColor = System.Drawing.Color.Black;
+            this.tabPageMotherboard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPageMotherboard.BackgroundImage")));
             this.tabPageMotherboard.Controls.Add(this.buttonSelectMotherboard);
             this.tabPageMotherboard.Controls.Add(this.buttonCancelMotherboard);
             this.tabPageMotherboard.Controls.Add(this.dataGridViewMotherboard);
@@ -802,7 +822,10 @@
             // 
             // buttonSelectMotherboard
             // 
-            this.buttonSelectMotherboard.BackColor = System.Drawing.Color.MintCream;
+            this.buttonSelectMotherboard.BackColor = System.Drawing.Color.Black;
+            this.buttonSelectMotherboard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSelectMotherboard.BackgroundImage")));
+            this.buttonSelectMotherboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelectMotherboard.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSelectMotherboard.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectMotherboard.Name = "buttonSelectMotherboard";
             this.buttonSelectMotherboard.Size = new System.Drawing.Size(182, 23);
@@ -813,7 +836,10 @@
             // 
             // buttonCancelMotherboard
             // 
-            this.buttonCancelMotherboard.BackColor = System.Drawing.Color.MintCream;
+            this.buttonCancelMotherboard.BackColor = System.Drawing.Color.Black;
+            this.buttonCancelMotherboard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelMotherboard.BackgroundImage")));
+            this.buttonCancelMotherboard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelMotherboard.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonCancelMotherboard.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelMotherboard.Name = "buttonCancelMotherboard";
             this.buttonCancelMotherboard.Size = new System.Drawing.Size(182, 23);
@@ -1017,6 +1043,7 @@
             // tabPagePowerUnit
             // 
             this.tabPagePowerUnit.BackColor = System.Drawing.Color.Black;
+            this.tabPagePowerUnit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPagePowerUnit.BackgroundImage")));
             this.tabPagePowerUnit.Controls.Add(this.buttonSelectPowerUnit);
             this.tabPagePowerUnit.Controls.Add(this.buttonCancelPowerUnit);
             this.tabPagePowerUnit.Controls.Add(this.dataGridViewPowerUnit);
@@ -1030,7 +1057,10 @@
             // 
             // buttonSelectPowerUnit
             // 
-            this.buttonSelectPowerUnit.BackColor = System.Drawing.Color.MintCream;
+            this.buttonSelectPowerUnit.BackColor = System.Drawing.Color.Black;
+            this.buttonSelectPowerUnit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSelectPowerUnit.BackgroundImage")));
+            this.buttonSelectPowerUnit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelectPowerUnit.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSelectPowerUnit.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectPowerUnit.Name = "buttonSelectPowerUnit";
             this.buttonSelectPowerUnit.Size = new System.Drawing.Size(182, 23);
@@ -1041,7 +1071,10 @@
             // 
             // buttonCancelPowerUnit
             // 
-            this.buttonCancelPowerUnit.BackColor = System.Drawing.Color.MintCream;
+            this.buttonCancelPowerUnit.BackColor = System.Drawing.Color.Black;
+            this.buttonCancelPowerUnit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelPowerUnit.BackgroundImage")));
+            this.buttonCancelPowerUnit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelPowerUnit.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonCancelPowerUnit.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelPowerUnit.Name = "buttonCancelPowerUnit";
             this.buttonCancelPowerUnit.Size = new System.Drawing.Size(182, 23);
@@ -1205,6 +1238,7 @@
             // tabPageCooler
             // 
             this.tabPageCooler.BackColor = System.Drawing.Color.Black;
+            this.tabPageCooler.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPageCooler.BackgroundImage")));
             this.tabPageCooler.Controls.Add(this.buttonSelectCooler);
             this.tabPageCooler.Controls.Add(this.buttonCancelCooler);
             this.tabPageCooler.Controls.Add(this.dataGridViewCooler);
@@ -1218,7 +1252,10 @@
             // 
             // buttonSelectCooler
             // 
-            this.buttonSelectCooler.BackColor = System.Drawing.Color.MintCream;
+            this.buttonSelectCooler.BackColor = System.Drawing.Color.Black;
+            this.buttonSelectCooler.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSelectCooler.BackgroundImage")));
+            this.buttonSelectCooler.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelectCooler.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSelectCooler.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectCooler.Name = "buttonSelectCooler";
             this.buttonSelectCooler.Size = new System.Drawing.Size(182, 23);
@@ -1229,7 +1266,10 @@
             // 
             // buttonCancelCooler
             // 
-            this.buttonCancelCooler.BackColor = System.Drawing.Color.MintCream;
+            this.buttonCancelCooler.BackColor = System.Drawing.Color.Black;
+            this.buttonCancelCooler.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelCooler.BackgroundImage")));
+            this.buttonCancelCooler.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelCooler.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonCancelCooler.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelCooler.Name = "buttonCancelCooler";
             this.buttonCancelCooler.Size = new System.Drawing.Size(182, 23);
@@ -1337,6 +1377,7 @@
             // tabPageROM
             // 
             this.tabPageROM.BackColor = System.Drawing.Color.Black;
+            this.tabPageROM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPageROM.BackgroundImage")));
             this.tabPageROM.Controls.Add(this.buttonSelectROM);
             this.tabPageROM.Controls.Add(this.buttonCancelROM);
             this.tabPageROM.Controls.Add(this.dataGridViewROM);
@@ -1350,7 +1391,10 @@
             // 
             // buttonSelectROM
             // 
-            this.buttonSelectROM.BackColor = System.Drawing.Color.MintCream;
+            this.buttonSelectROM.BackColor = System.Drawing.Color.Black;
+            this.buttonSelectROM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSelectROM.BackgroundImage")));
+            this.buttonSelectROM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelectROM.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSelectROM.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectROM.Name = "buttonSelectROM";
             this.buttonSelectROM.Size = new System.Drawing.Size(182, 23);
@@ -1361,7 +1405,10 @@
             // 
             // buttonCancelROM
             // 
-            this.buttonCancelROM.BackColor = System.Drawing.Color.MintCream;
+            this.buttonCancelROM.BackColor = System.Drawing.Color.Black;
+            this.buttonCancelROM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelROM.BackgroundImage")));
+            this.buttonCancelROM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelROM.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonCancelROM.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelROM.Name = "buttonCancelROM";
             this.buttonCancelROM.Size = new System.Drawing.Size(182, 23);
@@ -1461,6 +1508,7 @@
             // tabPageHardDisk
             // 
             this.tabPageHardDisk.BackColor = System.Drawing.Color.Black;
+            this.tabPageHardDisk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPageHardDisk.BackgroundImage")));
             this.tabPageHardDisk.Controls.Add(this.buttonSelectHardDisk);
             this.tabPageHardDisk.Controls.Add(this.buttonCancelHardDisk);
             this.tabPageHardDisk.Controls.Add(this.dataGridViewHardDisk);
@@ -1474,8 +1522,11 @@
             // 
             // buttonSelectHardDisk
             // 
-            this.buttonSelectHardDisk.BackColor = System.Drawing.Color.MintCream;
-            this.buttonSelectHardDisk.ForeColor = System.Drawing.Color.Black;
+            this.buttonSelectHardDisk.BackColor = System.Drawing.Color.Black;
+            this.buttonSelectHardDisk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSelectHardDisk.BackgroundImage")));
+            this.buttonSelectHardDisk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSelectHardDisk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSelectHardDisk.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSelectHardDisk.Location = new System.Drawing.Point(449, 309);
             this.buttonSelectHardDisk.Name = "buttonSelectHardDisk";
             this.buttonSelectHardDisk.Size = new System.Drawing.Size(182, 23);
@@ -1486,8 +1537,10 @@
             // 
             // buttonCancelHardDisk
             // 
-            this.buttonCancelHardDisk.BackColor = System.Drawing.Color.MintCream;
-            this.buttonCancelHardDisk.ForeColor = System.Drawing.Color.Black;
+            this.buttonCancelHardDisk.BackColor = System.Drawing.Color.Black;
+            this.buttonCancelHardDisk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonCancelHardDisk.BackgroundImage")));
+            this.buttonCancelHardDisk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelHardDisk.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonCancelHardDisk.Location = new System.Drawing.Point(49, 309);
             this.buttonCancelHardDisk.Name = "buttonCancelHardDisk";
             this.buttonCancelHardDisk.Size = new System.Drawing.Size(182, 23);
@@ -1858,8 +1911,10 @@
             // 
             // buttonSendOrder
             // 
-            this.buttonSendOrder.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.buttonSendOrder.ForeColor = System.Drawing.Color.Black;
+            this.buttonSendOrder.BackColor = System.Drawing.Color.Black;
+            this.buttonSendOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSendOrder.BackgroundImage")));
+            this.buttonSendOrder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSendOrder.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.buttonSendOrder.Location = new System.Drawing.Point(760, 368);
             this.buttonSendOrder.Name = "buttonSendOrder";
             this.buttonSendOrder.Size = new System.Drawing.Size(204, 23);
