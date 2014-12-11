@@ -25,11 +25,14 @@ namespace System_Constructor
 
         private void button1_Click(object sender, EventArgs e)
         {
-                try
+
+            try
+            {
+                if (textBox1.Text.Contains("@") && textBox1.Text.Contains("."))
                 {
-                    string request="";
-                    if (Config.CPU !=null) {request += Config.CPU.Name + "\n";}
-                    if (Config.VideoCard!=null) {request += Config.VideoCard.Name + "\n";}
+                    string request = "";
+                    if (Config.CPU != null) { request += Config.CPU.Name + "\n"; }
+                    if (Config.VideoCard != null) { request += Config.VideoCard.Name + "\n"; }
                     if (Config.SoundCard != null) { request += Config.SoundCard.Name + "\n"; }
                     if (Config.MBoard != null) { request += Config.MBoard.Name + "\n"; }
                     if (Config.Power != null) { request += Config.Power.Name + "\n"; }
@@ -37,8 +40,8 @@ namespace System_Constructor
                     if (Config.ROM != null) { request += Config.ROM.Name + "\n"; }
                     if (Config.HardDisk != null) { request += Config.HardDisk.Name + "\n"; }
 
-                    request += "\n" + "\n" + "Итого: " + Price.ToString() + "\n" + "\n" + "Обратная связь: "+ textBox1.Text;
-                    string subject = "NewProjectToBuild "+textBox1.Text;
+                    request += "\n" + "\n" + "Итого: " + Price.ToString() + "\n" + "\n" + "Обратная связь: " + textBox1.Text;
+                    string subject = "NewProjectToBuild " + textBox1.Text;
                     MailMessage m1 = new MailMessage("scappuser@rambler.ru", "scappuser@rambler.ru", subject, request);
 
                     SmtpClient client = new SmtpClient("smtp.rambler.ru");
@@ -49,9 +52,12 @@ namespace System_Constructor
                     client.EnableSsl = true;
                     client.Send(m1);
                     MessageBox.Show("Запрос на сборку успешно отправлен в компанию System-Constructor. Спасибо, что воспользовались нашими услугами!", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
                 }
-                catch { MessageBox.Show("Неверно указан почтовый адрес", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-                this.Close();
+                else { MessageBox.Show("Неверно указан почтовый адрес", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            }
+            catch { MessageBox.Show("Неверно указан почтовый адрес", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                
         }
 
     }
